@@ -9,6 +9,8 @@ error_reporting(E_ALL);
 /*Homebrew convenience library and others required before execution 		       */
 require_once("ghlib/libft_core.php");
 require_once("logging.php");
+require_once("management.php");
+require_once("shell.php");
 
 /*Arguement parsing and checking 									    	       */
 if ($argc < 2)
@@ -28,6 +30,22 @@ $file = file($argv[1]); //File is read into an array of each line here.
 
 /*config file parsing and establishing goes here.             <---------           */
 
-log_message("Taskmaster shut down by the user." . PHP_EOL, $logfile);
+/*autostart any processes defined to be started at launch in the config file */
 
+stream_set_blocking (STDIN, 0);
+$exit = FALSE;
+$confirm = FALSE;
+echo "Taskmaster Initiated. Service Status Summary:" . PHP_EOL . task_status() . PHP_EOL . "> ";
+while ($exit != TRUE)
+{
+
+	if (($input = fgets(STDIN)) != NULL)
+	{
+		if (strcmp($input, "exit") == 1 || $confirm == TRUE)
+			$confirm = task_exit($confirm, $logfile);
+		else
+			echo ("Command Not Found" . PHP_EOL);
+		echo("> ");
+	}
+}
 ?>
