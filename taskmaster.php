@@ -20,8 +20,14 @@ if ($argv[1] == NULL | !file_exists($argv[1]))
 if (!contains($argv[1], ".yaml"))
 	die ("Error: The config file passed is not a .yaml file.\nUsage: ./taskmaster config.yaml\n");
 
+$logfile = "tasklog.txt";
+
+log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.", $logfile);
+
 $file = file($argv[1]); //File is read into an array of each line here.
 
 /*config file parsing and establishing goes here.             <---------           */
+
+log_message("Taskmaster shut down by the user." . PHP_EOL, $logfile);
 
 ?>
