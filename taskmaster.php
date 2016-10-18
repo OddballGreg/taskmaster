@@ -9,7 +9,6 @@ error_reporting(E_ALL);
 /*Homebrew convenience library and others required before execution 		       */
 require_once("ghlib/libft_core.php");
 require_once("logging.php");
-require_once("management.php");
 require_once("shell.php");
 
 /*Arguement parsing and checking 									    	       */
@@ -42,7 +41,7 @@ while ($exit != TRUE)
 	if (($input = fgets(STDIN)) != NULL)
 	{
 		if (strcmp($input, "exit") == 1 || $confirm == TRUE)
-			$confirm = task_exit($confirm, $logfile);
+			$confirm = task_exit($confirm, $logfile, $input);
 		else
 			echo ("Command Not Found" . PHP_EOL);
 		echo("> ");

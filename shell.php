@@ -1,6 +1,11 @@
 <?php
 
-function task_exit($confirm, $logfile)
+function task_status($param = NULL, $name = NULL)
+{
+	return (FALSE);
+}
+
+function task_exit($confirm, $logfile, $input)
 {
 	if (task_status("On") != FALSE)
 	{
@@ -9,12 +14,12 @@ function task_exit($confirm, $logfile)
 	}
 	else if (task_status("On") == FALSE || $confirm === TRUE)
 	{
-		if ($input = "Y")
+		if (strcmp($input, "Y") == 1)
 		{
 			log_message("Taskmaster shut down by the user." . PHP_EOL, $logfile);
 			die ("Exiting" . PHP_EOL);
 		}
-		else if ($input = "N")
+		else if (strcmp($input, "N") == 1)
 			return (FALSE);
 		else
 		{
@@ -25,4 +30,8 @@ function task_exit($confirm, $logfile)
 	return (FALSE);
 }
 
+function task_restart()
+{
+
+}
 ?>
