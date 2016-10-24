@@ -72,58 +72,21 @@ void			shell()
 	{
 		cin.getline(input, 256);
 		if (strcmp(input, "exit") == 0 || strcmp(input, "Exit") == 0)
-		{
-			cout << "TM > Exiting Taskmaster. Have a nice day." << endl;
-			free(input);
-			*logFile << currentDateTime() << " User exited Taskmaster\n\n";
-			logFile->close();
-			exit(0);
-		}
+		task_exit(input);
 		else if (strcmp(input, "reconfig") == 0 || strcmp(input, "Reconfig") == 0)
-		{
-			cout << "TM > Re-parsing Taskmaster Services from " << configFile << endl;
-			*logFile << currentDateTime() << " User requested services 'Reconfig'\n";
-			raise(1);
-			cout << "TM > ";
-		}
+		task_reconfig();
 		else if (strcmp(input, "help") == 0 || strcmp(input, "Help") == 0)
-		{
-			cout << "Welcome to Taskmaster by ghavenga and sallen.\n";
-			cout << "Taskmaster is a WTC_ project aimed at handling the running of ";
-			cout << "processes and programs according to the .yaml file given as an arguement.\n";
-			cout << "The following commands are available to you:\n";
-			cout << "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nExit\n";
-			cout << "TM > ";
-		}
-		else if (strcmp(input, "restart") == 0 || strcmp(input, "Restart") == 0)
-		{
-			cout << "TM > User requested 'restart' on program/process <insert arg>" << endl;
-			*logFile << currentDateTime() << " User requested 'restart' on program/process <insert arg>\n";
-			cout << "TM > ";
-		}
+		task_help();
+		else if (strncmp(input, "restart", 7) == 0 || strncmp(input, "Restart", 7) == 0)
+		task_restart(input);
 		else if (strcmp(input, "status") == 0 || strcmp(input, "Status") == 0)
-		{
-			cout << "TM > <process statuses printed here>" << endl;
-			cout << "TM > ";
-		}
-		else if (strcmp(input, "kill") == 0 || strcmp(input, "Kill") == 0)
-		{
-			cout << "TM > User requested 'kill' on program/process <insert arg>" << endl;
-			*logFile << currentDateTime() << " User requested 'kill' on program/process <insert arg>\n";
-			cout << "TM > ";
-		}
-		else if (strcmp(input, "shutdown") == 0 || strcmp(input, "Shutdown") == 0)
-		{
-			cout << "TM > User requested 'shutdown' on program/process <insert arg>" << endl;
-			*logFile << currentDateTime() << " User requested 'shutdown' on program/process <insert arg>\n";
-			cout << "TM > ";
-		}
-		else if (strcmp(input, "edit") == 0 || strcmp(input, "Edit") == 0)
-		{
-			cout << "TM > User 'edit'ed process <processid>'s <variablename> to <newvalue>" << endl;
-			*logFile << currentDateTime() << " User 'edit'ed process <processid>'s <variablename> to <newvalue>\n";
-			cout << "TM > ";
-		}
+		task_status();
+		else if (strncmp(input, "kill", 4) == 0 || strncmp(input, "Kill", 4) == 0)
+		task_kill(input);
+		else if (strncmp(input, "shutdown", 8) == 0 || strncmp(input, "Shutdown", 8) == 0)
+		task_shutdown(input);
+		else if (strncmp(input, "edit", 4) == 0 || strncmp(input, "Edit", 4) == 0)
+		task_edit(input);
 		else
 			cout << "TM > Command Not Recognized" << endl << "TM > ";
 	}

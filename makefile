@@ -5,7 +5,9 @@ CFLAGS= -Wall -Werror -Wextra
 HEADER= -I include
 
 SP= ./srcs/
-SRC= $(SP)main.cpp\
+SRC= 	$(SP)main.cpp\
+		$(SP)shellcmd1.cpp\
+		$(SP)shellcmd2.cpp\
 
 
 all: $(NAME)
