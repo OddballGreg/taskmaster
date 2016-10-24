@@ -17,7 +17,7 @@ $(NAME):
 	@echo "\x1b[34m-----Done Compiling $(NAME)\x1b[0m"
 
 clean:
-	@rm $(NAME)
+	@-rm $(NAME)
 	@echo "\x1b[32mCompleted Clean\x1b[0m"
 
 fclean: clean

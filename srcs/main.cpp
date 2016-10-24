@@ -24,14 +24,14 @@ void			config()
 	std::ifstream	*config;
 	config = new ifstream;
 	if (configFile != NULL)
-		configFile->open(filename, ios::in);
+		config->open(configFile, ios::in);
 
 }
 
 void			reconfig(int param)
 {
 	(void)param;
-	cout << currentDateTime() << " SIGHUP signal recieved. Executing reconfig.\n";
+	*logFile << currentDateTime() << " SIGHUP signal recieved. Executing reconfig.\n";
 	config();
 }
 

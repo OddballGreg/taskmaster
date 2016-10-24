@@ -47,3 +47,15 @@ Logfile Succesfully Opened
 <debug> Logfile Succesfully Opened
 2016-10-24.12:09:39 User exited Taskmaster
 
+<debug> Logfile Succesfully Opened
+2016-10-24.12:39:37 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-24.12:39:42 User requested services 'Reconfig'
+2016-10-24.12:39:48 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-24.12:40:14 User requested services 'Reconfig'
+2016-10-24.12:40:14 SIGHUP signal recieved. Executing reconfig.
+2016-10-24.12:40:18 User exited Taskmaster
+
