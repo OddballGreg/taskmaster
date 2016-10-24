@@ -26,6 +26,7 @@ void			config()
 void			reconfig(int param)
 {
 	(void)param;
+	cout << currentDateTime() << " SIGHUP signal recieved. Executing reconfig.\n";
 	config();
 }
 

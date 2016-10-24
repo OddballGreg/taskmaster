@@ -32,3 +32,6 @@ Logfile Succesfully Opened
 <debug> Logfile Succesfully Opened
 2016-10-24.11:35:47 User exited Taskmaster
 
+<debug> Logfile Succesfully Opened
+2016-10-24.11:58:42 User exited Taskmaster
+

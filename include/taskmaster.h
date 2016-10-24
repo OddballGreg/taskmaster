@@ -19,5 +19,6 @@ using namespace std;
 void reconfig(int param);
 void init(char *filename);
 void shell();
+const std::string currentDateTime();
 
 #endif
