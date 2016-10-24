@@ -86,6 +86,15 @@ void			shell()
 			raise(1);
 			cout << "TM > ";
 		}
+		else if (strcmp(input, "help") == 0 || strcmp(input, "Help") == 0)
+		{
+			cout << "Welcome to Taskmaster by ghavenga and sallen.\n";
+			cout << "Taskmaster is a WTC_ project aimed at handling the running of ";
+			cout << "processes and programs according to the .yaml file given as an arguement.\n";
+			cout << "The following commands are available to you:\n";
+			cout << "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nExit\n";
+			cout << "TM > ";
+		}
 		else
 			cout << "TM > Command Not Recognized" << endl << "TM > ";
 	}

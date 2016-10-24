@@ -59,3 +59,4 @@ Logfile Succesfully Opened
 2016-10-24.12:40:14 SIGHUP signal recieved. Executing reconfig.
 2016-10-24.12:40:18 User exited Taskmaster
 
+<debug> Logfile Succesfully Opened
