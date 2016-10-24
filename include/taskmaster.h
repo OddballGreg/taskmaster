@@ -11,8 +11,8 @@
 #include <csignal>
 
 /*global variables*/
-std::ofstream	*logfile;
-char			*configfile;
+std::ofstream	*logFile;
+char			*configFile;
 
 
 using namespace std;
