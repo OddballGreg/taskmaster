@@ -12,10 +12,9 @@ int				main(int argc, char *argv[])
 		return (0);
 	}
 	if (argv[2] != NULL)
-		init(argv[2]);
+		init(argv[1], argv[2]);
 	else
-		init(NULL);
-	configFile = argv[1];
+		init(argv[1], NULL);
 	config();
 	/*this function designates a function to be run when SIGHUP is called*/
 	void (*sighup_handler)(int);
@@ -23,11 +22,12 @@ int				main(int argc, char *argv[])
 	shell();
 }
 
-void			init(char *filename)
+void			init(char *configFileName, char *logFileName)
 {
+	configFile = configFileName;
 	logFile = new ofstream;
-	if (filename != NULL)
-		logFile->open(filename, ios::out | ios::app);
+	if (logFileName != NULL)
+		logFile->open(logFileName, ios::out | ios::app);
 	else
 		logFile->open("logfile.txt", ios::out | ios::app);
 	cout << "Logfile Succesfully Opened\n";
@@ -46,21 +46,21 @@ void			shell()
 	{
 		cin.getline(input, 256);
 		if (strcmp(input, "exit") == 0 || strcmp(input, "Exit") == 0)
-		task_exit(input);
+			task_exit(input);
 		else if (strcmp(input, "reconfig") == 0 || strcmp(input, "Reconfig") == 0)
-		task_reconfig();
+			task_reconfig();
 		else if (strcmp(input, "help") == 0 || strcmp(input, "Help") == 0)
-		task_help();
+			task_help();
 		else if (strncmp(input, "restart", 7) == 0 || strncmp(input, "Restart", 7) == 0)
-		task_restart(input);
+			task_restart(input);
 		else if (strcmp(input, "status") == 0 || strcmp(input, "Status") == 0)
-		task_status();
+			task_status();
 		else if (strncmp(input, "kill", 4) == 0 || strncmp(input, "Kill", 4) == 0)
-		task_kill(input);
+			task_kill(input);
 		else if (strncmp(input, "shutdown", 8) == 0 || strncmp(input, "Shutdown", 8) == 0)
-		task_shutdown(input);
+			task_shutdown(input);
 		else if (strncmp(input, "edit", 4) == 0 || strncmp(input, "Edit", 4) == 0)
-		task_edit(input);
+			task_edit(input);
 		else
 			cout << "TM > Command Not Recognized" << endl << "TM > ";
 	}

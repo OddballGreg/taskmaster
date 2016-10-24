@@ -19,7 +19,7 @@ extern char					*configFile;
 /*main.cpp*/
 void					config();
 void					reconfig(int param);
-void					init(char *filename);
+void					init(char *configFileName, char *logFileName);
 void					shell();
 const std::string		currentDateTime();
 
