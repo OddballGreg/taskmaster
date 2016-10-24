@@ -8,6 +8,8 @@ SP= ./srcs/
 SRC= 	$(SP)main.cpp\
 		$(SP)shellcmd1.cpp\
 		$(SP)shellcmd2.cpp\
+		$(SP)parse.cpp\
+		$(SP)utils.cpp\
 
 
 all: $(NAME)

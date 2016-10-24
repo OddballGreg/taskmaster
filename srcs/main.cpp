@@ -1,4 +1,8 @@
-#include "taskmaster.h"
+#include "taskmaster.hpp"
+
+/*global variables*/
+std::ofstream			*logFile;
+char					*configFile;
 
 int				main(int argc, char *argv[])
 {
@@ -19,22 +23,6 @@ int				main(int argc, char *argv[])
 	shell();
 }
 
-void			config()
-{
-	std::ifstream	*config;
-	config = new ifstream;
-	if (configFile != NULL)
-		config->open(configFile, ios::in);
-
-}
-
-void			reconfig(int param)
-{
-	(void)param;
-	*logFile << currentDateTime() << " SIGHUP signal recieved. Executing reconfig.\n";
-	config();
-}
-
 void			init(char *filename)
 {
 	logFile = new ofstream;
@@ -46,20 +34,6 @@ void			init(char *filename)
 	*logFile << "<debug> Logfile Succesfully Opened\n";
 	logFile->flush();
 
-}
-
-const std::string currentDateTime() 
-{
-	time_t		now = time(0);
-	struct tm	tstruct;
-	char		buf[80];
-
-	tstruct = *localtime(&now);
-	// Visit http://en.cppreference.com/w/cpp/chrono/c/strftime
-	// for more information about date/time format
-	strftime(buf, sizeof(buf), "%Y-%m-%d.%X", &tstruct);
-
-	return buf;
 }
 
 void			shell()

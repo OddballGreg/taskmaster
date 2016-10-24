@@ -1,4 +1,4 @@
-#include "taskmaster.h"
+#include "taskmaster.hpp"
 
 void				task_exit(char *input)
 {
@@ -19,12 +19,12 @@ void				task_reconfig()
 
 void				task_help()
 {
-	cout << "Welcome to Taskmaster by ghavenga and sallen.\n";
+	cout << endl << "Welcome to Taskmaster by ghavenga and sallen.\n";
 	cout << "Taskmaster is a WTC_ project aimed at handling the running of ";
 	cout << "processes and programs according to the .yaml file given as an arguement.\n";
 	cout << "The following commands are available to you:\n";
 	cout << "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nExit\n";
-	cout << "TM > ";
+	cout << endl << "TM > ";
 }
 
 void				task_status()
