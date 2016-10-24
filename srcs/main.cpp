@@ -95,6 +95,35 @@ void			shell()
 			cout << "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nExit\n";
 			cout << "TM > ";
 		}
+		else if (strcmp(input, "restart") == 0 || strcmp(input, "Restart") == 0)
+		{
+			cout << "TM > User requested 'restart' on program/process <insert arg>" << endl;
+			*logFile << currentDateTime() << " User requested 'restart' on program/process <insert arg>\n";
+			cout << "TM > ";
+		}
+		else if (strcmp(input, "status") == 0 || strcmp(input, "Status") == 0)
+		{
+			cout << "TM > <process statuses printed here>" << endl;
+			cout << "TM > ";
+		}
+		else if (strcmp(input, "kill") == 0 || strcmp(input, "Kill") == 0)
+		{
+			cout << "TM > User requested 'kill' on program/process <insert arg>" << endl;
+			*logFile << currentDateTime() << " User requested 'kill' on program/process <insert arg>\n";
+			cout << "TM > ";
+		}
+		else if (strcmp(input, "shutdown") == 0 || strcmp(input, "Shutdown") == 0)
+		{
+			cout << "TM > User requested 'shutdown' on program/process <insert arg>" << endl;
+			*logFile << currentDateTime() << " User requested 'shutdown' on program/process <insert arg>\n";
+			cout << "TM > ";
+		}
+		else if (strcmp(input, "edit") == 0 || strcmp(input, "Edit") == 0)
+		{
+			cout << "TM > User 'edit'ed process <processid>'s <variablename> to <newvalue>" << endl;
+			*logFile << currentDateTime() << " User 'edit'ed process <processid>'s <variablename> to <newvalue>\n";
+			cout << "TM > ";
+		}
 		else
 			cout << "TM > Command Not Recognized" << endl << "TM > ";
 	}
