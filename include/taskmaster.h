@@ -14,6 +14,7 @@
 std::ofstream	*logfile;
 char			*configfile;
 
+
 using namespace std;
 
 void reconfig(int param);

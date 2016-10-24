@@ -11,7 +11,8 @@ int				main(int argc, char *argv[])
 		init(argv[2]);
 	else
 		init(NULL);
-	configfile = argv[1];
+	configFile = argv[1];
+	config();
 	/*this function designates a function to be run when SIGHUP is called*/
 	void (*sighup_handler)(int);
 	sighup_handler = signal(1, reconfig);
@@ -20,6 +21,10 @@ int				main(int argc, char *argv[])
 
 void			config()
 {
+	std::ifstream	*config;
+	config = new ifstream;
+	if (configFile != NULL)
+		configFile->open(filename, ios::in);
 
 }
 
@@ -32,14 +37,14 @@ void			reconfig(int param)
 
 void			init(char *filename)
 {
-	logfile = new ofstream;
+	logFile = new ofstream;
 	if (filename != NULL)
-		logfile->open(filename, ios::out | ios::app);
+		logFile->open(filename, ios::out | ios::app);
 	else
-		logfile->open("logfile.txt", ios::out | ios::app);
+		logFile->open("logfile.txt", ios::out | ios::app);
 	cout << "Logfile Succesfully Opened\n";
-	*logfile << "<debug> Logfile Succesfully Opened\n";
-	logfile->flush();
+	*logFile << "<debug> Logfile Succesfully Opened\n";
+	logFile->flush();
 
 }
 
@@ -70,14 +75,14 @@ void			shell()
 		{
 			cout << "TM > Exiting Taskmaster. Have a nice day." << endl;
 			free(input);
-			*logfile << currentDateTime() << " User exited Taskmaster\n\n";
-			logfile->close();
+			*logFile << currentDateTime() << " User exited Taskmaster\n\n";
+			logFile->close();
 			exit(0);
 		}
 		else if (strcmp(input, "reconfig") == 0 || strcmp(input, "Reconfig") == 0)
 		{
-			cout << "TM > Re-parsing Taskmaster Services from " << configfile << endl;
-			*logfile << currentDateTime() << " User requested services 'Reconfig'\n";
+			cout << "TM > Re-parsing Taskmaster Services from " << configFile << endl;
+			*logFile << currentDateTime() << " User requested services 'Reconfig'\n";
 			raise(1);
 			cout << "TM > ";
 		}

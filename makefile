@@ -30,8 +30,9 @@ me:
 
 test: testmsg clean all
 	./$(NAME) config.yaml
-	echo "\n"
-	cat logfile.txt
+	@echo "\n\x1b[33m"
+	@cat logfile.txt
+	@echo "\x1b[0mTest Concluded\n"
 
 testmsg:
 	@echo "\x1b[35mRecompiling and initiating test with config.yaml as arguement\x1b[0m"
