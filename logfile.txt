@@ -10,3 +10,25 @@ Logfile Succesfully Opened
 2016-10-20.16:03:36User exited Taskmaster
 Logfile Succesfully Opened
 2016-10-20.16:03:58 User exited Taskmaster
+Logfile Succesfully Opened
+2016-10-24.11:24:53 User exited Taskmaster
+Logfile Succesfully Opened
+2016-10-24.11:27:44 User exited Taskmaster
+Logfile Succesfully Opened
+Logfile Succesfully Opened
+2016-10-24.11:29:26 User exited Taskmaster
+Logfile Succesfully Opened
+Logfile Succesfully Opened
+2016-10-24.11:31:16 User exited Taskmaster
+<debug> Logfile Succesfully Opened
+<debug> Logfile Succesfully Opened
+2016-10-24.11:32:32 User exited Taskmaster
+<debug> Logfile Succesfully Opened
+<debug> Logfile Succesfully Opened
+2016-10-24.11:33:21 User exited Taskmaster
+<debug> Logfile Succesfully Opened
+2016-10-24.11:33:28 User requested services 'Reconfig'
+2016-10-24.11:33:39 User exited Taskmaster
+<debug> Logfile Succesfully Opened
+2016-10-24.11:35:47 User exited Taskmaster
+

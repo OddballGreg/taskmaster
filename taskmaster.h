@@ -8,12 +8,15 @@
 #include <ctime>
 #include <cstddef>
 #include <time.h>
+#include <csignal>
 
 /*global variables*/
-std::ofstream *logfile;
+std::ofstream	*logfile;
+char			*configfile;
 
 using namespace std;
 
+void reconfig(int param);
 void init(char *filename);
 void shell();
 
