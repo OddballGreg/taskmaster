@@ -104,3 +104,7 @@ Logfile Succesfully Opened
 <debug> Logfile Succesfully Opened
 2016-10-24.14:00:59 User exited Taskmaster
 
+<debug> Logfile Succesfully Opened
+2016-10-25.07:59:11 User requested 'shutdown' on program/process <insert arg>
+2016-10-25.07:59:12 User exited Taskmaster
+

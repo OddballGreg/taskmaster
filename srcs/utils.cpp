@@ -1,3 +1,5 @@
+#include "taskmaster.hpp"
+
 const std::string currentDateTime() 
 {
 	time_t		now = time(0);

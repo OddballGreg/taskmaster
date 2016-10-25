@@ -1,3 +1,5 @@
+#include "taskmaster.hpp"
+
 void			config()
 {
 	std::ifstream	*config;
