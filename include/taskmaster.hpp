@@ -15,6 +15,7 @@ using namespace std;
 /* global variables */
 extern std::ofstream		*logFile;
 extern char					*configFile;
+extern void					(*sighup_handler)(int);
 
 /* main.cpp */
 void					config();

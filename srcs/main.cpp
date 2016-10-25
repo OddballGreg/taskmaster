@@ -3,6 +3,7 @@
 /* global variables */
 std::ofstream			*logFile;
 char					*configFile;
+void					(*sighup_handler)(int);
 
 int				main(int argc, char *argv[])
 {
@@ -16,15 +17,15 @@ int				main(int argc, char *argv[])
 	else
 		init(argv[1], NULL);
 	config();
-	/* this function designates a function to be run when SIGHUP is called */
-	void (*sighup_handler)(int);
-	sighup_handler = signal(1, reconfig);
 	shell();
 }
 
 void			init(char *configFileName, char *logFileName)
 {
+	sighup_handler = signal(1, reconfig);
+
 	configFile = configFileName;
+
 	logFile = new ofstream;
 	if (logFileName != NULL)
 		logFile->open(logFileName, ios::out | ios::app);
