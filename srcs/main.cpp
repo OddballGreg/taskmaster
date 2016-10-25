@@ -4,6 +4,7 @@
 std::ofstream			*logFile;
 char					*configFile;
 void					(*sighup_handler)(int);
+//process				**processes;
 
 int				main(int argc, char *argv[])
 {
@@ -17,6 +18,7 @@ int				main(int argc, char *argv[])
 		init(argv[1], argv[2]);
 	else
 		init(argv[1], NULL);
+
 	config();
 	shell();
 }

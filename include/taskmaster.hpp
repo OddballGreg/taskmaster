@@ -16,6 +16,7 @@ using namespace std;
 extern std::ofstream		*logFile;
 extern char					*configFile;
 extern void					(*sighup_handler)(int);
+//extern process				**processes;
 
 /* main.cpp */
 void					config();

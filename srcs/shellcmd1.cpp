@@ -29,5 +29,11 @@ void				task_help()
 void				task_status()
 {
 	cout << "TM > <process statuses printed here>" << endl;
+	/*
+	int index;
+	index = -1;
+	while (processes[++index] != NULL)
+		cout << processes[index]->status();
+	*/
 	cout << "TM > ";
 }
