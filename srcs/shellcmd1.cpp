@@ -1,9 +1,8 @@
 #include "taskmaster.hpp"
 
-void				task_exit(char *input)
+void				task_exit()
 {
 	cout << "TM > Exiting Taskmaster. Have a nice day." << endl;
-	free(input);
 	*logFile << currentDateTime() << " User exited Taskmaster\n\n";
 	logFile->close();
 	exit(0);

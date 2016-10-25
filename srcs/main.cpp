@@ -1,6 +1,6 @@
 #include "taskmaster.hpp"
 
-/*global variables*/
+/* global variables */
 std::ofstream			*logFile;
 char					*configFile;
 
@@ -16,7 +16,7 @@ int				main(int argc, char *argv[])
 	else
 		init(argv[1], NULL);
 	config();
-	/*this function designates a function to be run when SIGHUP is called*/
+	/* this function designates a function to be run when SIGHUP is called */
 	void (*sighup_handler)(int);
 	sighup_handler = signal(1, reconfig);
 	shell();
@@ -38,15 +38,14 @@ void			init(char *configFileName, char *logFileName)
 
 void			shell()
 {
-	char		*input;
+	char		input[256];
 
-	input = (char *)calloc(256, sizeof(char));
 	cout << "TM > ";
 	while (1)
 	{
 		cin.getline(input, 256);
 		if (strcmp(input, "exit") == 0 || strcmp(input, "Exit") == 0)
-			task_exit(input);
+			task_exit();
 		else if (strcmp(input, "reconfig") == 0 || strcmp(input, "Reconfig") == 0)
 			task_reconfig();
 		else if (strcmp(input, "help") == 0 || strcmp(input, "Help") == 0)
