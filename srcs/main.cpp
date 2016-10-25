@@ -34,10 +34,6 @@ void			init(char *configFileName, char *logFileName)
 		logFile->open(logFileName, ios::out | ios::app);
 	else
 		logFile->open("tasklog.txt", ios::out | ios::app);
-	cout << "Logfile Succesfully Opened\n";
-	*logFile << "<debug> Logfile Succesfully Opened\n";
-	logFile->flush();
-
 }
 
 void			shell()
