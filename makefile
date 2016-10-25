@@ -11,7 +11,6 @@ SRC= 	$(SP)main.cpp\
 		$(SP)parse.cpp\
 		$(SP)utils.cpp\
 
-
 all: $(NAME)
 
 $(NAME):

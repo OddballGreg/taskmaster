@@ -16,14 +16,17 @@ using namespace std;
 extern std::ofstream		*logFile;
 extern char					*configFile;
 extern void					(*sighup_handler)(int);
-//extern process				**processes;
+//extern process				*processes;
 
 /* main.cpp */
 void					config();
 void					reconfig(int param);
 void					init(char *configFileName, char *logFileName);
 void					shell();
+
+/* utils.cpp */
 const std::string		currentDateTime();
+std::string				*str_split(char *input);
 
 /* shellcmd1.cpp */
 void					task_exit();

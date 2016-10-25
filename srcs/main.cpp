@@ -4,7 +4,7 @@
 std::ofstream			*logFile;
 char					*configFile;
 void					(*sighup_handler)(int);
-//process				**processes;
+//process					*processes;
 
 int				main(int argc, char *argv[])
 {

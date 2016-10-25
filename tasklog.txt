@@ -34,3 +34,25 @@
 <debug> Logfile Succesfully Opened
 2016-10-25.09:40:21 User exited Taskmaster
 
+<debug> Logfile Succesfully Opened
+2016-10-25.13:25:34 User requested 'kill' on program/process <insert arg>
+2016-10-25.13:25:39 User requested 'kill' on program/process <insert arg>
+2016-10-25.13:26:24 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.13:30:21 User requested 'kill' on program/process <insert arg>
+2016-10-25.13:30:45 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.13:32:02 User requested 'restart' on program/process <insert arg>
+2016-10-25.13:32:06 User requested 'restart' on program/process <insert arg>
+2016-10-25.13:32:09 User requested 'restart' on program/process <insert arg>
+2016-10-25.13:32:14 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.13:33:16 User requested 'shutdown' on program/process 123
+2016-10-25.13:33:20 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.13:46:01 User exited Taskmaster
+
