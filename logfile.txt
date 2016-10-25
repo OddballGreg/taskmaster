@@ -116,3 +116,26 @@ Logfile Succesfully Opened
 2016-10-25.08:24:23 SIGHUP signal recieved. Executing reconfig.
 2016-10-25.08:24:26 User exited Taskmaster
 
+<debug> Logfile Succesfully Opened
+2016-10-25.08:36:52 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.08:37:12 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.08:37:48 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.08:38:24 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.08:39:36 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.08:40:54 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.08:42:28 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+<debug> Logfile Succesfully Opened

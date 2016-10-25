@@ -9,7 +9,8 @@ int				main(int argc, char *argv[])
 {
 	if (argc < 2)
 	{
-		cout << "Taskmaster requires you to input a .yaml config file" << endl;
+		cout << "Taskmaster requires you to input at least a .yaml config file" << endl;
+		cout << "Usage: ./taskmaster ./config.yaml ./logfile.txt" << endl;
 		return (0);
 	}
 	if (argv[2] != NULL)
@@ -30,7 +31,7 @@ void			init(char *configFileName, char *logFileName)
 	if (logFileName != NULL)
 		logFile->open(logFileName, ios::out | ios::app);
 	else
-		logFile->open("logfile.txt", ios::out | ios::app);
+		logFile->open("tasklog.txt", ios::out | ios::app);
 	cout << "Logfile Succesfully Opened\n";
 	*logFile << "<debug> Logfile Succesfully Opened\n";
 	logFile->flush();
