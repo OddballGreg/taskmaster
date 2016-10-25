@@ -24,3 +24,13 @@
 <Tuesday, 18-Oct-2016 17:04:33 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
 <Tuesday, 18-Oct-2016 17:04:57 SAST>	Taskmaster shut down by the user.
 
+<debug> Logfile Succesfully Opened
+2016-10-25.09:39:31 User requested 'shutdown' on program/process <insert arg>
+2016-10-25.09:39:33 User requested 'restart' on program/process <insert arg>
+2016-10-25.09:39:35 User requested services 'Reconfig'
+2016-10-25.09:39:35 SIGHUP signal recieved. Executing reconfig.
+2016-10-25.09:39:41 User exited Taskmaster
+
+<debug> Logfile Succesfully Opened
+2016-10-25.09:40:21 User exited Taskmaster
+

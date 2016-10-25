@@ -35,7 +35,7 @@ me:
 test: testmsg clean all
 	./$(NAME) config.yaml
 	@echo "\n\x1b[33m"
-	@cat logfile.txt
+	@cat tasklog.txt
 	@echo "\x1b[0mTest Concluded\n"
 
 testmsg:
