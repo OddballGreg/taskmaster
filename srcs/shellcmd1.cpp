@@ -1,12 +1,35 @@
 #include "taskmaster.hpp"
 
-void				task_exit()
+void				task_exit(char *input)
 {
-	cout << "TM > Exiting Taskmaster. Have a nice day." << endl;
-	*logFile << currentDateTime() << " User exited Taskmaster\n\n";
-	logFile->close();
-	exit(0);
-	//anti orphaning handling needed
+	int				index;
+	bool			orphans;
+
+	index = -1;
+	orphans = false;
+	while (proccesses[++index] != NULL)
+		if (processes[index]->status() == true)
+			orphans = true;
+	if (orphans == true)
+	{
+		cout << "TM > Taskmaster is still handling 1 or more processes."; 
+		cout << "Exiting now would orphan those processes.";
+		cout << "Type exit -f or shutdown the processes first to exit." << endl;
+	}
+	else if (strcmp(input[5], "-f") == 0)
+	{
+		cout << "TM > Forced Exiting Taskmaster. Processes may have been orphaned." << endl;
+		*logFile << currentDateTime() << " User force exited Taskmaster. Processes may have been orphaned\n\n";
+		logFile->close();
+		exit(0);
+	}
+	else if (orphans == false)
+	{
+		cout << "TM > Exiting Taskmaster. Have a nice day." << endl;
+		*logFile << currentDateTime() << " User exited Taskmaster\n\n";
+		logFile->close();
+		exit(0);
+	}
 }
 
 void				task_reconfig()
@@ -30,12 +53,10 @@ void				task_help()
 
 void				task_status()
 {
-	cout << "TM > <process statuses printed here>" << endl;
-	/*
 	int index;
+
 	index = -1;
 	while (processes[++index] != NULL)
-		cout << processes[index]->status();
-	*/
+		processes[index]->status(true);
 	cout << "TM > ";
 }

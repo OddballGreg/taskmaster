@@ -29,8 +29,6 @@ void		autostart()
 
 	index = -1;
 	while (processes[++index] != NULL)
-	{
 		if (processes[index]->autostart == TRUE)
 			processes[index]->start();
-	}	
 }
