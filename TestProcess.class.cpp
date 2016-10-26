@@ -2,7 +2,6 @@
 #include <typeinfo>
 
 class Process {
-    char    *logfile;
     //lcmd; ??              //launch command. How the program should be launched. E.g. ./desktop/folder/program arg1 arg2
     long    pcount;         //process count
     bool    autostart;
