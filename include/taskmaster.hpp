@@ -19,10 +19,11 @@ extern void					(*sighup_handler)(int);
 //extern process				*processes;
 
 /* main.cpp */
-void					config();
-void					reconfig(int param);
 void					init(char *configFileName, char *logFileName);
+
+/* shell.cpp */
 void					shell();
+void                    run(char *input);
 
 /* utils.cpp */
 const std::string		currentDateTime();
@@ -39,5 +40,14 @@ void					task_restart(char *input);
 void					task_kill(char *input);
 void					task_shutdown(char *input);
 void					task_edit(char *input);
+void                    task_start(char *input);
+
+/* parse.cpp */
+void					config();
+void					reconfig(int param);
+
+/* phandling.cpp */
+void					maintain();
+void					autostart();
 
 #endif

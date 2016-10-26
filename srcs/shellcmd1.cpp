@@ -23,7 +23,7 @@ void				task_help()
 	cout << "Taskmaster is a WTC_ project aimed at handling the running of ";
 	cout << "processes and programs according to the .yaml file given as an arguement.\n";
 	cout << "The following commands are available to you:\n";
-	cout << "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nExit\n";
+	cout << "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nStart\nExit\n";
 	cout << "Note: The commands require that you input exactly the process ID as an arguement or they will not function.\n";
 	cout << endl << "TM > ";
 }
@@ -39,5 +39,3 @@ void				task_status()
 	*/
 	cout << "TM > ";
 }
-
-//void				task_start()
