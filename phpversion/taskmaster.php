@@ -30,7 +30,6 @@ $file = file($argv[1]); //File is read into an array of each line here.
 /*config file parsing and establishing goes here.             <---------           */
 
 /*autostart any processes defined to be started at launch in the config file */
-
 stream_set_blocking (STDIN, 0);
 $exit = FALSE;
 $confirm = FALSE;
