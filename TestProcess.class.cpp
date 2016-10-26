@@ -3,7 +3,7 @@
 
 class Process {
     char    *logfile;
-    //lcmd; ??
+    //lcmd; ??              //launch command. How the program should be launched. E.g. ./desktop/folder/program arg1 arg2
     long    pcount;         //process count
     bool    autostart;
     bool    rstart_cond;    //contingent on use during alg.
@@ -12,8 +12,8 @@ class Process {
     long    retry;
     int     exitsig;
     int     killwait;
-    //pid_logging;  ??
-    //pid_logfile;  ??
+    //pid_logging;  ??      //option dicating if the output from the process should be saved or not.
+    //pid_logfile;  ??      //if pid_logging is set to true, what file should the output be saved to.
     char    *env_vars;
     char    *wrk_dir;
     mode_t  umask;

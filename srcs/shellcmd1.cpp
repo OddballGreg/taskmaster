@@ -6,6 +6,7 @@ void				task_exit()
 	*logFile << currentDateTime() << " User exited Taskmaster\n\n";
 	logFile->close();
 	exit(0);
+	//anti orphaning handling needed
 }
 
 void				task_reconfig()
