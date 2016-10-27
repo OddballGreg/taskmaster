@@ -2,38 +2,83 @@
 
 class 		Process
 {
-	char    *lcmd			= NULL;          //launch command. How the program should be launched. E.g. ./desktop/folder/program arg1 arg2
-	long    pcount			= 1;         //process count
+	char	*name			= NULL;
+	char    *lcmd			= NULL;     //launch command. How the program should be launched. E.g. ./desktop/folder/program arg1 arg2
+	long    pcount			= 1;        //process count
 	bool    autostart		= FALSE;
 	bool    rstart_cond		= FALSE;    //contingent on use during alg.
-	int		*exitcodes		= NULL;		//IF NULL, consider only 0 to be a good exit
+	int		*exitcodes		= NULL;
 	int     startwait		= 5;
 	long    retry			= 0;
 	int     exitsig			= 3;
 	int     killwait		= 5;
-	bool    pid_logging		= FALSE;     //option dicating if the output from the process should be saved or not.
-	char    *pid_logfile	= NULL;    //if pid_logging is set to true, what file should the output be saved to.
+	bool    pid_logging		= FALSE;    //option dicating if the output from the process should be saved or not.
+	char    *pid_logfile	= NULL;     //if pid_logging is set to true, what file should the output be saved to.
 	char    **env_vars		= NULL;
 	char    *wrk_dir		= NULL;
 	mode_t  umask			= NULL;
-	double  pid				;
+	double  *pid			= NULL;
+	Process	child			= NULL;
 	bool    status			= FALSE;
 	bool    restartMe		= FALSE;
-	bool    verbose			= FALSE;
 
 public:
-    Process() 
+	Process() 
 	{
-		lcmd = (char)malloc(sizeof(char) * 256);
+		name = (char)malloc(sizeof(char) * 256); //Protect against flood
+		lcmd = (char)malloc(sizeof(char) * 256); //Protect against flood
 		exitcodes = (int)malloc(sizeof(int) * 20); // Will need protection against flooding
-		pid_logfile = (char)malloc(sizeof(char) * 256);
+		pid_logfile = (char)malloc(sizeof(char) * 256); //Flood protection
 		env_vars = (char *)malloc(sizeof(char *) * 50); // Will need protection against flooding.
-		
-        cout << "New Process Constructed" << endl;
-    }
+		wrk_dir = (char)malloc(sizeof(char) * 256); //Protect against flooding
+		pid = (double)malloc(sizeof(double) * 1);
 
-    ~Process() 
+		int index = -1;
+		while (env_vars[++index] != NULL)
+			env_vars[index] = (char)malloc(sizeof(char) * 256);
+
+		exitcodes[0] = '0';
+
+		cout << "New Process Constructed" << endl;
+	}
+
+	~Process() 
 	{
-        cout << "Process Destructed" << endl;
-    }
+		int index = -1;
+		while (env_vars[++index] != NULL)
+			free(env_vars[index]);
+
+		free(name);
+		free(lcmd);
+		free(exitcodes);
+		free(pid_logfile);
+		free(env_vars);
+		free(wrk_dir);
+		free(pid);
+
+		cout << "Process Destructed" << endl;
+	}
+
+	bool	status(bool verbose)
+	{
+		if (verbose == FALSE)
+		{
+			if (status == FALSE)
+				return (FALSE);
+			else if (child == NULL);
+				return (TRUE);
+			else
+				return(child->status());
+		}
+		else
+		{
+			if (status == TRUE)
+				cout << "TM > " << name << " " << pid << " status: \x1b[34mONLINE\x1b[0m" << endl;
+			else
+				cout << "TM > " << name << " " << pid << " status: \x1b[31mOFFLINE\x1b[0m" << endl;
+			if (child != NULL)
+				child->status(TRUE);
+		}
+	}
+
 }

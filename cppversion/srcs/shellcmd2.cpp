@@ -5,7 +5,7 @@ void				task_restart(char *input)
 	std::string temp(&input[8]);
 	int			index;
 	
-	if (temp.empty() != true)
+	if (temp.empty() != TRUE)
 	{
 		index = -1;
 		while (processes[++index] != NULL)
@@ -26,7 +26,7 @@ void				task_kill(char *input)
 	std::string temp(&input[5]);
 	int			index;
 
-	if (temp.empty() != true)
+	if (temp.empty() != TRUE)
 	{
 		index = -1;
 		while (processes[++index] != NULL)
@@ -47,7 +47,7 @@ void				task_shutdown(char *input)
 	std::string temp(&input[9]);
 	int			index;
 
-	if (temp.empty() != true)
+	if (temp.empty() != TRUE)
 	{
 		index = -1;
 		while (processes[++index] != NULL)
@@ -68,7 +68,7 @@ void				task_edit(char *input)
 	std::string temp(&input[5]);
 	int			index;
 
-	if (temp.empty() != true)
+	if (temp.empty() != TRUE)
 	{
 		index = -1;
 		while (processes[++index] != NULL)
@@ -89,7 +89,7 @@ void				task_start()
 	std::string temp(&input[9]);
 	int			index;
 
-	if (temp.empty() != true)
+	if (temp.empty() != TRUE)
 	{
 		index = -1;
 		while (processes[++index] != NULL)

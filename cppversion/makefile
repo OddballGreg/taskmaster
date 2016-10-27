@@ -11,6 +11,7 @@ SRC= 	$(SP)main.cpp\
 		$(SP)config.cpp\
 		$(SP)utils.cpp\
 		$(SP)shell.cpp\
+		$(SP)Process.class.cpp\
 
 all: $(NAME)
 

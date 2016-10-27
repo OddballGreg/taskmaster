@@ -8,9 +8,9 @@ void				task_exit(char *input)
 	index = -1;
 	orphans = false;
 	while (proccesses[++index] != NULL)
-		if (processes[index]->status() == true)
-			orphans = true;
-	if (orphans == true)
+		if (processes[index]->status(FALSE) == TRUE)
+			orphans = TRUE;
+	if (orphans == TRUE)
 	{
 		cout << "TM > Taskmaster is still handling 1 or more processes."; 
 		cout << "Exiting now would orphan those processes.";
@@ -23,7 +23,7 @@ void				task_exit(char *input)
 		logFile->close();
 		exit(0);
 	}
-	else if (orphans == false)
+	else if (orphans == FALSE)
 	{
 		cout << "TM > Exiting Taskmaster. Have a nice day." << endl;
 		*logFile << currentDateTime() << " User exited Taskmaster\n\n";
@@ -57,6 +57,6 @@ void				task_status()
 
 	index = -1;
 	while (processes[++index] != NULL)
-		processes[index]->status(true);
+		processes[index]->status(TRUE);
 	cout << "TM > ";
 }
