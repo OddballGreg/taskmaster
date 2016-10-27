@@ -96,6 +96,7 @@ public:
 				//create logfile if necessary
 				/* research how to redirect a processes stdoutput to a file */
 				//launch process and listen for exit codes
+				int execve(const char *path, char *const argv[], char *const envp[]);
 				//if exit code detected within startwait seconds, retry launch process up to retry times
 				//output debug message if start aborted due to continued death.
 			}
