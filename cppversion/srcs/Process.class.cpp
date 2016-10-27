@@ -93,6 +93,8 @@ public:
 				//create logfile if necessary
 				/* research how to redirect a processes stdoutput to a file */
 				//launch process and listen for exit codes
+				//if exit code detected within startwait seconds, retry launch process up to retry times
+				//output debug message if start aborted due to continued death.
 			}
 		}
 		else
@@ -103,19 +105,37 @@ public:
 
 	void	restart()
 	{
-		
+		if (status == FALSE)
+			this->start();
+		else
+		{
+			this->shutdown();
+			this->start();
+		}
+		if (child != NULL)
+			child->restart();
 	}
 
 	void	shutdown()
 	{
-
+		if (status == TRUE)
+		{
+			//send clean exit code to process
+			//wait for killwait seconds
+			this->kill();
+		}
+		if (child != NULL)
+			child->shutdown();
 	}
 
 	void	kill()
 	{
-
+		if (status == TRUE)
+		{
+			//kill process
+			//attach child process to parent process
+		}
+		if (child != NULL)
+			child->kill();
 	}
-
-
-
 }
