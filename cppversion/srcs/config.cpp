@@ -19,12 +19,23 @@ void			config()
 	//malloc each space in processes to hold a process object:
 	//ie: processes[0] = malloc(sizeof(process));
 	//store process in processes[0] and populate data.
+	//If data already exists in the item and you are reconfiguring it:
+	//	lcmd, pid logging or logfile, env vars, working directory or umask
+	//	set restartMe to true
 }
 
 void			reconfig(int param)
 {
 	(void)param;
+	int index;
+
+	index = -1;
 	*logFile << currentDateTime() << " SIGHUP signal recieved. Executing reconfig.\n";
 	config();
-	//restart necessary servers
+	while (processes[++index] != NULL)
+		if (processes[index]->restartMe == TRUE)
+		{
+			processes[index]->restartMe = FALSE;
+			processes[index]->restart();
+		}
 }

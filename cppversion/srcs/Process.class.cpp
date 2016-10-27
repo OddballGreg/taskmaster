@@ -59,6 +59,9 @@ public:
 
 	bool	status(bool verbose)
 	{
+		//check process for exit codes and set status according to accepted exit codes
+		//if unaccepted exit code and restart true, attempt to restart
+
 		if (verbose == FALSE)
 		{
 			if (status == FALSE)
