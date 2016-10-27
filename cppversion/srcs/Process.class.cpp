@@ -17,7 +17,7 @@ class 		Process
 	char    **env_vars		= NULL;
 	char    *wrk_dir		= NULL;
 	mode_t  umask			= NULL;
-	double  *pid			= NULL;
+	double  pid				= 0;
 	Process	child			= NULL;
 	bool    status			= FALSE;
 	bool    restartMe		= FALSE;
@@ -31,7 +31,6 @@ public:
 		pid_logfile = (char)malloc(sizeof(char) * 256); //Flood protection
 		env_vars = (char *)malloc(sizeof(char *) * 50); // Will need protection against flooding.
 		wrk_dir = (char)malloc(sizeof(char) * 256); //Protect against flooding
-		pid = (double)malloc(sizeof(double) * 1);
 
 		int index = -1;
 		while (env_vars[++index] != NULL)
@@ -54,7 +53,6 @@ public:
 		free(pid_logfile);
 		free(env_vars);
 		free(wrk_dir);
-		free(pid);
 
 		cout << "Process Destructed" << endl;
 	}
@@ -80,5 +78,44 @@ public:
 				child->status(TRUE);
 		}
 	}
+
+	void	start()
+	{
+		if (status == FALSE)
+		{
+			if (pid == 0)
+			{
+				//fork process
+				//save pid to pid
+				//init envvars
+				//set working directory
+				//define umask for pid
+				//create logfile if necessary
+				/* research how to redirect a processes stdoutput to a file */
+				//launch process and listen for exit codes
+			}
+		}
+		else
+			*logFile << currentDateTime() <<  " Process ID " << pid << " already online during start() call\n";
+		if (child != NULL)
+			child->start();
+	}
+
+	void	restart()
+	{
+		
+	}
+
+	void	shutdown()
+	{
+
+	}
+
+	void	kill()
+	{
+
+	}
+
+
 
 }
