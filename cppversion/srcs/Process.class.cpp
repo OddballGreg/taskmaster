@@ -16,7 +16,7 @@ class 		Process
 	char    *pid_logfile	= NULL;     //if pid_logging is set to true, what file should the output be saved to.
 	char    **env_vars		= NULL;
 	char    *wrk_dir		= NULL;
-	mode_t  umask			= NULL;
+	mode_t  uMask			= NULL;
 	pid_t	pid				= 0;
 	Process	child			= NULL;
 	bool    status			= FALSE;
@@ -88,17 +88,37 @@ public:
 		{
 			if (pid == 0)
 			{
-				pid = fork();
+
+
+				char **tempEnv = new char* [strlen(environ) + strlen(env_vars) + 1];
+				int index = -1;
+				while (environ[++index] != NULL)
+					tempEnv[index] = strcpy(tempEnv[index], environ[index]);
+				tempEnv[strlen(environ) + strlen(env_vars) + 1] = NULL;
+				/*index = -1;
+				while (++index != strlen(environ) + strlen(env_vars))
+				{
+					int env_ind = -1;
+					while (++env_ind != str_len(env_vars))
+						if (strncmp(tempEnv[env_ind], env_vars[index], (strcspn(env_vars[index], "=")) == 0)
+						//This double loop is really wrong...
+							
+				}*/
+
+				mode_t prev = umask(uMask); //Forked processes inherit the umask of the parent
+				pid = fork(); //so we set our umask to what it needs
+				umask(prev); //then set it back after the fork
 				
 				//init envvars
 				//set working directory
-				//define umask for pid
+
 				//create logfile if necessary
 				/* research how to redirect a processes stdoutput to a file */
 				//launch process and listen for exit codes
 				int execve(const char *path, char *const argv[], char *const envp[]);
 				//if exit code detected within startwait seconds, retry launch process up to retry times
 				//output debug message if start aborted due to continued death.
+
 			}
 		}
 		else
