@@ -35,6 +35,8 @@ void			reconfig(int param)
 	while (processes[++index] != NULL)
 		if (processes[index]->restartMe == TRUE)
 		{
+			*logFile << currentDateTime() << " " << processes[index]->name<< " " << processes[index]->pid << " Process detected as flagged for Restarting\n";
+			*logFile << currentDateTime() << " " << processes[index]->name<< " " << processes[index]->pid << " Attempting To Restart Process\n";
 			processes[index]->restartMe = FALSE;
 			processes[index]->restart();
 		}

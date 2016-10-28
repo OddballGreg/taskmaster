@@ -17,34 +17,24 @@ class 		Process
 	char    **env_vars		= NULL;
 	char    *wrk_dir		= NULL;
 	mode_t  umask			= NULL;
-	double  pid				= 0;
+	pid_t	pid				= 0;
 	Process	child			= NULL;
 	bool    status			= FALSE;
 	bool    restartMe		= FALSE;
 
-//USE "NEW"
-
 public:
 	Process() 
 	{
-		/*E.G.
-			name = new char [256]
-			lcmd = new char [256]
-			exitcodes = new int [20]
-			pid_logfile = new char [256]
-			env_vars = new char [50]
-			wrk_dir = new char [256]
-		*/
-		name = (char)malloc(sizeof(char) * 256); //Protect against flood
-		lcmd = (char)malloc(sizeof(char) * 256); //Protect against flood
-		exitcodes = (int)malloc(sizeof(int) * 20); // Will need protection against flooding
-		pid_logfile = (char)malloc(sizeof(char) * 256); //Flood protection
-		env_vars = (char *)malloc(sizeof(char *) * 50); // Will need protection against flooding.
-		wrk_dir = (char)malloc(sizeof(char) * 256); //Protect against flooding
+		name = new char [256]; //Protect against flood
+		lcmd = new char [256]; //Protect against flood
+		exitcodes = new int [20]; //Protect against flood
+		pid_logfile = new char [256]; //Protect against flood
+		env_vars = new char [50]; //Protect against flood 
+		wrk_dir = new char [256]; //Protect against flood
 
 		int index = -1;
 		while (env_vars[++index] != NULL)
-			env_vars[index] = (char)malloc(sizeof(char) * 256);
+			env_vars[index] = new char [256];
 
 		exitcodes[0] = '0';
 
@@ -69,7 +59,7 @@ public:
 
 	bool	status(bool verbose)
 	{
-		//check process for exit codes and set status according to accepted exit codes
+		//check process for exit codes, kill process and set status
 		//if unaccepted exit code and restart true, attempt to restart
 
 		if (verbose == FALSE)
@@ -98,8 +88,8 @@ public:
 		{
 			if (pid == 0)
 			{
-				//fork process
-				//save pid to pid
+				pid = fork();
+				
 				//init envvars
 				//set working directory
 				//define umask for pid
@@ -117,16 +107,14 @@ public:
 			child->start();
 	}
 
-//REMOVE USE OF "THIS"
-
 	void	restart()
 	{
 		if (status == FALSE)
-			this->start();
+			start();
 		else
 		{
-			this->shutdown();
-			this->start();
+			shutdown();
+			start();
 		}
 		if (child != NULL)
 			child->restart();
@@ -138,7 +126,7 @@ public:
 		{
 			//send clean exit code to process
 			//wait for killwait seconds
-			this->kill();
+			kill();
 		}
 		if (child != NULL)
 			child->shutdown();

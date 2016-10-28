@@ -16,7 +16,6 @@ SRC= 	$(SP)main.cpp\
 all: $(NAME)
 
 $(NAME):
-	@clear
 	@echo "\x1b[31m-----Compiling $(NAME)\x1b[0m"
 	@$(CC) $(NAME) $(CFLAGS) $(SRC) $(HEADER)
 	@echo "\x1b[34m-----Done Compiling $(NAME)\x1b[0m"
