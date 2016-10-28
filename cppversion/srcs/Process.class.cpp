@@ -22,9 +22,19 @@ class 		Process
 	bool    status			= FALSE;
 	bool    restartMe		= FALSE;
 
+//USE "NEW"
+
 public:
 	Process() 
 	{
+		/*E.G.
+			name = new char [256]
+			lcmd = new char [256]
+			exitcodes = new int [20]
+			pid_logfile = new char [256]
+			env_vars = new char [50]
+			wrk_dir = new char [256]
+		*/
 		name = (char)malloc(sizeof(char) * 256); //Protect against flood
 		lcmd = (char)malloc(sizeof(char) * 256); //Protect against flood
 		exitcodes = (int)malloc(sizeof(int) * 20); // Will need protection against flooding
@@ -106,6 +116,8 @@ public:
 		if (child != NULL)
 			child->start();
 	}
+
+//REMOVE USE OF "THIS"
 
 	void	restart()
 	{
