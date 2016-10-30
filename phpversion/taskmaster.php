@@ -27,7 +27,7 @@ if ($argc > 2 && $argv[2] != NULL)
 else
 	$GLOBALS['logfile'] = "tasklog.txt";
 
-log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.");
+log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.\n");
 
 $file = file($argv[1]); //File is read into an array of each line here.
 
@@ -35,14 +35,17 @@ $file = file($argv[1]); //File is read into an array of each line here.
 
 /*autostart any processes defined to be started at launch in the config file */
 
-$tmpid = getmypid();
+//Init signal handler
+pcntl_signal(SIGHUP,  "reconfig");
+
+// THIS IS HOW TO DO FORKING:
+
 $child = pcntl_fork();
-if (getmypid() != $tmpid)
+if (getmypid() != $child)
 {
 	echo "Child Process\n";
 	die();
 }
-pcntl_signal(SIGHUP,  "reconfig");
 
 shell();
 ?>

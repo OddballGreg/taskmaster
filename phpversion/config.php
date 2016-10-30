@@ -1,4 +1,30 @@
-#include "taskmaster.hpp"
+<?php
+
+function config()
+{
+
+}
+
+function reconfig($param)
+{
+	$index = -1;
+	log_message("SIGHUP signal recieved. Executing reconfig.\n");
+	config();
+	while ($GLOBALS['processes'][++$index] != NULL)
+	{
+		$process = $GLOBALS['processes'][$index];
+		if ($process.$restartMe == TRUE)
+		{
+			log_message($process.$name . " " . $process.$pid . " Process detected as flagged for Restarting\n");
+			log_message($process.$name . " " . $process.$pid . " Attempting To Restart Process\n");
+			$process.$restartMe = FALSE;
+			$process.$restart();
+		}
+	}
+
+}
+
+?>
 
 void			config()
 {
@@ -11,7 +37,7 @@ void			config()
 	if ((config->rdstate() & std::ifstream::failbit) != 0)
 	{
 		*logFile << currentDateTime() << " Invalid Config File Given\n";
-		cout << "\x1b[31mInvalid Config File Given\n\x1b[0m";
+		echo "\x1b[31mInvalid Config File Given\n\x1b[0m";
 		exit(1);
 	}
 	//Parse number of programs to be handled
@@ -35,8 +61,8 @@ void			reconfig(int param)
 	while (processes[++index] != NULL)
 		if (processes[index]->restartMe == TRUE)
 		{
-			*logFile << currentDateTime() << " " << processes[index]->name<< " " << processes[index]->pid << " Process detected as flagged for Restarting\n";
-			*logFile << currentDateTime() << " " << processes[index]->name<< " " << processes[index]->pid << " Attempting To Restart Process\n";
+			log_message($GLOBALS['processes'][index].name . " " . $GLOBALS['processes'][index].pid . " Process detected as flagged for Restarting\n";
+			log_message($GLOBALS['processes'][index].name . " " . $GLOBALS['processes'][index].pid . " Attempting To Restart Process\n";
 			processes[index]->restartMe = FALSE;
 			processes[index]->restart();
 		}
