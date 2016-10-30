@@ -31,4 +31,14 @@ function task_restart()
 {
 
 }
+
+function task_reconfig()
+{
+
+}
+
+function task_help()
+{
+
+}
 ?>

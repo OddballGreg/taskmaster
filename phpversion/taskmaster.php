@@ -7,11 +7,13 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 /*Homebrew convenience library and others required before execution 		       */
-require_once("ghlib/libft_core.php");
+require_once("utils.php");
 require_once("logging.php");
 require_once("shell.php");
 require_once("shellcmd1.php");
 require_once("shellcmd2.php");
+require_once("config.php");
+require_once("phandling.php");
 
 /*Arguement parsing and checking 									    	       */
 if ($argc < 2)
@@ -32,6 +34,15 @@ $file = file($argv[1]); //File is read into an array of each line here.
 /*config file parsing and establishing goes here.             <---------           */
 
 /*autostart any processes defined to be started at launch in the config file */
+
+$tmpid = getmypid();
+$child = pcntl_fork();
+if (getmypid() != $tmpid)
+{
+	echo "Child Process\n";
+	die();
+}
+pcntl_signal(SIGHUP,  "reconfig");
 
 shell();
 ?>
