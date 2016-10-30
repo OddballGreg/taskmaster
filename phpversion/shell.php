@@ -1,37 +1,21 @@
 <?php
 
-function task_status($param = NULL, $name = NULL)
+function shell()
 {
-	return (FALSE);
-}
-
-function task_exit($confirm, $logfile, $input)
-{
-	if (task_status("On") != FALSE)
+	stream_set_blocking (STDIN, 0);
+	$exit = FALSE;
+	echo "Taskmaster Initiated. Service Status Summary:" . PHP_EOL . task_status() . PHP_EOL . "> ";
+	while ($exit != TRUE)
 	{
-		echo "Exiting Taskmaster now would orphan the following functions: " . PHP_EOL . task_status("On") . PHP_EOL . "Please enter either Y or N to confirm exit or resume" . PHP_EOL;
-		return (TRUE);
-	}
-	else if (task_status("On") == FALSE || $confirm === TRUE)
-	{
-		if (strcmp($input, "Y") == 1)
+		if (($input = fgets(STDIN)) != NULL)
 		{
-			log_message("Taskmaster shut down by the user." . PHP_EOL, $logfile);
-			die ("Exiting" . PHP_EOL);
-		}
-		else if (strcmp($input, "N") == 1)
-			return (FALSE);
-		else
-		{
-			echo "Please enter either Y or N to confirm exit or resume" . PHP_EOL;
-			return (TRUE);
+			if (strcmp($input, "exit") == 1)
+				$exit = task_exit($logfile, $input);
+			else
+				echo ("Command Not Found" . PHP_EOL);
+			echo("> ");
 		}
 	}
-	return (FALSE);
 }
 
-function task_restart()
-{
-
-}
 ?>
