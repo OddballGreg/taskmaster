@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/goinfre/ghavenga/MAMP/php/bin/php
 <?php
 
 /*php error reporting code, remove before submission                               */
@@ -20,20 +20,18 @@ if ($argv[1] == NULL | !file_exists($argv[1]))
 	die ("Error: The config file passed does not exist.\nUsage: ./taskmaster config.yaml\n");
 if (!contains($argv[1], ".yaml"))
 	die ("Error: The config file passed is not a .yaml file.\nUsage: ./taskmaster config.yaml\n");
-if ($argv[2] != NULL)
-	$logfile = $argv[2];
+if ($argc > 2 && $argv[2] != NULL)
+	$GLOBALS['logfile'] = $argv[2];
 else
-	$logfile = "tasklog.txt";
+	$GLOBALS['logfile'] = "tasklog.txt";
 
-log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.", $logfile);
+log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.");
 
 $file = file($argv[1]); //File is read into an array of each line here.
 
 /*config file parsing and establishing goes here.             <---------           */
 
 /*autostart any processes defined to be started at launch in the config file */
-
-$pid = pcntl_fork();
 
 shell();
 ?>

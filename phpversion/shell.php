@@ -10,7 +10,7 @@ function shell()
 		if (($input = fgets(STDIN)) != NULL)
 		{
 			if (strcmp($input, "exit") == 1)
-				$exit = task_exit($logfile, $input);
+				$exit = task_exit($input);
 			else
 				echo ("Command Not Found" . PHP_EOL);
 			echo("> ");

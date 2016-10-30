@@ -5,7 +5,7 @@ function task_status($param = NULL, $name = NULL)
 	return (FALSE);
 }
 
-function task_exit($confirm, $logfile, $input)
+function task_exit($confirm, $input)
 {
 	if (task_status("On") != FALSE)
 	{
@@ -16,7 +16,7 @@ function task_exit($confirm, $logfile, $input)
 	{
 		if (strcmp($input, "Y") == 1)
 		{
-			log_message("Taskmaster shut down by the user." . PHP_EOL, $logfile);
+			log_message("Taskmaster shut down by the user." . PHP_EOL, $GLOBALS['logfile']);
 			die ("Exiting" . PHP_EOL);
 		}
 		else if (strcmp($input, "N") == 1)
