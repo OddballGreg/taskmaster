@@ -10,6 +10,8 @@ error_reporting(E_ALL);
 require_once("ghlib/libft_core.php");
 require_once("logging.php");
 require_once("shell.php");
+require_once("shellcmd1.php");
+require_once("shellcmd2.php");
 
 /*Arguement parsing and checking 									    	       */
 if ($argc < 2)
