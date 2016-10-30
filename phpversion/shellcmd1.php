@@ -5,27 +5,24 @@ function task_status($param = NULL, $name = NULL)
 	return (FALSE);
 }
 
-function task_exit($confirm, $input)
+function task_exit($input)
 {
 	if (task_status("On") != FALSE)
 	{
-		echo "Exiting Taskmaster now would orphan the following functions: " . PHP_EOL . task_status("On") . PHP_EOL . "Please enter either Y or N to confirm exit or resume" . PHP_EOL;
+		echo "TM > Exiting Taskmaster now would orphan the following functions: " . PHP_EOL . task_status("On") . PHP_EOL . "Please shut them down or type 'exit -f' to force exit" . PHP_EOL;
 		return (TRUE);
 	}
-	else if (task_status("On") == FALSE || $confirm === TRUE)
+	else if (task_status("On") == FALSE)
 	{
-		if (strcmp($input, "Y") == 1)
-		{
-			log_message("Taskmaster shut down by the user." . PHP_EOL, $GLOBALS['logfile']);
-			die ("Exiting" . PHP_EOL);
-		}
-		else if (strcmp($input, "N") == 1)
-			return (FALSE);
-		else
-		{
-			echo "Please enter either Y or N to confirm exit or resume" . PHP_EOL;
-			return (TRUE);
-		}
+		echo "TM > Exiting Taskmaster. Have a nice day." . PHP_EOL;
+		log_message("Taskmaster shut down by the user." . PHP_EOL, $GLOBALS['logfile']);
+		die ();
+	}
+	else if (strcmp($input, "exit -f") == 0)
+	{
+		echo "TM > Force Exiting Taskmaster. Processes may have been orphaned." . PHP_EOL;
+		log_message("Taskmaster force shut down by the user. Processes potentially orphaned" . PHP_EOL, $GLOBALS['logfile']);
+		die ();
 	}
 	return (FALSE);
 }
