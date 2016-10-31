@@ -2,33 +2,7 @@
 
 function config()
 {
-
-}
-
-function reconfig($param)
-{
-	$index = -1;
-	log_message("SIGHUP signal recieved. Executing reconfig.\n");
-	config();
-	while ($GLOBALS['processes'][++$index] != NULL)
-	{
-		$process = $GLOBALS['processes'][$index];
-		if ($process.$restartMe == TRUE)
-		{
-			log_message($process.$name . " " . $process.$pid . " Process detected as flagged for Restarting\n");
-			log_message($process.$name . " " . $process.$pid . " Attempting To Restart Process\n");
-			$process.$restartMe = FALSE;
-			$process.$restart();
-		}
-	}
-
-}
-
-
-
-/*void			config()
-{
-	std::ifstream	*config;
+	/*std::ifstream	*config;
 	//int			progCount;
 
 	config = new ifstream;
@@ -39,7 +13,7 @@ function reconfig($param)
 		*logFile << currentDateTime() << " Invalid Config File Given\n";
 		echo "\x1b[31mInvalid Config File Given\n\x1b[0m";
 		exit(1);
-	}
+	}*/
 	//Parse number of programs to be handled
 	//processes = malloc(progCount * sizeof(*process));
 	//malloc each space in processes to hold a process object:
@@ -50,22 +24,23 @@ function reconfig($param)
 	//	set restartMe to true
 }
 
-void			reconfig(int param)
+function reconfig($param)
 {
-	(void)param;
-	int index;
-
-	index = -1;
-	*logFile << currentDateTime() << " SIGHUP signal recieved. Executing reconfig.\n";
+	$index = -1;
+	log_message("SIGHUP signal recieved. Executing reconfig.");
 	config();
-	while (processes[++index] != NULL)
-		if (processes[index]->restartMe == TRUE)
+	while ($GLOBALS['processes'][++$index] != NULL)
+	{
+		$process = $GLOBALS['processes'][$index];
+		if ($process.$restartMe == TRUE)
 		{
-			log_message($GLOBALS['processes'][index].name . " " . $GLOBALS['processes'][index].pid . " Process detected as flagged for Restarting\n";
-			log_message($GLOBALS['processes'][index].name . " " . $GLOBALS['processes'][index].pid . " Attempting To Restart Process\n";
-			processes[index]->restartMe = FALSE;
-			processes[index]->restart();
+			log_message($process.$name . " " . $process.$pid . " Process detected as flagged for Restarting");
+			log_message($process.$name . " " . $process.$pid . " Attempting To Restart Process");
+			$process.$restartMe = FALSE;
+			$process.$restart();
 		}
-}*/
+	}
+
+}
 
 ?>
