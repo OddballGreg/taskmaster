@@ -46,7 +46,7 @@ class Process {
         return $attribStat;
     }
 
-	//REMIND Greg to comment the fuck out of this function. It's a bit much to wrap ones head around without reference
+	//REMIND Greg to comment the hell out of this function. It's a bit much to wrap ones head around without reference
     public function start() 
 	{
 		if ($this->aborted == FALSE)
@@ -157,42 +157,42 @@ class Process {
 		}
 	}
 
-}
-
-	void	restart()
+	public function restart()
 	{
-		if (status == FALSE)
-			start();
+		if ($this->status == FALSE)
+			$this->start();
 		else
 		{
-			shutdown();
-			start();
+			$this->shutdown();
+			$this->start();
 		}
-		if (child != NULL)
-			child->restart();
+		if ($this->child != NULL)
+			$this->child->restart();
 	}
 
-	void	shutdown()
+	public function shutdown()
 	{
-		if (status == TRUE)
+		if ($this->status == TRUE)
 		{
 			//send clean exit code to process
 			//wait for killwait seconds
-			kill();
+			$this->kill();
 		}
-		if (child != NULL)
-			child->shutdown();
+		if ($this->child != NULL)
+			$this->child->shutdown();
 	}
 
-	void	kill()
+	public function kill()
 	{
-		if (status == TRUE)
+		if ($this->status == TRUE)
 		{
 			//kill process
 			//attach child process to parent process
 		}
-		if (child != NULL)
-			child->kill();
+		if ($this->child != NULL)
+			$this->child->kill();
 	}
+
+}
 
 ?>
