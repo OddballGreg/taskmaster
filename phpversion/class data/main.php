@@ -107,7 +107,7 @@ function initShell($processList) {
                 var_dump($process->attribStat());
             }
         }
-        if (strncmp($line,"adjust",6) == 0) {
+        else if (strncmp($line,"adjust",6) == 0) {
             $newAttr = explode("->",$line);
             echo "new array: ";
             print_r($newAttr);
@@ -117,7 +117,7 @@ function initShell($processList) {
             print_r($finalAttr);
             foreach($processList as $process) {
                 foreach ($finalAttr as $name => $value) {
-                    $process->_attribStat[$name] = $finalAttr[$name];
+                    $process->_attribStat[$name] = trim($finalAttr[$name]);
                     echo "new: ".$process->attribStat()[$name];
                 }
             }
