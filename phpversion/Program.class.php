@@ -22,7 +22,8 @@ class Process {
         "status" => false,
         "restartMe" => false,
         "child" => NULL,
-		"stream" => NULL
+		"stream" => NULL,
+		"aborted" => FALSE
     );
 
     public function __construct($kwargs) {
@@ -45,79 +46,90 @@ class Process {
         return $attribStat;
     }
 
+	//REMIND Greg to comment the fuck out of this function. It's a bit much to wrap ones head around without reference
     public function start() 
 	{
-		if ($this->status == FALSE)
+		if ($this->aborted == FALSE)
 		{
-			if ($this->pid == 0)
+			if ($this->status == FALSE)
 			{
-				$env = phpinfo(INFO_ENVIRONMENT);
-				for ($x; $env[$x] != NULL; $x++)
+				if ($this->pid == 0)
 				{
-					for ($y; $_env_vars[$y] != NULL; $y++)
+					$env = phpinfo(INFO_ENVIRONMENT);
+					for ($x; $env[$x] != NULL; $x++)
 					{
-						$env_pair = explode("=", $env[$x]);
-						$_env_pair = explode("=", $_env_vars[$y]);
-						if (strcmp($env_pair[0], $_env_pair[0]) == 0)
-							$env[$x] = $_env_vars[$y];
-					}
-				}
-				for ($x; $_env_vars[$x] != NULL; $x++)
-				{
-					$exists = FALSE;
-					for ($y; $env[$y] != NULL; $y++)
-					{
-						$env_pair = explode("=", $env[$y]);
-						$_env_pair = explode("=", $_env_vars[$x]);
-						if (strcmp($env_pair[0], $_env_pair[0]) == 0)
-							$exits = TRUE;
-					}
-					if ($exists == FALSE)
-						$env[] = $_env_vars[$x];
-				}
-				if ($_pid_logging == TRUE)
-				{
-					// add user specified stdout redirect filename stuff
-					if ($this->_pid_logfile != NULL)
-						$descriptorspec['0'] = fopen($this->_pid_logfile, 'a');
-					else
-						$descriptorspec['0'] = fopen($this->_name . $this->pid . "txt", 'a');
-				}
-				$attempts = 0;
-				pexec:
-				$attempts++;
-				if ($_umask != NULL)
-					$mask = umask($_umask);
-				$this->_stream = proc_open($_lcmd, $descriptorspec, $pipes, $_wrkdir, $env);
-				$proc_details = proc_get_status($this->_stream);
-				if ($this->_umask != NULL)
-					umask($mask); //then set it back after the fork
-				$wait = time() + $_startwait;
-				while (time() <= $_startwait)
-					if (pcntl_waitpid($proc_details['pid'], $status, WNOHANG) == $this->pid)
-					{
-						if ($attempts <= $this->_retry)
+						for ($y; $_env_vars[$y] != NULL; $y++)
 						{
-							log_message("Program {$this->name} at process {$this->pid} failed to start. Retrying for the {$attempts} time.\n");
-							jump(pexec);
+							$env_pair = explode("=", $env[$x]);
+							$_env_pair = explode("=", $_env_vars[$y]);
+							if (strcmp($env_pair[0], $_env_pair[0]) == 0)
+								$env[$x] = $_env_vars[$y];
 						}
-						else
-							log_message("Program {$this->name} at process {$this->pid} failed to start after {$this->retry} attempts\n");
 					}
-
-					
-				
-
-				//launch process and listen for exit codes
-				//if exit code detected within startwait seconds, retry launch process up to retry times
-				//output debug message if start aborted due to continued death.
-
+					for ($x; $_env_vars[$x] != NULL; $x++)
+					{
+						$exists = FALSE;
+						for ($y; $env[$y] != NULL; $y++)
+						{
+							$env_pair = explode("=", $env[$y]);
+							$_env_pair = explode("=", $_env_vars[$x]);
+							if (strcmp($env_pair[0], $_env_pair[0]) == 0)
+								$exits = TRUE;
+						}
+						if ($exists == FALSE)
+							$env[] = $_env_vars[$x];
+					}
+					if ($_pid_logging == TRUE)
+					{
+						if ($this->_pid_logfile != NULL)
+							$descriptorspec['0'] = fopen($this->_pid_logfile, 'a');
+						else
+							$descriptorspec['0'] = fopen($this->_name . $this->pid . "txt", 'a');
+					}
+					$attempts = 0;
+					pexec:
+					$attempts++;
+					if ($_umask != NULL)
+						$mask = umask($_umask);
+					$this->_stream = proc_open($_lcmd, $descriptorspec, $pipes, $_wrkdir, $env);
+					$proc_details = proc_get_status($this->_stream);
+					$this->pid = $proc_details['pid'];
+					if ($this->_umask != NULL)
+						umask($mask); //then set it back after the fork
+					$wait = time() + $_startwait;
+					while (time() <= $_startwait)
+						if (pcntl_waitpid($proc_details['pid'], $status, WNOHANG) == $this->pid)
+						{
+							if ($attempts <= $this->_retry)
+							{
+								log_message("Program {$this->name} at process {$this->pid} failed to start. Retrying for the {$attempts} time.\n");
+								jump(pexec);
+							}
+							else
+							{
+								log_message("Program {$this->name} at process {$this->pid} failed to start after {$this->retry} attempts\n");
+								$this->aborted = TRUE;
+								proc_close($this->stream);
+							}
+						}
+					$this->_status = TRUE;
+				}
+				else
+				{
+					if ($this->child != NULL)
+						$this->child->start();
+				}
+			}
+			else
+				log_message("Process ID {$this->pid} already online during start() call\n");
+			if ($this->pcount > 1)
+			{
+				log_message("Program {$this->_name} is creating \n");
+				$this->child = clone $this;
+				$this->child->_pcount = $this->_pcount - 1;
+				$this->child->start();
 			}
 		}
-		else
-			*logFile << currentDateTime() <<  " Process ID " << pid << " already online during start() call\n";
-		if (child != NULL)
-			child->start();
     }
 
 	public function status($verbose)
