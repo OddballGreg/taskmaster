@@ -1,9 +1,9 @@
 <?php
 
-function tast_restart($input)
+function task_restart($input)
 {
 	$args = explode(" ", $input);
-	if ($args[1] != NULL)
+	if (count($args) > 1 && $args[1] != NULL)
 	{
 		$index = -1;
 		while ($GLOBALS['processes'][++$index] != NULL)
@@ -11,9 +11,9 @@ function tast_restart($input)
 			$process = $GLOBALS['processes'][$index];
 			if (strcmp($process.$name, $args[1]) == 0)
 			{
+				echo "TM > User requested 'restart' on program/process {$args[1]} .\n";
+				log_message("User requested 'restart' on program/process {$args[1]}\n");
 				$process.restart();
-				echo "TM > User requested 'restart' on program/process " . $args[1] . PHP_EOL;
-				log_message("User requested 'restart' on program/process \n");
 			}
 		}
 	}
@@ -22,128 +22,91 @@ function tast_restart($input)
 	echo "TM > ";
 }
 
-function tast_kill($input)
+function task_kill($input)
 {
-	
+	$args = explode(" ", $input);
+	if (count($args) > 1 && $args[1] != NULL)
+	{
+		$index = -1;
+		while ($GLOBALS['processes'][++$index] != NULL)
+		{
+			$process = $GLOBALS['processes'][$index];
+			if (strcmp($process.$name, $args[1]) == 0)
+			{
+				$process.kill();
+				echo "TM > User requested 'kill' on program/process {$args[1]}\n";
+				log_message(" User requested 'kill' on program/process {$args[1]}\n");
+			}
+		}
+	}
+	else
+		echo "TM > The 'restart' command requires a program name arguement to function.\n";
+	echo "TM > ";
 }
 
-function tast_shutdown($input)
+function task_shutdown($input)
 {
-	
+	$args = explode(" ", $input);
+	if (count($args) > 1 && $args[1] != NULL)
+	{
+		$index = -1;
+		while ($GLOBALS['processes'][++$index] != NULL)
+		{
+			$process = $GLOBALS['processes'][$index];
+			if (strcmp($process.$name, $args[1]) == 0)
+			{
+				$process.shutdown();
+				echo "TM > User requested 'shutdown' on program/process {$args[1]}\n";
+				log_message(" User requested 'shutdown' on program/process {$args[1]}\n");
+			}
+		}
+	}
+	else
+		echo "TM > The 'restart' command requires a program name arguement to function.\n";
+	echo "TM > ";
 }
 
-function tast_edit($input)
+function task_edit($input)
 {
-	
+	$args = explode(" ", $input);
+	if (count($args) > 1 && $args[1] != NULL)
+	{
+		$index = -1;
+		while ($GLOBALS['processes'][++$index] != NULL)
+		{
+			$process = $GLOBALS['processes'][$index];
+			if (strcmp($process.$name, $args[1]) == 0)
+			{
+				//$process.edit();
+				echo "TM > You attempted to use the 'edit' command. Unfortunately this command does not yet work.{$args[1]}\n";
+				log_message(" User 'edit'ed process <processid>'s <variablename> to <newvalue> {$args[1]}\n");
+			}
+		}
+	}
+	else
+		echo "TM > The 'edit' command requires a program name arguement to function.\n";
+	echo "TM > ";
 }
 
-function tast_start($input)
+function task_start($input)
 {
-	
+	$args = explode(" ", $input);
+	if (count($args) > 1 && $args[1] != NULL)
+	{
+		$index = -1;
+		while ($GLOBALS['processes'][++$index] != NULL)
+		{
+			$process = $GLOBALS['processes'][$index];
+			if (strcmp($process.$name, $args[1]) == 0)
+			{
+				$process.start();
+				echo "TM > User requested 'start' on program/process {$args[1]}\n";
+				log_message(" User requested 'start' on program/process {$args[1]}\n");
+			}
+		}
+	}
+	else
+		echo "TM > The 'start' command requires a program name arguement to function.\n";
+	echo "TM > ";
 }
 ?>
-
-void				task_restart(char *input)
-{
-	std::string temp(&input[8]);
-	int			index;
-	
-	if (temp.empty() != TRUE)
-	{
-		index = -1;
-		while (processes[++index] != NULL)
-			if (strcmp(processes[index]->name, &input[8]) == 0)
-			{
-				processes[index]->restart();
-				echo "TM > User requested 'restart' on program/process " << temp << endl;
-				*logFile << currentDateTime() << " User requested 'restart' on program/process " << temp << endl;
-			}
-	}
-	else
-		echo "TM > The 'restart' command requires a program name arguement to function." . PHP_EOL;
-	echo "TM > ";
-}
-
-void				task_kill(char *input)
-{
-	std::string temp(&input[5]);
-	int			index;
-
-	if (temp.empty() != TRUE)
-	{
-		index = -1;
-		while (processes[++index] != NULL)
-			if (strcmp(processes[index]->name, &input[5]) == 0)
-			{
-				processes[index]->kill();
-				echo "TM > User requested 'kill' on program/process " << temp << endl;
-				*logFile << currentDateTime() << " User requested 'kill' on program/process " << temp << endl;
-			}
-	}
-	else
-		echo "TM > The 'restart' command requires a program name arguement to function." << endl;
-	echo "TM > ";
-}
-
-void				task_shutdown(char *input)
-{
-	std::string temp(&input[9]);
-	int			index;
-
-	if (temp.empty() != TRUE)
-	{
-		index = -1;
-		while (processes[++index] != NULL)
-			if (strcmp(processes[index]->name, &input[9]) == 0)
-			{
-				processes[index]->shutdown();
-				echo "TM > User requested 'shutdown' on program/process " << temp << endl;
-				*logFile << currentDateTime() << " User requested 'shutdown' on program/process " << temp << endl;
-			}
-	}
-	else
-		echo "TM > The 'restart' command requires a program name arguement to function." << endl;
-	echo "TM > ";
-}
-
-void				task_edit(char *input)
-{
-	std::string temp(&input[5]);
-	int			index;
-
-	if (temp.empty() != TRUE)
-	{
-		index = -1;
-		while (processes[++index] != NULL)
-			if (strcmp(processes[index]->name, &input[5]) == 0)
-			{
-				//processes[index]->edit();
-				echo "TM > You attempted to use the 'edit' command. Unfortunately this command does not yet work." << temp << endl;
-				*logFile << currentDateTime() << " User 'edit'ed process <processid>'s <variablename> to <newvalue> " << temp << endl;
-			}
-	}
-	else
-		echo "TM > The 'edit' command requires a program name arguement to function." << endl;
-	echo "TM > ";
-}
-
-void				task_start()
-{
-	std::string temp(&input[9]);
-	int			index;
-
-	if (temp.empty() != TRUE)
-	{
-		index = -1;
-		while (processes[++index] != NULL)
-			if (strcmp(processes[index]->name, &input[9]) == 0)
-			{
-				processes[index]->start();
-				echo "TM > User requested 'start' on program/process " << temp << endl;
-				*logFile << currentDateTime() << " User requested 'start' on program/process " << temp << endl;
-			}
-}
-	else
-		echo "TM > The 'start' command requires a program name arguement to function." << endl;
-	echo "TM > ";
-}

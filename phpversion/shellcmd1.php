@@ -2,28 +2,42 @@
 
 function task_status($verbose)
 {
-	$index = -1;
-	while ($GLOBALS['processes'][++$index] != NULL)
-		$GLOBALS['processes'][index].status(TRUE);
+	if ($verbose = TRUE)
+	{
+		$index = -1;
+		$result = FALSE;
+		//while ($GLOBALS['processes'][++$index] != NULL)
+			//$result = $GLOBALS['processes'][$index].status(FALSE);
+			if ($result == TRUE)
+				return (TRUE);
+		return (FALSE);
+	}
+	else
+	{
+		$index = -1;
+		//while ($GLOBALS['processes'][++$index] != NULL)
+			//$GLOBALS['processes'][$index].status(TRUE);
+		return (FALSE);
+	}
+
 	echo "TM > ";
 }
 
 function task_exit($input)
 {
-	if (task_status("On") != FALSE)
+	if (task_status(FALSE) != FALSE)
 	{
-		echo "TM > Exiting Taskmaster now would orphan the following functions: \n";
-		task_status(TRUE);
-		echo "\nPlease shut them down or type 'exit -f' to force exit\nTM > ";
+		echo "TM > Exiting Taskmaster now may orphan processes.\n";
+		echo "Please shut them down or type 'exit -f' to force exit\nTM > ";
 		return (TRUE);
 	}
-	else if (task_status("On") == FALSE)
+	else if (task_status(FALSE) == FALSE)
 	{
 		echo "TM > Exiting Taskmaster. Have a nice day.\n";
 		log_message("Taskmaster shut down by the user.\n");
 		die ();
 	}
-	else if (strcmp($input, "exit -f") == 0)
+	else if (strncmp($input, "exit -f", 7) == 0)
 	{
 		echo "TM > Force Exiting Taskmaster. Processes may have been orphaned.\n";
 		log_message("Taskmaster force shut down by the user. Processes potentially orphaned\n");
@@ -34,9 +48,9 @@ function task_exit($input)
 
 function task_reconfig()
 {
-	echo "TM > Re-parsing Taskmaster Services from " << configFile << endl;
+	echo "TM > Re-parsing Taskmaster Services from {$GLOBALS['configName']}\n";
 	log_message(" User requested services 'Reconfig'\n");
-	posix_kill (getmypid(), SIGHUP);
+	posix_kill(getmypid(), SIGHUP);
 	echo "TM > ";
 }
 

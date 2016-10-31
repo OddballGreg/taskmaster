@@ -24,9 +24,9 @@ function reconfig($param)
 
 }
 
-?>
 
-void			config()
+
+/*void			config()
 {
 	std::ifstream	*config;
 	//int			progCount;
@@ -66,4 +66,6 @@ void			reconfig(int param)
 			processes[index]->restartMe = FALSE;
 			processes[index]->restart();
 		}
-}
+}*/
+
+?>
