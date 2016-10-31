@@ -1,5 +1,5 @@
 ls:
-    pid:	false;
+    pid:	123124;
     lcmd:	false;
     pcount:	false;
     autostart:	false;
@@ -20,7 +20,7 @@ ls:
     name:	false;
 ---
 echo:
-    pid:	false;
+    pid:	f234235;
     lcmd:	false;
     pcount:	false;
     autostart:	false;
@@ -41,7 +41,7 @@ echo:
     name:	false;
 ---
 pwd:
-    pid:	false;
+    pid:	523532;
     lcmd:	false;
     pcount:	false;
     autostart:	false;
@@ -62,7 +62,7 @@ pwd:
     name:	false;
 ---
 clear:
-    pid:	false;
+    pid:	23523;
     lcmd:	false;
     pcount:	false;
     autostart:	false;

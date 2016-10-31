@@ -1,48 +1,50 @@
 <?php
 
 class Process {
-    private $_name;
-    private $_pid;
-    private $_lcmd;
-    private $_pcount;
-    private $_autostart;
-    private $_rstart_cond;
-    private $_exitcodes;
-    private $_startwait;
-    private $_retry;
-    private $_exitsig;
-    private $_killwait;
-    private $_pid_logging;
-    private $_pid_logfile;
-    private $_env_vars;
-    private $_wrk_dir;
-    private $_umask;
-    private $_status;
-    private $_restartMe;
-    private $_child;
-    private $_attribStat;
+    public $_attribStat = array(
+        "name" => false,
+        "pid" => NULL,
+        "lcmd" => NULL,
+        "pcount" => NULL,
+        "autostart" => false,
+        "rstart_cond" => NULL,
+        "exitcodes" => 0,
+        "startwait" => NULL,
+        "retry" => false,
+        "exitsig" => NULL,
+        "killwait" => NULL,
+        "pid_logging" => false,
+        "pid_logfile" => NULL,
+        "env_vars" => NULL,
+        "wrk_dir" => NULL,
+        "umask" => NULL,
+        "status" => false,
+        "restartMe" => false,
+        "child" => NULL
+    );
 
     public function __construct($kwargs) {
-        //echo "constructor".PHP_EOL;
-        $this->_name = $kwargs[0][0];
-        $this->_pid = trim($kwargs[1][1],";");
-        $this->_lcmd = trim($kwargs[2][1],";");
-        $this->_pcount = trim($kwargs[3][1],";");
-        $this->_autostart = trim($kwargs[4][1],";");
-        $this->_rstart_cond = trim($kwargs[5][1],";");
-        $this->_exitcodes = trim($kwargs[6][1],";");
-        $this->_startwait = trim($kwargs[7][1],";");
-        $this->_retry = trim($kwargs[8][1],";");
-        $this->_exitsig = trim($kwargs[9][1],";");
-        $this->_killwait = trim($kwargs[10][1],";");
-        $this->_pid_logging = trim($kwargs[11][1],";");
-        $this->_pid_logfile = trim($kwargs[12][1],";");
-        $this->_env_vars = trim($kwargs[13][1],";");
-        $this->_wrk_dir = trim($kwargs[14][1],";");
-        $this->_umask = trim($kwargs[15][1],";");
-        $this->_status = trim($kwargs[16][1],";");
-        $this->_restartMe = trim($kwargs[17][1],";");
-        $this->_child = trim($kwargs[18][1],";");
+        echo "constructor".PHP_EOL;
+
+        $this->_attribStat['name'] = $kwargs[0][0];
+        $this->_attribStat['pid'] = trim($kwargs[1][1],";");
+        $this->_attribStat['lcmd'] = trim($kwargs[2][1],";");
+        $this->_attribStat['pcount'] = trim($kwargs[3][1],";");
+        $this->_attribStat['autostart'] = trim($kwargs[4][1],";");
+        $this->_attribStat['rstart_cond'] = trim($kwargs[5][1],";");
+        $this->_attribStat['exitcodes'] = trim($kwargs[6][1],";");
+        $this->_attribStat['startwait'] = trim($kwargs[7][1],";");
+        $this->_attribStat['retry'] = trim($kwargs[8][1],";");
+        $this->_attribStat['exitsig'] = trim($kwargs[9][1],";");
+        $this->_attribStat['killwait'] = trim($kwargs[10][1],";");
+        $this->_attribStat['pid_logging'] = trim($kwargs[11][1],";");
+        $this->_attribStat['pid_logfile'] = trim($kwargs[12][1],";");
+        $this->_attribStat['env_vars'] = trim($kwargs[13][1],";");
+        $this->_attribStat['wrk_dir'] = trim($kwargs[14][1],";");
+        $this->_attribStat['umask'] = trim($kwargs[15][1],";");
+        $this->_attribStat['status'] = trim($kwargs[16][1],";");
+        $this->_attribStat['restartMe'] = trim($kwargs[17][1],";");
+        $this->_attribStat['child'] = trim($kwargs[18][1],";");
     }
     
     public function __destruct() {
@@ -50,42 +52,16 @@ class Process {
     }
 
     public function adjust($pargs) {
-        foreach ($pargs as $arg => $value) {
-            foreach ($this->_attribStat as $process) {
-                if (strncmp($process,$arg,strlen($process)) == 0) {
-                    $process = $value;
-                }
-            }
-        }
+        echo "pargs: ".$pargs.PHP_EOL;
+        $this->_attribStat[$pargs[0]] == $pargs[1];
     }
 
     public function getName() {
-        return $this->_name;
+        return $this->_attribStat['name'];
     }
 
     public function attribStat() {
-        $this->_attribStat = array(
-                    $this->_name,
-                    $this->_pid,
-                    $this->_lcmd,
-                    $this->_pcount,
-                    $this->_autostart,
-                    $this->_rstart_cond,
-                    $this->_exitcodes,
-                    $this->_startwait,
-                    $this->_retry,
-                    $this->_exitsig,
-                    $this->_killwait,
-                    $this->_pid_logging,
-                    $this->_pid_logfile,
-                    $this->_env_vars,
-                    $this->_wrk_dir,
-                    $this->_umask,
-                    $this->_status,
-                    $this->_restartMe,
-                    $this->_child,
-            );
-        return $_attribStat;
+        return $this->_attribStat;
     }
 
     public function start($command) {
@@ -128,7 +104,22 @@ function initShell($processList) {
             foreach ($processList as $process) {
                 echo $process->getName().PHP_EOL;
                 print_r($process->attribStat());
-                var_dump($process);
+                var_dump($process->attribStat());
+            }
+        }
+        if (strncmp($line,"adjust",6) == 0) {
+            $newAttr = explode("->",$line);
+            echo "new array: ";
+            print_r($newAttr);
+            $finalAttr = array();
+            $finalAttr[$newAttr[2]] = $newAttr[3];
+            echo "input: ";
+            print_r($finalAttr);
+            foreach($processList as $process) {
+                foreach ($finalAttr as $name => $value) {
+                    $process->_attribStat[$name] = $finalAttr[$name];
+                    echo "new: ".$process->attribStat()[$name];
+                }
             }
         }
         echo "<taskmaster/> ";
