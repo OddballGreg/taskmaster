@@ -1,16 +1,84 @@
 ls:
-    start:	true;
-    pid:	01;
+    pid:	false;
+    lcmd:	false;
+    pcount:	false;
+    autostart:	false;
+    rstart_cond:	false;
+    exitcodes:	false;
+    startwait:	false;
+    retry:	false;
+    exitsig:	false;
+    killwait:	false;
+    pid_logging:	false;
+    pid_logfile:	false;
+    env_vars:	false;
+    wrk_dir:	false;
+    umask:	false;
+    status:	false;
+    restartMe:	false;
+    child:	false;
+    name:	false;
 ---
 echo:
-    start:	true;
-    pid:	02;
+    pid:	false;
+    lcmd:	false;
+    pcount:	false;
+    autostart:	false;
+    rstart_cond:	false;
+    exitcodes:	false;
+    startwait:	false;
+    retry:	false;
+    exitsig:	false;
+    killwait:	false;
+    pid_logging:	false;
+    pid_logfile:	false;
+    env_vars:	false;
+    wrk_dir:	false;
+    umask:	false;
+    status:	false;
+    restartMe:	false;
+    child:	false;
+    name:	false;
 ---
 pwd:
-    start:	true;
-    pid:	03;
+    pid:	false;
+    lcmd:	false;
+    pcount:	false;
+    autostart:	false;
+    rstart_cond:	false;
+    exitcodes:	false;
+    startwait:	false;
+    retry:	false;
+    exitsig:	false;
+    killwait:	false;
+    pid_logging:	false;
+    pid_logfile:	false;
+    env_vars:	false;
+    wrk_dir:	false;
+    umask:	false;
+    status:	false;
+    restartMe:	false;
+    child:	false;
+    name:	false;
 ---
 clear:
-    start:	true;
-    pid:	04;
+    pid:	false;
+    lcmd:	false;
+    pcount:	false;
+    autostart:	false;
+    rstart_cond:	false;
+    exitcodes:	false;
+    startwait:	false;
+    retry:	false;
+    exitsig:	false;
+    killwait:	false;
+    pid_logging:	false;
+    pid_logfile:	false;
+    env_vars:	false;
+    wrk_dir:	false;
+    umask:	false;
+    status:	false;
+    restartMe:	false;
+    child:	false;
+    name:	false;
 ---
