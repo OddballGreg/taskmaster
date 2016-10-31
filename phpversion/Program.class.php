@@ -166,16 +166,15 @@ class Process {
 			$this->shutdown();
 			$this->start();
 		}
-		if ($this->child != NULL)
-			$this->child->restart();
+		/* Restart is intentionally no recursive, because it calls other methods which already are. */
 	}
 
 	public function shutdown()
 	{
 		if ($this->status == TRUE)
 		{
-			//send clean exit code to process
-			//wait for killwait seconds
+			proc_terminate($this->stream, $this->exitsig);
+			sleep($this->killwait);
 			$this->kill();
 		}
 		if ($this->child != NULL)
@@ -186,8 +185,9 @@ class Process {
 	{
 		if ($this->status == TRUE)
 		{
-			//kill process
-			//attach child process to parent process
+			proc_terminate($this->stream);
+			$this->pid = 0;
+			$this->status = FALSE;	
 		}
 		if ($this->child != NULL)
 			$this->child->kill();
