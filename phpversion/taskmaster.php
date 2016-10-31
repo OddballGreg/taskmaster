@@ -44,7 +44,6 @@ pcntl_signal(SIGHUP,  "reconfig");
 $child = pcntl_fork();
 if ($child == 0)
 {
-	echo "Child Process\n";
 	//execve
 	die();
 }

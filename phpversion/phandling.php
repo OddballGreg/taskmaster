@@ -2,10 +2,9 @@
 
 function		maintain()
 {
-	/*int		index;
-
-	index = -1;
-	while (processes[++index] != NULL)
+/*
+	$index = -1;
+	while ($GLOBALS['processes'][++index] != NULL)
 	{
 		//request status
 		//if offline, request restart boolean setting
