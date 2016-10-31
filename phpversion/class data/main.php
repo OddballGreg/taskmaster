@@ -1,9 +1,25 @@
 <?php
 
 class Process {
-    private $_start = false;
-    private $_pid;
-    private $_name;
+    private $_pid = false;
+    private $_lcmd = false;          //launch command. How the program should be launched. E.g. ./desktop/folder/program arg1 arg2
+    private $_pcount = false;         //process count
+    private $_autostart = false;
+    private $_rstart_cond = false;    //contingent on use during alg.
+    private $_exitcodes = false;
+    private $_startwait = false;
+    private $_retry = false;
+    private $_exitsig = false;
+    private $_killwait = false;
+    private $_pid_logging = false;     //option dicating if the output from the process should be saved or not.
+    private $_pid_logfile = false;    //if pid_logging is set to true, what file should the output be saved to.
+    private $_env_vars = false;
+    private $_wrk_dir = false;
+    private $_umask = false;
+    private $_status = false;
+    private $_restartMe = false;
+    private $_child = false;
+    private $_name = false;
 
     public function __construct($kwargs) {
         //echo "constructor".PHP_EOL;
@@ -30,7 +46,6 @@ class Process {
         foreach($contents as $file)
             echo $file.PHP_EOL;
     }
-
 }
 
 function initData($handle) {
