@@ -1,0 +1,186 @@
+<?php
+
+class Process {
+    
+	public $_attribStat = array(
+        "name" => false,
+        "pid" => NULL,
+        "lcmd" => NULL,
+        "pcount" => NULL,
+        "autostart" => false,
+        "rstart_cond" => NULL,
+        "exitcodes" => 0,
+        "startwait" => NULL,
+        "retry" => false,
+        "exitsig" => NULL,
+        "killwait" => NULL,
+        "pid_logging" => false,
+        "pid_logfile" => NULL,
+        "env_vars" => NULL,
+        "wrk_dir" => NULL,
+        "umask" => NULL,
+        "status" => false,
+        "restartMe" => false,
+        "child" => NULL,
+		"stream" => NULL
+    );
+
+    public function __construct($kwargs) {
+        //echo "constructor".PHP_EOL;
+        $this->name = $kwargs[0][0];
+        $this->_attrib_00 = $kwargs[1][1];  //1, not 0, to grep actual value and assign it
+        $this->_attrib_01 = $kwargs[2][1];
+    }
+    
+    public function __destruct() {
+        //echo "destructor".PHP_EOL;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function attribStat() {
+        $attribStat = array($this->_attrib_00,$this->_attrib_01);
+        return $attribStat;
+    }
+
+    public function start() 
+	{
+		if ($this->status == FALSE)
+		{
+			if ($this->pid == 0)
+			{
+				$env = phpinfo(INFO_ENVIRONMENT);
+				for ($x; $env[$x] != NULL; $x++)
+				{
+					for ($y; $_env_vars[$y] != NULL; $y++)
+					{
+						$env_pair = explode("=", $env[$x]);
+						$_env_pair = explode("=", $_env_vars[$y]);
+						if (strcmp($env_pair[0], $_env_pair[0]) == 0)
+							$env[$x] = $_env_vars[$y];
+					}
+				}
+				for ($x; $_env_vars[$x] != NULL; $x++)
+				{
+					$exists = FALSE;
+					for ($y; $env[$y] != NULL; $y++)
+					{
+						$env_pair = explode("=", $env[$y]);
+						$_env_pair = explode("=", $_env_vars[$x]);
+						if (strcmp($env_pair[0], $_env_pair[0]) == 0)
+							$exits = TRUE;
+					}
+					if ($exists == FALSE)
+						$env[] = $_env_vars[$x];
+				}
+				if ($_pid_logging == TRUE)
+				{
+					// add user specified stdout redirect filename stuff
+					if ($this->_pid_logfile != NULL)
+						$descriptorspec['0'] = fopen($this->_pid_logfile, 'a');
+					else
+						$descriptorspec['0'] = fopen($this->_name . $this->pid . "txt", 'a');
+				}
+				$attempts = 0;
+				pexec:
+				$attempts++;
+				if ($_umask != NULL)
+					$mask = umask($_umask);
+				$this->_stream = proc_open($_lcmd, $descriptorspec, $pipes, $_wrkdir, $env);
+				$proc_details = proc_get_status($this->_stream);
+				if ($this->_umask != NULL)
+					umask($mask); //then set it back after the fork
+				$wait = time() + $_startwait;
+				while (time() <= $_startwait)
+					if (pcntl_waitpid($proc_details['pid'], $status, WNOHANG) == $this->pid)
+					{
+						if ($attempts <= $this->_retry)
+						{
+							log_message("Program {$this->name} at process {$this->pid} failed to start. Retrying for the {$attempts} time.\n");
+							jump(pexec);
+						}
+						else
+							log_message("Program {$this->name} at process {$this->pid} failed to start after {$this->retry} attempts\n");
+					}
+
+					
+				
+
+				//launch process and listen for exit codes
+				//if exit code detected within startwait seconds, retry launch process up to retry times
+				//output debug message if start aborted due to continued death.
+
+			}
+		}
+		else
+			*logFile << currentDateTime() <<  " Process ID " << pid << " already online during start() call\n";
+		if (child != NULL)
+			child->start();
+    }
+
+	public function status($verbose)
+	{
+		//check process for exit codes, kill process and set status
+		//if unaccepted exit code and restart true, attempt to restart
+
+		if ($verbose == FALSE)
+		{
+			if ($this->_status == FALSE)
+				return (FALSE);
+			else if ($this->_child == NULL)
+				return (TRUE);
+			else
+				return($this->_child->status());
+		}
+		else
+		{
+			if ($this->_status == TRUE)
+				echo "TM > " . $this->_name . " " . $this->_pid . " status: \x1b[34mONLINE\x1b[0m\n";
+			else
+				echo "TM > " . $this->_name . " " . $this->_pid . " status: \x1b[31mOFFLINE\x1b[0m\n";
+			if ($this->_child != NULL)
+				$this->_child->status(TRUE);
+		}
+	}
+
+}
+
+	void	restart()
+	{
+		if (status == FALSE)
+			start();
+		else
+		{
+			shutdown();
+			start();
+		}
+		if (child != NULL)
+			child->restart();
+	}
+
+	void	shutdown()
+	{
+		if (status == TRUE)
+		{
+			//send clean exit code to process
+			//wait for killwait seconds
+			kill();
+		}
+		if (child != NULL)
+			child->shutdown();
+	}
+
+	void	kill()
+	{
+		if (status == TRUE)
+		{
+			//kill process
+			//attach child process to parent process
+		}
+		if (child != NULL)
+			child->kill();
+	}
+
+?>

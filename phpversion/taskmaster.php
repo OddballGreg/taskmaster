@@ -39,14 +39,12 @@ $file = file($GLOBALS['configName']); //File is read into an array of each line 
 //Init signal handler
 pcntl_signal(SIGHUP,  "reconfig");
 
-// THIS IS HOW TO DO FORKING:
+$fdout = fopen('/tmp/stdout.log', 'wb');
+$fderr = fopen('/tmp/stderr.log', 'wb');
 
-$child = pcntl_fork();
-if ($child == 0)
-{
-	//execve
-	die();
-}
+eio_dup2($fdout, STDOUT);
+eio_dup2($fderr, STDERR);
+eio_event_loop();
 
 shell();
 ?>
