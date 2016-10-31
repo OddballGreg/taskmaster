@@ -1,0 +1,16 @@
+ls:
+    start:	true;
+    pid:	01;
+---
+echo:
+    start:	true;
+    pid:	02;
+---
+pwd:
+    start:	true;
+    pid:	03;
+---
+clear:
+    start:	true;
+    pid:	04;
+---
