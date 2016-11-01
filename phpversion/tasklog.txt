@@ -206,3 +206,47 @@
 <Tuesday, 01-Nov-2016 09:45:40 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
 <Tuesday, 01-Nov-2016 09:46:36 SAST>	Taskmaster shut down by the user.
 
+<Tuesday, 01-Nov-2016 10:37:31 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:38:39 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:41:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:44:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:44:58 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:45:03 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:45:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:46:52 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:47:19 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:47:20 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:47:54 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:47:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:48:40 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:48:41 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:49:15 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:49:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:50:19 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:50:20 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:50:46 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:50:46 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:51:02 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:52:37 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:53:08 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:53:09 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:53:42 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:54:13 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:54:14 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:56:01 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:56:02 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:56:29 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 10:56:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 10:56:47 SAST>	Taskmaster shut down by the user.
+

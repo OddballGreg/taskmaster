@@ -20,12 +20,14 @@ function task_exit($input)
 	{
 		echo "TM > Exiting Taskmaster. Have a nice day.\n";
 		log_message("Taskmaster shut down by the user.\n");
+		echo exec("clear");
 		die ();
 	}
 	else if (strncmp($input, "exit -f", 7) == 0)
 	{
 		echo "TM > Force Exiting Taskmaster. Processes may have been orphaned.\n";
 		log_message("Taskmaster force shut down by the user. Processes potentially orphaned\n");
+		echo exec("clear");
 		die ();
 	}
 	return (FALSE);

@@ -27,7 +27,7 @@ class Process {
     );
 
     public function __construct($kwargs) {
-        //echo "constructor".PHP_EOL;
+        echo "constructor".PHP_EOL;
         $this->_attribStat['name'] = trim($kwargs['name:'],";");
         $this->_attribStat['pid'] = trim($kwargs['pid:'],";");
         $this->_attribStat['lcmd'] = trim($kwargs['lcmd:'],";");
@@ -62,12 +62,12 @@ class Process {
         return $this->_attribStat;
     }
 
-    public function debug_start($command) {
+    public function debug_start($lcmd) {
         echo exec($lcmd);
     }
     
     public function __destruct() {
-        //echo "destructor".PHP_EOL;
+        echo "destructor".PHP_EOL;
     }
 
 
