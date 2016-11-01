@@ -1,25 +1,10 @@
 <?php
 
-function task_status($verbose)
+function task_status()
 {
-	if ($verbose = TRUE)
-	{
-		$index = -1;
-		$result = FALSE;
-		//while ($GLOBALS['processes'][++$index] != NULL)
-			//$result = $GLOBALS['processes'][$index]->status(FALSE);
-			if ($result == TRUE)
-				return (TRUE);
-		return (FALSE);
-	}
-	else
-	{
-		$index = -1;
-		//while ($GLOBALS['processes'][++$index] != NULL)
-			//$GLOBALS['processes'][$index]->status(TRUE);
-		return (FALSE);
-	}
-
+	$index = -1;
+	//while ($GLOBALS['processes'][++$index] != NULL)
+		//$GLOBALS['processes'][$index]->status(TRUE);
 	echo "TM > ";
 }
 
