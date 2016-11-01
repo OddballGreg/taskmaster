@@ -1001,3 +1001,85 @@
 <Tuesday, 01-Nov-2016 17:26:04 SAST>	ls 0 Reported as OFFLINE
 <Tuesday, 01-Nov-2016 17:26:18 SAST>	Taskmaster shut down by the user.
 
+<Tuesday, 01-Nov-2016 17:33:27 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:33:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:33:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:33:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:33:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:33:31 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:33:31 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:33:31 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:33:31 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:33:37 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:34:13 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:34:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:34:24 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:40:37 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:40:37 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:37 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:37 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:37 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:39 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:40:40 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:40:40 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:40 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:40 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:40 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:40:42 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:41:13 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:41:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:41:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:41:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:41:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:41:17 SAST>	Taskmaster force shut down by the user. Processes potentially orphaned
+
+<Tuesday, 01-Nov-2016 17:44:19 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:44:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:44:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:44:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:44:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:44:26 SAST>	 User requested 'start' on program ls
+<Tuesday, 01-Nov-2016 17:44:26 SAST>	 User requested 'start' on program ls
+<Tuesday, 01-Nov-2016 17:44:26 SAST>	 User requested 'start' on program ls
+<Tuesday, 01-Nov-2016 17:44:26 SAST>	 User requested 'start' on program ls
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	 User requested 'shutdown' on program ls
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	 User requested 'shutdown' on program ls
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	 User requested 'shutdown' on program ls
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	 User requested 'shutdown' on program ls
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:45:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:45:30 SAST>	Taskmaster shut down by the user.
+

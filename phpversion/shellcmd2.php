@@ -11,8 +11,9 @@ function task_restart($input)
 			$process = $GLOBALS['processList'][$index];
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
-				echo "<taskmaster/> User requested 'restart' on program/process {$args[1]} .";
-				log_message("User requested 'restart' on program/process {$args[1]}");
+				$name = trim($args[1]);
+				echo "<taskmaster/> User requested 'restart' on program/process {$name}\n";
+				log_message("User requested 'restart' on program/process {$name}");
 				$process->restart();
 			}
 		}
@@ -32,9 +33,10 @@ function task_kill($input)
 			$process = $GLOBALS['processList'][$index];
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
+				$name = trim($args[1]);
 				$process->kill();
-				echo "<taskmaster/> User requested 'kill' on program/process {$args[1]}";
-				log_message(" User requested 'kill' on program/process {$args[1]}");
+				echo "<taskmaster/> User requested 'kill' on program/process {$name}\n";
+				log_message("User requested 'kill' on program/process {$name}");
 			}
 		}
 	}
@@ -54,8 +56,9 @@ function task_shutdown($input)
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
 				$process->shutdown();
-				echo "<taskmaster/> User requested 'shutdown' on program {$args[1]}";
-				log_message(" User requested 'shutdown' on program {$args[1]}");
+				$name = trim($args[1]);
+				echo "<taskmaster/> User requested 'shutdown' on program {$name}\n";
+				log_message("User requested 'shutdown' on program {$name}");
 			}
 		}
 	}
@@ -74,9 +77,10 @@ function task_edit($input)
 			$process = $GLOBALS['procesList'][$index];
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
+				$name = trim($args[1]);
 				//$process->edit();
-				echo "<taskmaster/> You attempted to use the 'edit' command. Unfortunately this command does not yet work.{$args[1]}";
-				log_message(" User 'edit'ed process <processid>'s <variablename> to <newvalue> {$args[1]}");
+				echo "<taskmaster/> You attempted to use the 'edit' command. Unfortunately this command does not yet work.{$name}\n";
+				log_message("User 'edit'ed process <processid>'s <variablename> to <newvalue> {$name}");
 			}
 		}
 	}
@@ -95,9 +99,10 @@ function task_start($input)
 			$process = $GLOBALS['processList'][$index];
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
+				$name = trim($args[1]);
 				$process->start();
-				echo "<taskmaster/> User requested 'start' on program {$args[1]}";
-				log_message(" User requested 'start' on program {$args[1]}");
+				echo "<taskmaster/> User requested 'start' on program {$name}\n";
+				log_message("User requested 'start' on program {$name}");
 			}
 		}
 	}

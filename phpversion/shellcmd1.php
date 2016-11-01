@@ -9,27 +9,39 @@ function task_status()
 
 function task_exit($input)
 {
-	if (task_status(FALSE) != FALSE)
+	if (strncmp($input, "exit -f", 7) == 0)
+	{
+		echo "<taskmaster/> Force Exiting Taskmaster. Processes may have been orphaned.\n";
+		log_message("Taskmaster force shut down by the user. Processes potentially orphaned\n");
+		die ();
+	}
+	else if (online_check() != FALSE)
 	{
 		echo "<taskmaster/> Exiting Taskmaster now may orphan processes.\n";
 		echo "Please shut them down or type 'exit -f' to force exit\n<taskmaster/> ";
 		return (TRUE);
 	}
-	else if (task_status(FALSE) == FALSE)
+	else if (online_check() == FALSE)
 	{
 		echo "<taskmaster/> Exiting Taskmaster. Have a nice day.\n";
 		log_message("Taskmaster shut down by the user.\n");
-		echo exec("clear");
 		die ();
 	}
-	else if (strncmp($input, "exit -f", 7) == 0)
-	{
-		echo "<taskmaster/> Force Exiting Taskmaster. Processes may have been orphaned.\n";
-		log_message("Taskmaster force shut down by the user. Processes potentially orphaned\n");
-		echo exec("clear");
-		die ();
-	}
+	
 	return (FALSE);
+}
+
+function online_check()
+{
+	$return = FALSE;
+	$index = -1;
+	while (isset($GLOBALS['processList'][++$index]) == TRUE)
+	{
+		$status = $GLOBALS['processList'][$index]->status(FALSE);
+		if ($status == TRUE)
+			$return = TRUE;
+	}
+	return ($return);
 }
 
 function task_reconfig()

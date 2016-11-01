@@ -91,7 +91,7 @@ class Process {
     }
     
     public function __destruct() {
-        echo "destructor".PHP_EOL;
+        //echo "destructor".PHP_EOL;
     }
 
 	/* We should probably consider breaking down the functionality of this method into smaller functions/methods. It's a bit frightening to look at. */
