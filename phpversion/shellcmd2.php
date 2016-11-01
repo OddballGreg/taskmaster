@@ -11,15 +11,14 @@ function task_restart($input)
 			$process = $GLOBALS['processes'][$index];
 			if (strcmp($process->name, $args[1]) == 0)
 			{
-				echo "TM > User requested 'restart' on program/process {$args[1]} .\n";
+				echo "<taskmaster/> User requested 'restart' on program/process {$args[1]} .\n";
 				log_message("User requested 'restart' on program/process {$args[1]}\n");
 				$process->restart();
 			}
 		}
 	}
 	else
-		echo "TM > The 'restart' command requires a program name arguement to function." . PHP_EOL;
-	echo "TM > ";
+		echo "<taskmaster/> The 'restart' command requires a program name arguement to function." . PHP_EOL;
 }
 
 function task_kill($input)
@@ -34,14 +33,13 @@ function task_kill($input)
 			if (strcmp($process->name, $args[1]) == 0)
 			{
 				$process->kill();
-				echo "TM > User requested 'kill' on program/process {$args[1]}\n";
+				echo "<taskmaster/> User requested 'kill' on program/process {$args[1]}\n";
 				log_message(" User requested 'kill' on program/process {$args[1]}\n");
 			}
 		}
 	}
 	else
-		echo "TM > The 'restart' command requires a program name arguement to function.\n";
-	echo "TM > ";
+		echo "<taskmaster/> The 'kill' command requires a program name arguement to function.\n";
 }
 
 function task_shutdown($input)
@@ -56,14 +54,13 @@ function task_shutdown($input)
 			if (strcmp($process->name, $args[1]) == 0)
 			{
 				$process->shutdown();
-				echo "TM > User requested 'shutdown' on program/process {$args[1]}\n";
+				echo "<taskmaster/> User requested 'shutdown' on program/process {$args[1]}\n";
 				log_message(" User requested 'shutdown' on program/process {$args[1]}\n");
 			}
 		}
 	}
 	else
-		echo "TM > The 'restart' command requires a program name arguement to function.\n";
-	echo "TM > ";
+		echo "<taskmaster/> The 'shutdown' command requires a program name arguement to function.\n";
 }
 
 function task_edit($input)
@@ -78,14 +75,13 @@ function task_edit($input)
 			if (strcmp($process->name, $args[1]) == 0)
 			{
 				//$process->edit();
-				echo "TM > You attempted to use the 'edit' command. Unfortunately this command does not yet work.{$args[1]}\n";
+				echo "<taskmaster/> You attempted to use the 'edit' command. Unfortunately this command does not yet work.{$args[1]}\n";
 				log_message(" User 'edit'ed process <processid>'s <variablename> to <newvalue> {$args[1]}\n");
 			}
 		}
 	}
 	else
-		echo "TM > The 'edit' command requires a program name arguement to function.\n";
-	echo "TM > ";
+		echo "<taskmaster/> The 'edit' command requires a program name arguement to function.\n";
 }
 
 function task_start($input)
@@ -100,13 +96,12 @@ function task_start($input)
 			if (strcmp($process->name, $args[1]) == 0)
 			{
 				$process->start();
-				echo "TM > User requested 'start' on program/process {$args[1]}\n";
+				echo "<taskmaster/> User requested 'start' on program/process {$args[1]}\n";
 				log_message(" User requested 'start' on program/process {$args[1]}\n");
 			}
 		}
 	}
 	else
-		echo "TM > The 'start' command requires a program name arguement to function.\n";
-	echo "TM > ";
+		echo "<taskmaster/> The 'start' command requires a program name arguement to function.\n";
 }
 ?>

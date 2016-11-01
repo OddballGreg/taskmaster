@@ -253,3 +253,106 @@
 <Tuesday, 01-Nov-2016 11:09:50 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
 <Tuesday, 01-Nov-2016 11:21:36 SAST>	Taskmaster shut down by the user.
 
+<Tuesday, 01-Nov-2016 11:29:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:30:22 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 11:30:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID false already online during start() call
+
+<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID f234235 already online during start() call
+
+<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID 523532 already online during start() call
+
+<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID 23523 already online during start() call
+
+<Tuesday, 01-Nov-2016 11:45:01 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID false already online during start() call
+
+<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID f234235 already online during start() call
+
+<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID 523532 already online during start() call
+
+<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID 23523 already online during start() call
+
+<Tuesday, 01-Nov-2016 11:47:26 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:47:41 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 11:50:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:50:17 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 11:53:19 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:53:27 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 11:54:07 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 11:54:09 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 13:23:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:32 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 13:27:34 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
+
+<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
+

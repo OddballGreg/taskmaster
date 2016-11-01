@@ -28,7 +28,6 @@ function initData($handle) {
 
 function shell()
 {
-	//task_status(TRUE); 
 	echo "<taskmaster/> ";
 	while ($line = fgets(STDIN)) {
 		maintain();
