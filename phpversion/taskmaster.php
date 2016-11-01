@@ -39,12 +39,7 @@ $file = file($GLOBALS['configName']); //File is read into an array of each line 
 //Init signal handler
 pcntl_signal(SIGHUP,  "reconfig");
 
-$fdout = fopen('/tmp/stdout.log', 'wb');
-$fderr = fopen('/tmp/stderr.log', 'wb');
-
-eio_dup2($fdout, STDOUT);
-eio_dup2($fderr, STDERR);
-eio_event_loop();
+autostart();
 
 shell();
 ?>

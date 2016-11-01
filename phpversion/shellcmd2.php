@@ -9,11 +9,11 @@ function task_restart($input)
 		while ($GLOBALS['processes'][++$index] != NULL)
 		{
 			$process = $GLOBALS['processes'][$index];
-			if (strcmp($process.$name, $args[1]) == 0)
+			if (strcmp($process->name, $args[1]) == 0)
 			{
 				echo "TM > User requested 'restart' on program/process {$args[1]} .\n";
 				log_message("User requested 'restart' on program/process {$args[1]}\n");
-				$process.restart();
+				$process->restart();
 			}
 		}
 	}
@@ -31,9 +31,9 @@ function task_kill($input)
 		while ($GLOBALS['processes'][++$index] != NULL)
 		{
 			$process = $GLOBALS['processes'][$index];
-			if (strcmp($process.$name, $args[1]) == 0)
+			if (strcmp($process->name, $args[1]) == 0)
 			{
-				$process.kill();
+				$process->kill();
 				echo "TM > User requested 'kill' on program/process {$args[1]}\n";
 				log_message(" User requested 'kill' on program/process {$args[1]}\n");
 			}
@@ -53,9 +53,9 @@ function task_shutdown($input)
 		while ($GLOBALS['processes'][++$index] != NULL)
 		{
 			$process = $GLOBALS['processes'][$index];
-			if (strcmp($process.$name, $args[1]) == 0)
+			if (strcmp($process->name, $args[1]) == 0)
 			{
-				$process.shutdown();
+				$process->shutdown();
 				echo "TM > User requested 'shutdown' on program/process {$args[1]}\n";
 				log_message(" User requested 'shutdown' on program/process {$args[1]}\n");
 			}
@@ -75,9 +75,9 @@ function task_edit($input)
 		while ($GLOBALS['processes'][++$index] != NULL)
 		{
 			$process = $GLOBALS['processes'][$index];
-			if (strcmp($process.$name, $args[1]) == 0)
+			if (strcmp($process->name, $args[1]) == 0)
 			{
-				//$process.edit();
+				//$process->edit();
 				echo "TM > You attempted to use the 'edit' command. Unfortunately this command does not yet work.{$args[1]}\n";
 				log_message(" User 'edit'ed process <processid>'s <variablename> to <newvalue> {$args[1]}\n");
 			}
@@ -97,9 +97,9 @@ function task_start($input)
 		while ($GLOBALS['processes'][++$index] != NULL)
 		{
 			$process = $GLOBALS['processes'][$index];
-			if (strcmp($process.$name, $args[1]) == 0)
+			if (strcmp($process->name, $args[1]) == 0)
 			{
-				$process.start();
+				$process->start();
 				echo "TM > User requested 'start' on program/process {$args[1]}\n";
 				log_message(" User requested 'start' on program/process {$args[1]}\n");
 			}

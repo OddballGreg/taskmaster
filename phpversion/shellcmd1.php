@@ -7,7 +7,7 @@ function task_status($verbose)
 		$index = -1;
 		$result = FALSE;
 		//while ($GLOBALS['processes'][++$index] != NULL)
-			//$result = $GLOBALS['processes'][$index].status(FALSE);
+			//$result = $GLOBALS['processes'][$index]->status(FALSE);
 			if ($result == TRUE)
 				return (TRUE);
 		return (FALSE);
@@ -16,7 +16,7 @@ function task_status($verbose)
 	{
 		$index = -1;
 		//while ($GLOBALS['processes'][++$index] != NULL)
-			//$GLOBALS['processes'][$index].status(TRUE);
+			//$GLOBALS['processes'][$index]->status(TRUE);
 		return (FALSE);
 	}
 
