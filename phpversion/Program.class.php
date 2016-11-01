@@ -266,6 +266,29 @@ class Process {
 		return ($env);
 	}
 
+	public function reset_pcount()
+	{
+		if ($this->_attribStat['pcount'] <= 1)
+			if ($this->_attribStat['child'] != NULL)
+			{
+				$this->_attribStat['child']->shutdown();
+				$this->_attribStat['child']->remove_children();
+		}
+		else
+		{
+			log_message("Program {$this->_attribStat['name']} is creating a child process\n");
+			$this->_attribStat['child'] = clone $this;
+			$this->_attribStat['child']->_pcount = $this->_attribStat['pcount'] - 1;
+			$this->_attribStat['child']->reset_pcount();
+		}
+	}
+
+	private function remove_children()
+	{
+		while ($this->_attribStat['child'] != NULL)
+			$this->_attribStat['child']->remove_children();
+	}
+
 }
 
 ?>

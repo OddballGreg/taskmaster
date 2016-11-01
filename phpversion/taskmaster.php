@@ -1,4 +1,4 @@
-#!/goinfre/sallen/mamp/php/bin/php
+#!/goinfre/ghavenga/mamp/php/bin/php
 <?php
 
 /*php error reporting code, remove before submission                               */
