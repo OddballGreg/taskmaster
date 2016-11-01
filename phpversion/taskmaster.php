@@ -1,4 +1,4 @@
-#!/goinfre/ghavenga/MAMP/php/bin/php
+#!/goinfre/sallen/mamp/php/bin/php
 <?php
 
 /*php error reporting code, remove before submission                               */
@@ -27,10 +27,13 @@ if ($argc > 2 && $argv[2] != NULL)
 else
 	$GLOBALS['logfile'] = "tasklog.txt";
 
+$handle = fopen($argv[1],"r");
+$GLOBALS['processList'] = initData($handle);
+print_r($GLOBALS['processList']);
 log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.");
 
-$GLOBALS['configName'] = $argv[1];
-$file = file($GLOBALS['configName']); //File is read into an array of each line here.
+//$GLOBALS['configName'] = $argv[1];
+//$file = file($GLOBALS['configName']); //File is read into an array of each line here.
 
 /*config file parsing and establishing goes here.             <---------           */
 
@@ -40,6 +43,6 @@ $file = file($GLOBALS['configName']); //File is read into an array of each line 
 pcntl_signal(SIGHUP,  "reconfig");
 
 autostart();
-
+welcome();
 shell();
 ?>
