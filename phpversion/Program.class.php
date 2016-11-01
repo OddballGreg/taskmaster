@@ -70,88 +70,91 @@ class Process {
         //echo "destructor".PHP_EOL;
     }
 
+
+
 	/* We should probably consider breaking down the functionality of this method into smaller functions/methods. It's a bit frightening to look at. */
     public function start() 
 	{
 		/* Check that the program was not aborted in the past */
-		if ($this->aborted == FALSE)
+		if ($this->_attribStat['aborted'] == FALSE)
 		{
 			/* Start will only start offline programs, if you want to restart already running programs, use restart() */
-			if ($this->status == FALSE)
+			if ($this->_attribStat['status'] == FALSE)
 			{
 				/* Further assurance the there is actually no program running */
-				if ($this->pid == 0)
+				if ($this->_attribStat['pid'] == 0)
 				{
 					/* get the environment and add or modify according to user input */
 					$env = $this->_gen_env();
 					/* Generate a file descriptor to redirect the programs stdout if the user requested it */
-					if ($_pid_logging == TRUE)
+					if ($this->_attribStat['pid_logging'] == TRUE)
 					{
-						if ($this->_pid_logfile != NULL)
-							$descriptorspec['0'] = fopen($this->_pid_logfile, 'a');
+						if ($this->_attribStat['pid_logfile'] != NULL)
+							$descriptorspec['0'] = fopen($this->_attribStat['pid_logfile'], 'a');
 						else
-							$descriptorspec['0'] = fopen($this->_name . $this->pid . "txt", 'a');
+							$descriptorspec['0'] = fopen($this->_attribStat['name'] . $this->_attribStat['pid'] . "txt", 'a');
 					}
 					/* assembly loop to retry program initialization until it runs or must be aborted due to too many attempts*/
 					$attempts = 0;
 					pexec:
 					$attempts++;
 					/* Set the umask if necessary */
-					if ($_umask != NULL)
-						$mask = umask($_umask);
+					if ($this->_attribStat['umask'] != NULL)
+						$mask = umask($this->_attribStat['umask']);
 					/* Create the Process stream and save the pid */
-					$this->_stream = proc_open("exec " . $_lcmd, $descriptorspec, $pipes, $_wrkdir, $env);
-					$proc_details = proc_get_status($this->_stream);
-					$this->pid = $proc_details['pid'];
+					$this->_attribStat['stream'] = proc_open("exec " . $this->_attribStat['lcmd'], $descriptorspec, $pipes, $this->_attribStat['wrk_dir'], $env);
+					$proc_details = proc_get_status($this->_attribStat['stream']);
+					$this->_attribStat['pid'] = $proc_details['pid'];
 					/* Set back the umask post fork */
-					if ($this->_umask != NULL)
+					if ($this->_attribStat['umask'] != NULL)
 						umask($mask);
 					/* Calculate how much time in seconds to give the program to start before it is considered properly started */
-					$wait = time() + $_startwait;
+					$wait = time() + $this->_attribStat['startwait'];
 					/* Continually check for the process status to make sure it's okay, if not, retry until limit is reached, the output abort debug message and close stream */
-					while (time() <= $_startwait)
-						if (pcntl_waitpid($proc_details['pid'], $status, WNOHANG) == $this->pid)
+					while (time() <= $this->_attribStat['startwait'])
+						if (pcntl_waitpid($proc_details['pid'], $status, WNOHANG) == $this->_attribStat['pid'])
 						{
-							if ($attempts <= $this->_retry)
+							if ($attempts <= $this->_attribStat['retry'])
 							{
-								log_message("Program {$this->name} at process {$this->pid} failed to start. Retrying for the {$attempts} time.\n");
+								log_message("Program {$this->_attribStat['name']} at process {$this->_attribStat['pid']} failed to start. Retrying for the {$attempts} time.\n");
 								jump(pexec);
 							}
 							else
 							{
-								log_message("Program {$this->name} at process {$this->pid} failed to start after {$this->retry} attempts\n");
-								$this->aborted = TRUE;
-								proc_close($this->stream);
+								log_message("Program {$this->_attribStat['name']} at process {$this->_attribStat['pid']} failed to start after {$this->_attribStat['retry']} attempts\n");
+								$this->_attribStat['aborted'] = TRUE;
+								proc_close($this->_attribStat['stream']);
+								$this->_attribStat['pid'] = 0;
 							}
 						}
 					/* If succesful, set status to TRUE for online */
-					$this->_status = TRUE;
+					$this->_attribStat['status'] = TRUE;
 				}
 				else
 				{
 					/* Repeat this process for any children the process may have or should have */
-					if ($this->pcount > 1)
+					if ($this->_attribStat['pcount'] > 1)
 					{
-						if ($this->child != NULL)
-							$this->child->start();
+						if ($this->_attribStat['child'] != NULL)
+							$this->_attribStat['child']->start();
 						else
 						{
-							log_message("Program {$this->_name} is creating a child process\n");
-							$this->child = clone $this;
-							$this->child->_pcount = $this->_pcount - 1;
-							$this->child->start();
+							log_message("Program {$this->_attribStat['name']} is creating a child process\n");
+							$this->_attribStat['child'] = clone $this;
+							$this->_attribStat['child']->_pcount = $this->_attribStat['pcount'] - 1;
+							$this->_attribStat['child']->start();
 						}
 					}
 				}
 			}
 			else
-				log_message("Process ID {$this->pid} already online during start() call\n");
-			if ($this->pcount > 1)
+				log_message("Process ID {$this->_attribStat['pid']} already online during start() call\n");
+			if ($this->_attribStat['pcount'] > 1)
 			{
-				log_message("Program {$this->_name} is creating a child process\n");
-				$this->child = clone $this;
-				$this->child->_pcount = $this->_pcount - 1;
-				$this->child->start();
+				log_message("Program {$this->_attribStat['name']} is creating a child process\n");
+				$this->_attribStat['child'] = clone $this;
+				$this->_attribStat['child']->_pcount = $this->_attribStat['pcount'] - 1;
+				$this->_attribStat['child']->start();
 			}
 		}
     }
@@ -160,18 +163,18 @@ class Process {
 	{
 		//check process for exit codes, kill process and set status
 		//if unaccepted exit code and restart true, attempt to restart
-		$proc_details = proc_get_status($this->_stream);
+		$proc_details = proc_get_status($this->_attribStat['stream']);
 		if ($proc_details['running'] == FALSE)
 		{
-			log_message("{$this->_name} {$this->pid} has reported as 'OFFLINE', due to exit code {$proc_details['exitcode']} \n");
-			if ($this->restart == TRUE && in_array($proc_details['exitcode'], $this->exitcodes) == FALSE)
+			log_message("{$this->_attribStat['name']} {$this->_attribStat['pid']} has reported as 'OFFLINE', due to exit code {$proc_details['exitcode']} \n");
+			if ($this->_attribStat['rstart_cond'] == TRUE && in_array($proc_details['exitcode'], $this->_attribStat['exitcodes']) == FALSE)
 			{
-				log_message("{$this->_name} {$this->pid} is set to be restarted after recieving an unnaccepted exitcode. Attempting Restart.\n");
+				log_message("{$this->_attribStat['name']} {$this->_attribStat['pid']} is set to be restarted after recieving an unnaccepted exitcode. Attempting Restart.\n");
 				$this->start();
 			}
 		}
-		if ($this->_child != NULL)
-			$this->_child->maintain();
+		if ($this->_attribStat['child'] != NULL)
+			$this->_attribStat['child']->maintain();
 	}
 
 	public function status($verbose)
@@ -179,28 +182,28 @@ class Process {
 		/* internal */
 		if ($verbose == FALSE)
 		{
-			if ($this->_status == FALSE)
+			if ($this->_attribStat['status'] == FALSE)
 				return (FALSE);
-			else if ($this->_child == NULL)
+			else if ($this->_attribStat['child'] == NULL)
 				return (TRUE);
 			else
-				return($this->_child->status(FALSE));
+				return($this->_attribStat['child']->status(FALSE));
 		}
 		/* external */
 		else
 		{
-			if ($this->_status == TRUE)
-				echo "TM > " . $this->_name . " " . $this->_pid . " status: \x1b[34mONLINE\x1b[0m\n";
+			if ($this->_attribStat['status'] == TRUE)
+				echo "TM > " . $this->_attribStat['name'] . " " . $this->_attribStat['pid'] . " status: \x1b[34mONLINE\x1b[0m\n";
 			else
-				echo "TM > " . $this->_name . " " . $this->_pid . " status: \x1b[31mOFFLINE\x1b[0m\n";
-			if ($this->_child != NULL)
-				$this->_child->status(TRUE);
+				echo "TM > " . $this->_attribStat['name'] . " " . $this->_attribStat['pid'] . " status: \x1b[31mOFFLINE\x1b[0m\n";
+			if ($this->_attribStat['child'] != NULL)
+				$this->_attribStat['child']->status(TRUE);
 		}
 	}
 
 	public function restart()
 	{
-		if ($this->status == FALSE)
+		if ($this->_attribStat['status'] == FALSE)
 			$this->start();
 		else
 		{
@@ -212,26 +215,26 @@ class Process {
 
 	public function shutdown()
 	{
-		if ($this->status == TRUE)
+		if ($this->_attribStat['status'] == TRUE)
 		{
-			proc_terminate($this->stream, $this->exitsig);
-			sleep($this->killwait);
+			proc_terminate($this->_attribStat['stream'], $this->_attribStat['exitsig']);
+			sleep($this->_attribStat['killwait']);
 			$this->kill();
 		}
-		if ($this->child != NULL)
-			$this->child->shutdown();
+		if ($this->_attribStat['child'] != NULL)
+			$this->_attribStat['child']->shutdown();
 	}
 
 	public function kill()
 	{
-		if ($this->status == TRUE)
+		if ($this->_attribStat['status'] == TRUE)
 		{
-			proc_terminate($this->stream);
-			$this->pid = 0;
-			$this->status = FALSE;	
+			proc_terminate($this->_attribStat['stream']);
+			$this->_attribStat['pid'] = 0;
+			$this->_attribStat['status'] = FALSE;	
 		}
-		if ($this->child != NULL)
-			$this->child->kill();
+		if ($this->_attribStat['child'] != NULL)
+			$this->_attribStat['child']->kill();
 	}
 
 	private function _gen_env()
@@ -239,26 +242,26 @@ class Process {
 		$env = phpinfo(INFO_ENVIRONMENT);
 		for ($x; $env[$x] != NULL; $x++)
 		{
-			for ($y; $_env_vars[$y] != NULL; $y++)
+			for ($y; $this->_attribStat['env_vars'][$y] != NULL; $y++)
 			{
 				$env_pair = explode("=", $env[$x]);
-				$_env_pair = explode("=", $_env_vars[$y]);
+				$_env_pair = explode("=", $this->_attribStat['env_vars'][$y]);
 				if (strcmp($env_pair[0], $_env_pair[0]) == 0)
-					$env[$x] = $_env_vars[$y];
+					$env[$x] = $this->_attribStat['env_vars'][$y];
 			}
 		}
-		for ($x; $_env_vars[$x] != NULL; $x++)
+		for ($x; $this->_attribStat['env_vars'][$x] != NULL; $x++)
 		{
 			$exists = FALSE;
 			for ($y; $env[$y] != NULL; $y++)
 			{
 				$env_pair = explode("=", $env[$y]);
-				$_env_pair = explode("=", $_env_vars[$x]);
+				$_env_pair = explode("=", $this->_attribStat['env_vars'][$x]);
 				if (strcmp($env_pair[0], $_env_pair[0]) == 0)
 					$exits = TRUE;
 			}
 			if ($exists == FALSE)
-				$env[] = $_env_vars[$x];
+				$env[] = $this->_attribStat['env_vars'][$x];
 		}
 		return ($env);
 	}
