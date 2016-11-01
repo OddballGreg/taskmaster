@@ -28,11 +28,15 @@ function initData($handle) {
 
 function shell()
 {
+	stream_set_blocking(STDOUT, 0);
 	echo "<taskmaster/> ";
-	while ($line = fgets(STDIN)) {
+	while (1) {
 		maintain();
-		run(strtolower($line));
-        echo "<taskmaster/> ";	
+		if ($line = fgets(STDIN))
+		{
+			run(strtolower($line));
+			echo "<taskmaster/> ";
+		}
 	}
 }
 
@@ -47,7 +51,7 @@ function run($line)
 	if (strncmp($line,"exit",4) == 0 || strncmp($line,"q",1) == 0) {
 		task_exit($line);
 	}
-	else if (strncmp($line,"status",6) == 0) {      //use e.g. "status->ls" i.e. status of attrib within object
+	/*else if (strncmp($line,"status",6) == 0) {      //use e.g. "status->ls" i.e. status of attrib within object
 		foreach($processList as $process) {
 			if (strncmp($process->getName(),$newAttr[1],strlen($process->getName())) == 0) {
 				echo $process->getName().PHP_EOL;
@@ -55,7 +59,7 @@ function run($line)
 					echo $key.": ".$value.PHP_EOL;
 			}
 		}
-	}
+	}*/
 	else if (strncmp($line,"update",6) == 0) {      //use e.g. "adjust->ls->pid->8000"
 		$finalAttr = array();
 		$finalAttr[$newAttr[2]] = $newAttr[3];
@@ -82,6 +86,8 @@ function run($line)
 		task_shutdown($line);
 	else if (strncmp($line, "edit", 4) == 0)
 		task_edit($line);
+	else if (strncmp($line, "start", 5) == 0)
+		task_start($line);
 	else return 0;
 }
 

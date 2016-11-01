@@ -1,358 +1,1003 @@
-<Tuesday, 18-Oct-2016 13:31:34 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 13:31:37 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:28:24 SAST>	ls 0 Reported as OFFLINE
 
-<Tuesday, 18-Oct-2016 17:00:44 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:01:03 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:01:05 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:26 SAST>	ls 0 Reported as OFFLINE
 
-<Tuesday, 18-Oct-2016 17:01:38 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:01:40 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:26 SAST>	ls 0 Reported as OFFLINE
 
-<Tuesday, 18-Oct-2016 17:01:54 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:01:56 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:26 SAST>	ls 0 Reported as OFFLINE
 
-<Tuesday, 18-Oct-2016 17:02:12 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:02:54 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:03:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:03:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:04:04 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:04:05 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:26 SAST>	ls 0 Reported as OFFLINE
 
-<Tuesday, 18-Oct-2016 17:04:28 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:04:30 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:26 SAST>	ls 0 Reported as OFFLINE
 
-<Tuesday, 18-Oct-2016 17:04:33 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 18-Oct-2016 17:04:57 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 15:59:51 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 15:59:59 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:00:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:00:18 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:00:43 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:00:46 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:01:07 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:01:09 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:02:51 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:02:54 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:03:12 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:03:14 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:27 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:03:39 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:03:41 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:03:52 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:03:54 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:05:04 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:05:05 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:05:16 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:05:17 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:05:25 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:05:27 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:05:38 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:05:40 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:27:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:27:37 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:27:50 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Wednesday, 26-Oct-2016 16:27:52 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Wednesday, 26-Oct-2016 16:27:59 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 12:33:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 12:34:00 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Sunday, 30-Oct-2016 12:34:45 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 12:34:47 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Sunday, 30-Oct-2016 13:14:25 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 13:14:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 13:14:30 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 13:15:57 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 13:36:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 13:44:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:02:25 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:02:27 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:28 SAST>	ls 0 Reported as OFFLINE
 
-<Sunday, 30-Oct-2016 14:02:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:02:59 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:29 SAST>	 User requested 'start' on program/process ls
 
-<Sunday, 30-Oct-2016 14:03:14 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:03:24 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:03:55 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:03:59 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:29 SAST>	 User requested 'start' on program/process ls
 
-<Sunday, 30-Oct-2016 14:04:42 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:04:43 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:29 SAST>	 User requested 'start' on program/process ls
 
-<Sunday, 30-Oct-2016 14:50:55 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:50:57 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:30 SAST>	 User requested 'start' on program/process ls
 
-<Sunday, 30-Oct-2016 14:51:00 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Sunday, 30-Oct-2016 14:51:11 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:28:32 SAST>	Taskmaster shut down by the user.
 
-<Sunday, 30-Oct-2016 16:23:02 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:36:20 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:36:21 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:21 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:21 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:24 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:24 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:24 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:36:27 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:36:28 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:36:28 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:36:28 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:36:39 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 15:38:59 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:39:00 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:07 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:09 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:10 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:12 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:13 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:13 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:14 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:15 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:21 SAST>	 User requested 'shutdown' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:21 SAST>	 User requested 'shutdown' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:22 SAST>	 User requested 'shutdown' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:22 SAST>	 User requested 'shutdown' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:39:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:24 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:28 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:28 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:31 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:31 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:31 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:31 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:31 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:39:34 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:57 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:49:59 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:50:00 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:50:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:50:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:50:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:50:03 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 15:54:05 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:54:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:54:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:54:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:54:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:54:10 SAST>	 User requested 'start' on program/process ls
+
+<Tuesday, 01-Nov-2016 15:54:12 SAST>	 User requested 'start' on program/process ls
 
-<Sunday, 30-Oct-2016 17:16:35 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:54:13 SAST>	 User requested 'start' on program/process ls
 
-<Sunday, 30-Oct-2016 17:16:51 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:54:13 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:27:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:54:22 SAST>	Taskmaster shut down by the user.
 
-<Monday, 31-Oct-2016 09:27:47 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:00 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:00 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:55:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:55:03 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:55:03 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:55:04 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:27:52 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:04 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:28:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:05 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:28:45 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:07 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:29:35 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:09 SAST>	Process ID  already online during start() call
 
-<Monday, 31-Oct-2016 09:32:02 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:10 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:33:49 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:11 SAST>	Process ID  already online during start() call
 
-<Monday, 31-Oct-2016 09:47:33 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:11 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:48:38 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:13 SAST>	Process ID  already online during start() call
 
-<Monday, 31-Oct-2016 09:49:02 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:16 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:50:07 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:16 SAST>	Process ID  already online during start() call
 
-<Monday, 31-Oct-2016 09:50:24 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:16 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:50:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:55:20 SAST>	Taskmaster shut down by the user.
 
-<Monday, 31-Oct-2016 09:51:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:56:50 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:56:51 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:56:51 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:56:51 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:56:51 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:56:53 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:51:37 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:56:53 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:52:24 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:56:53 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:52:53 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:56:53 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:53:26 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	 User requested 'shutdown' on program/process ls
 
-<Monday, 31-Oct-2016 09:54:01 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	 User requested 'shutdown' on program/process ls
 
-<Monday, 31-Oct-2016 09:54:52 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	 User requested 'shutdown' on program/process ls
 
-<Monday, 31-Oct-2016 09:55:59 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	 User requested 'shutdown' on program/process ls
 
-<Monday, 31-Oct-2016 09:56:57 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:57:01 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:57:02 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:57:07 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:57:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:09 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:58:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:09 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:58:44 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:09 SAST>	 User requested 'start' on program/process ls
 
-<Monday, 31-Oct-2016 09:59:07 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:57:12 SAST>	Taskmaster shut down by the user.
 
-<Monday, 31-Oct-2016 09:59:08 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:59:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:59:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:59:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:59:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:59:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 15:59:25 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 09:59:10 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:59:27 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 09:59:13 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 15:59:28 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 09:59:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 15:59:28 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 09:59:30 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:01:02 SAST>	Taskmaster shut down by the user.
 
-<Monday, 31-Oct-2016 10:01:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:01:03 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:01:03 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:01:03 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:01:03 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:01:03 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:01:06 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 10:01:16 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:01:06 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 10:01:34 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:01:35 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:01:06 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 10:04:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:04:51 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:04:55 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:01:06 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 10:06:19 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:07:19 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:07:21 SAST>	 User requested services 'Reconfig'
+<Tuesday, 01-Nov-2016 16:14:25 SAST>	Taskmaster shut down by the user.
 
-<Monday, 31-Oct-2016 10:08:57 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:11:47 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:12:18 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:12:22 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:14:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:30 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:31 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 10:12:28 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:12:37 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:31 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 10:13:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 10:23:08 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:31 SAST>	 User requested 'start' on program ls
 
-<Monday, 31-Oct-2016 11:27:38 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 11:28:12 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 11:28:55 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 13:14:46 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Monday, 31-Oct-2016 19:43:46 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 09:45:20 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 09:45:31 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:31 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 09:45:40 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 09:46:36 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:34 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:37:31 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:38:39 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:41:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:44:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:44:58 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:45:03 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:45:48 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:46:52 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:47:19 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:47:20 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:47:54 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:47:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:48:40 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:48:41 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:49:15 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:14:35 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:44 SAST>	Taskmaster shut down by the user.
 
-<Tuesday, 01-Nov-2016 10:49:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:50:19 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:45 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:26:45 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:45 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:45 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:45 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:47 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 10:50:20 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:50:46 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:47 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 10:50:46 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:51:02 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:47 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 10:52:37 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:53:08 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:47 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 10:53:09 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:53:42 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:54:13 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:54:14 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:56:01 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:56:02 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:56:29 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 10:56:29 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 10:56:47 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 11:09:50 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:21:36 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:26:59 SAST>	Taskmaster shut down by the user.
 
-<Tuesday, 01-Nov-2016 11:29:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:30:22 SAST>	Taskmaster shut down by the user.
+<Tuesday, 01-Nov-2016 16:35:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:35:15 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:15 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:15 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:15 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:17 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 11:30:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID false already online during start() call
+<Tuesday, 01-Nov-2016 16:35:17 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID f234235 already online during start() call
+<Tuesday, 01-Nov-2016 16:35:17 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID 523532 already online during start() call
+<Tuesday, 01-Nov-2016 16:35:17 SAST>	 User requested 'start' on program ls
 
-<Tuesday, 01-Nov-2016 11:30:23 SAST>	Process ID 23523 already online during start() call
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 11:45:01 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID false already online during start() call
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID f234235 already online during start() call
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID 523532 already online during start() call
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	 User requested 'shutdown' on program ls
 
-<Tuesday, 01-Nov-2016 11:45:01 SAST>	Process ID 23523 already online during start() call
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:35:27 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:37:48 SAST>	Taskmaster shut down by the user.
 
-<Tuesday, 01-Nov-2016 11:47:26 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:47:41 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:47:41 SAST>	Taskmaster shut down by the user.
-
-<Tuesday, 01-Nov-2016 11:50:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:50:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:50:17 SAST>	Taskmaster shut down by the user.
-
-<Tuesday, 01-Nov-2016 11:53:19 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:53:27 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:53:27 SAST>	Taskmaster shut down by the user.
-
-<Tuesday, 01-Nov-2016 11:54:07 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:54:09 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 11:54:09 SAST>	Taskmaster shut down by the user.
-
-<Tuesday, 01-Nov-2016 13:23:15 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:23:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:25:17 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:32 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:32 SAST>	Taskmaster shut down by the user.
-
-<Tuesday, 01-Nov-2016 13:27:34 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
-<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
-
-<Tuesday, 01-Nov-2016 13:27:38 SAST>	  Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:37:50 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:37:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:37:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:37:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:37:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:37:51 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:38:13 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:38:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:38:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:38:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:38:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:38:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:23 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:39:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:25 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:39:26 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:39:29 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:41:54 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 16:41:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:41:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:41:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:41:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:41:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	Program ls at process  failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:41:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:49:33 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 16:49:34 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:49:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:49:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:49:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:49:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:49:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:56:52 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 16:56:53 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:56:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:56:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:56:53 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:56:54 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:56:55 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:57:00 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 16:57:33 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:57:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:57:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:57:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:57:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:57:35 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:57:47 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 16:58:07 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:58:07 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:58:07 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:58:07 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:58:07 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:58:08 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:59:56 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 16:59:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:59:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:59:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:59:56 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 16:59:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:00:10 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:00:10 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:00:10 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:00:10 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:00:10 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:00:12 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:00:13 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:02:19 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:02:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:19 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:02:20 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:02:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:03 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:03:04 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:03:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:37 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:03:38 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:03:38 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:38 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:38 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:38 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:03:39 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:04:49 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:04:49 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:04:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:04:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:04:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:04:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:04:52 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:05:42 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:05:43 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:05:44 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:05:44 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:05:44 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:05:44 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 1 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 2 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start. Retrying for the 3 time.
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	Program ls at process 0 failed to start after 3 attempts
+<Tuesday, 01-Nov-2016 17:05:45 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:11 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:14:13 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:14:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:13 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:15 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:14:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:01 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:15:04 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:15:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:06 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:15:34 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:16:22 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:18:33 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:18:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:33 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:43 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:43 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:43 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:43 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:18:49 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:19:01 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:19:54 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:19:54 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:19:54 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:19:54 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:19:54 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:19:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:19:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:19:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:19:58 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:20:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:20:05 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:20:08 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:21:26 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:21:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:21:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:21:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:21:26 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:21:28 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:21:28 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:21:28 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:21:28 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:21:48 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:22:14 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:22:14 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:14 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:14 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:14 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:16 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:23 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:22:27 SAST>	Taskmaster shut down by the user.
+
+<Tuesday, 01-Nov-2016 17:25:50 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Tuesday, 01-Nov-2016 17:25:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:25:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:25:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:25:50 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:25:56 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:25:56 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:25:56 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:25:56 SAST>	 User requested 'start' on program ls
+
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	 User requested 'shutdown' on program ls
+
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:26:04 SAST>	ls 0 Reported as OFFLINE
+<Tuesday, 01-Nov-2016 17:26:18 SAST>	Taskmaster shut down by the user.
 

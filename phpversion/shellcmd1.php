@@ -3,8 +3,8 @@
 function task_status()
 {
 	$index = -1;
-	//while ($GLOBALS['processes'][++$index] != NULL)
-		//$GLOBALS['processes'][$index]->status(TRUE);
+	while (isset($GLOBALS['processList'][++$index]) == TRUE)
+		$GLOBALS['processList'][$index]->status(TRUE);
 }
 
 function task_exit($input)
@@ -35,7 +35,7 @@ function task_exit($input)
 function task_reconfig()
 {
 	echo "<taskmaster/> Re-parsing Taskmaster Services from {$GLOBALS['configName']}\n";
-	log_message(" User requested services 'Reconfig'\n");
+	log_message(" User requested services 'Reconfig'");
 	posix_kill(getmypid(), SIGHUP);
 }
 

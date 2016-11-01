@@ -11,10 +11,14 @@ function		maintain()
 		//attempt to restart if true
 		if ($process->status(FALSE) == FALSE)
 		{
-			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Reported as OFFLINE\n");
+			if ($process->_attribStat['reported'] == FALSE)
+			{
+				log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Reported as OFFLINE");
+				$process->_attribStat['reported'] = TRUE;
+			}
 			if ($process->_attribStat['rstart_cond'] == TRUE)
 			{
-				log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Attempting To Restart Process\n");
+				log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Attempting To Restart Process");
 				$process->start();
 			}
 		}
@@ -22,8 +26,8 @@ function		maintain()
 		//if true, restart the program(s)
 		if ($process->_attribStat['restartMe'] == TRUE)
 		{
-			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Process detected as flagged for Restarting\n");
-			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Attempting To Restart Process\n");
+			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Process detected as flagged for Restarting");
+			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Attempting To Restart Process");
 			$process->_attribStat['restartMe'] == FALSE;
 			$process->restart();
 		}
