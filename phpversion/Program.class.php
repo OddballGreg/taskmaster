@@ -9,7 +9,7 @@ class Process {
         "pcount" => 2,
         "autostart" => FALSE,
         "rstart_cond" => FALSE,
-        "exitcodes" => array(0),
+        "exitcodes" => array(185),
         "startwait" => 5,
         "retry" => 3,
         "exitsig" => 3,
@@ -24,30 +24,29 @@ class Process {
         "child" => NULL,
 		"stream" => NULL,
 		"aborted" => FALSE,
-		"reported" => TRUE
+		"reported" => TRUE,
+		"usr_sd" => FALSE,
+		"exited_with" => NULL
     );
 
 	public function __construct($kwargs) {
         echo "constructor".PHP_EOL;
-        $this->_attribStat['name'] = "ls";
+        $this->_attribStat['name'] = "tail";
         $this->_attribStat['pid'] = 0;
-        $this->_attribStat['lcmd'] = "ls";
+        $this->_attribStat['lcmd'] = "tail -f /tmp/toto";
         $this->_attribStat['pcount'] = 1;
-        $this->_attribStat['autostart'] = FALSE;
-        $this->_attribStat['rstart_cond'] = FALSE;
+        $this->_attribStat['autostart'] = TRUE;
+        $this->_attribStat['rstart_cond'] = TRUE;
         $this->_attribStat['exitcodes'] = array(0);
         $this->_attribStat['startwait'] = 0;
         $this->_attribStat['retry'] = 3;
         $this->_attribStat['exitsig'] = 3;
         $this->_attribStat['killwait'] = 0;
-        $this->_attribStat['pid_logging'] = FALSE;
+        $this->_attribStat['pid_logging'] = TRUE;
         $this->_attribStat['pid_logfile'] = NULL;
         $this->_attribStat['env_vars'] = array();
         $this->_attribStat['wrk_dir'] = NULL;
-        $this->_attribStat['umask'] = NULL;
-        $this->_attribStat['status'] = FALSE;
-        $this->_attribStat['restartMe'] = FALSE;
-        $this->_attribStat['child'] = NULL;
+        $this->_attribStat['umask'] = 200;
     }
 
     /*public function __construct($kwargs) {
@@ -113,7 +112,7 @@ class Process {
 					{
 						$descriptorspec = array(
 							0 => array("pipe", "r"),  // stdin is a pipe that the child will read from
-							1 => array("file", $this->_attribStat['name'] . $this->_attribStat['pid'] . "txt", "w"),  // stdout is a pipe that the child will write to
+							1 => array("file", $this->_attribStat['name'] . $this->_attribStat['pid'] . ".txt", "w"),  // stdout is a pipe that the child will write to
 							2 => array("file", "/dev/null", "w")); // stderr is a file to write to
 
 						if ($this->_attribStat['pid_logfile'] != NULL)
@@ -125,7 +124,11 @@ class Process {
 							0 => array("pipe", "r"),  // stdin is a pipe that the child will read from
 							1 => array("file","/dev/null", "w"),  // stdout is a pipe that the child will write to
 							2 => array("file","/dev/null", "w")); // stderr is a file to write to
-
+					}
+					if ($this->_attribStat['umask'] > 199)
+					{
+						$this->_attribStat['umask'] == NULL;
+						log_message("{$this->_attribStat['name']} User set invalid umask. Process creation requires read and write rights. Umask 000 set");
 					}
 					/* assembly loop to retry program initialization until it runs or must be aborted due to too many attempts*/
 					$attempts = 0;
@@ -139,6 +142,8 @@ class Process {
 					if ($this->_attribStat['stream'] != FALSE)
 					{
 						$proc_details = proc_get_status($this->_attribStat['stream']);
+						if ($proc_details['running'] == FALSE && $this->_attribStat['exited_with'] == NULL && $proc_details['exitcode'] != -1)
+							$this->_attribStat['exited_with'] = $proc_details['exitcode'];
 						$this->_attribStat['pid'] = $proc_details['pid'];
 					}
 					/* Set back the umask post fork */
@@ -170,33 +175,27 @@ class Process {
 					}
 					/* If succesful, set status to TRUE for online */
 					$this->_attribStat['status'] = TRUE;
+					$this->_attribStat['exited_with'] = NULL;
 					$this->_attribStat['reported'] = FALSE;
 				}
-				else
-				{
-					/* Repeat this process for any children the process may have or should have */
-					if ($this->_attribStat['pcount'] > 1)
-					{
-						if ($this->_attribStat['child'] != NULL)
-							$this->_attribStat['child']->start();
-						else
-						{
-							log_message("Program {$this->_attribStat['name']} is creating a child process");
-							$this->_attribStat['child'] = clone $this;
-							$this->_attribStat['child']->_pcount = $this->_attribStat['pcount'] - 1;
-							$this->_attribStat['child']->start();
-						}
-					}
-				}
+				
 			}
 			else
 				log_message("Process ID {$this->_attribStat['pid']} already online during start() call");
+			/* Repeat this process for any children the process may have or should have */
 			if ($this->_attribStat['pcount'] > 1)
 			{
-				log_message("Program {$this->_attribStat['name']} is creating a child process");
-				$this->_attribStat['child'] = clone $this;
-				$this->_attribStat['child']->_pcount = $this->_attribStat['pcount'] - 1;
-				$this->_attribStat['child']->start();
+				if ($this->_attribStat['child'] != NULL)
+					$this->_attribStat['child']->start();
+				else
+				{
+					log_message("Program {$this->_attribStat['name']} is creating a child process");
+					$this->_attribStat['child'] = clone $this;
+					$this->_attribStat['child']->_attribStat['pcount'] = $this->_attribStat['pcount'] - 1;
+					$this->_attribStat['child']->_attribStat['pid'] = 0;
+					$this->_attribStat['child']->_attribStat['status'] = FALSE;
+					$this->_attribStat['child']->start();
+				}
 			}
 		}
     }
@@ -206,6 +205,8 @@ class Process {
 		//check process for exit codes, kill process and set status
 		//if unaccepted exit code and restart true, attempt to restart
 		$proc_details = proc_get_status($this->_attribStat['stream']);
+		if ($proc_details['running'] == FALSE && $this->_attribStat['exited_with'] == NULL && $proc_details['exitcode'] != -1)
+			$this->_attribStat['exited_with'] = $proc_details['exitcode'];
 		if ($proc_details['running'] == FALSE)
 		{
 			log_message("{$this->_attribStat['name']} {$this->_attribStat['pid']} has reported as 'OFFLINE', due to exit code {$proc_details['exitcode']}");
@@ -258,11 +259,18 @@ class Process {
 	public function shutdown()
 	{
 		if (is_resource($this->_attribStat['stream']) != FALSE)
+		{
 			$proc_details = proc_get_status($this->_attribStat['stream']);
+			if ($proc_details['running'] == FALSE && $this->_attribStat['exited_with'] == NULL && $proc_details['exitcode'] != -1)
+				$this->_attribStat['exited_with'] = $proc_details['exitcode'];
+		}
 		if (is_resource($this->_attribStat['stream']) != FALSE && $this->_attribStat['status'] == TRUE)
 		{
 			if ($proc_details['running'] == TRUE)
+			{
 				proc_terminate($this->_attribStat['stream'], $this->_attribStat['exitsig']);
+				$this->_attribStat['exited_with'] = "User Command";
+			}
 			sleep($this->_attribStat['killwait']);
 			$this->kill();
 		}
@@ -273,12 +281,18 @@ class Process {
 	public function kill()
 	{
 		if (is_resource($this->_attribStat['stream']) != FALSE)
+		{
 			$proc_details = proc_get_status($this->_attribStat['stream']);
+			if ($proc_details['running'] == FALSE && $this->_attribStat['exited_with'] == NULL && $proc_details['exitcode'] != -1)
+				$this->_attribStat['exited_with'] = $proc_details['exitcode'];
+		}
+			
 		if (is_resource($this->_attribStat['stream']) != FALSE && $this->_attribStat['status'] == TRUE)
 		{
 			if ($proc_details['running'] == TRUE)
 			{
 				proc_terminate($this->_attribStat['stream']);
+				$this->_attribStat['exited_with'] = "User Command";
 			}
 			proc_close($this->_attribStat['stream']);
 			$this->_attribStat['pid'] = 0;

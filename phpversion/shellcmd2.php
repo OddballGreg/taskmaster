@@ -9,6 +9,7 @@ function task_restart($input)
 		while (isset($GLOBALS['processList'][++$index]) == TRUE)
 		{
 			$process = $GLOBALS['processList'][$index];
+			$process->_attribStat['usr_sd'] = FALSE;
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
 				$name = trim($args[1]);
@@ -31,6 +32,7 @@ function task_kill($input)
 		while (isset($GLOBALS['processList'][++$index]) == TRUE)
 		{
 			$process = $GLOBALS['processList'][$index];
+			$process->_attribStat['usr_sd'] = TRUE;
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
 				$name = trim($args[1]);
@@ -53,6 +55,7 @@ function task_shutdown($input)
 		while (isset($GLOBALS['processList'][++$index]) == TRUE)
 		{
 			$process = $GLOBALS['processList'][$index];
+			$process->_attribStat['usr_sd'] = TRUE;
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
 				$process->shutdown();
@@ -100,6 +103,7 @@ function task_start($input)
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
 				$name = trim($args[1]);
+				$process->_attribStat['usr_sd'] = FALSE;
 				$process->start();
 				echo "<taskmaster/> User requested 'start' on program {$name}\n";
 				log_message("User requested 'start' on program {$name}");
