@@ -1237,3 +1237,30 @@
 <Wednesday, 02-Nov-2016 11:00:52 SAST>	ls 0 Reported as OFFLINE
 <Wednesday, 02-Nov-2016 11:00:52 SAST>	ls 0 Reported as OFFLINE
 <Wednesday, 02-Nov-2016 11:01:04 SAST>	 User requested services 'Reconfig'
+<Wednesday, 02-Nov-2016 11:08:49 SAST>	Taskmaster shut down by the user.
+
+<Wednesday, 02-Nov-2016 11:08:51 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 11:08:51 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:08:51 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:08:51 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:08:53 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:08:53 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:08:53 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:08:53 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:08:53 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:08:53 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:08:56 SAST>	 User requested services 'Reconfig'
+<Wednesday, 02-Nov-2016 11:09:03 SAST>	Taskmaster shut down by the user.
+
+<Wednesday, 02-Nov-2016 11:25:00 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 11:25:00 SAST>	ls 0 Reported as OFFLINE due to 
+<Wednesday, 02-Nov-2016 11:25:00 SAST>	ls 0 Reported as OFFLINE due to 
+<Wednesday, 02-Nov-2016 11:25:00 SAST>	ls 0 Reported as OFFLINE due to 
+<Wednesday, 02-Nov-2016 11:27:00 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:27:00 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:27:00 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:27:00 SAST>	ls 0 Reported as OFFLINE due to 0
+<Wednesday, 02-Nov-2016 11:27:00 SAST>	ls 0 Reported as OFFLINE due to 0
+<Wednesday, 02-Nov-2016 11:27:00 SAST>	ls 0 Reported as OFFLINE due to 0
+<Wednesday, 02-Nov-2016 11:27:08 SAST>	Taskmaster shut down by the user.
+

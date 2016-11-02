@@ -2,12 +2,12 @@
 
 include_once('Program.class.php');
 
-function initData($handle) {
+function initData() {
     $processes = array();
     $vector = array();
     $array = array();
     $temp = array();
-    while ($line = fgets($handle)) { 
+    while ($line = fgets($GLOBALS['configFile'])) { 
         if (strncmp($line,"---",3)) {
             $temp = explode("\t",trim(trim($line),":"));
             $raw[$temp[0]] = $temp[1];

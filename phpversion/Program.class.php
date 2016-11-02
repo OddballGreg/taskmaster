@@ -24,7 +24,7 @@ class Process {
         "child" => NULL,
 		"stream" => NULL,
 		"aborted" => FALSE,
-		"reported" => FALSE
+		"reported" => TRUE
     );
 
 	public function __construct($kwargs) {
@@ -117,7 +117,7 @@ class Process {
 							2 => array("file", "/dev/null", "w")); // stderr is a file to write to
 
 						if ($this->_attribStat['pid_logfile'] != NULL)
-							$descriptorspec[0] = fopen($this->_attribStat['pid_logfile'], 'a');
+							$descriptorspec[1] = fopen($this->_attribStat['pid_logfile'], 'a');
 					}
 					else
 					{

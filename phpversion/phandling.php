@@ -17,12 +17,12 @@ function		maintain()
 			$process->kill();
 			if ($process->_attribStat['reported'] == FALSE)
 			{
-				log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Reported as OFFLINE");
+				log_message("{$process->_attribStat['name']} {$process->_attribStat['pid']} Reported as OFFLINE due to exitcode {$proc_details['exitcode']}");
 				$process->_attribStat['reported'] = TRUE;
 			}
 			if ($process->_attribStat['rstart_cond'] == TRUE)
 			{
-				log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Attempting To Restart Process");
+				log_message("{$process->_attribStat['name']} {$process->_attribStat['pid']} Attempting To Restart Process");
 				$process->start();
 			}
 		}

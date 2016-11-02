@@ -27,8 +27,9 @@ if ($argc > 2 && $argv[2] != NULL)
 else
 	$GLOBALS['logfile'] = "tasklog.txt";
 
-$handle = fopen($argv[1],"r");
-$GLOBALS['processList'] = initData($handle);
+$GLOBALS['configName'] = $argv[1];
+$GLOBALS['configFile'] = fopen($argv[1],"r");
+$GLOBALS['processList'] = initData();
 print_r($GLOBALS['processList']);
 log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.");
 
