@@ -1083,3 +1083,157 @@
 <Tuesday, 01-Nov-2016 17:45:26 SAST>	ls 0 Reported as OFFLINE
 <Tuesday, 01-Nov-2016 17:45:30 SAST>	Taskmaster shut down by the user.
 
+<Wednesday, 02-Nov-2016 09:41:27 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 09:41:27 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:41:27 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:41:27 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:21 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:21 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:21 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:30 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:30 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:30 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:30 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:30 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:30 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:34 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:34 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:34 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:35 SAST>	Process ID 32633 already online during start() call
+<Wednesday, 02-Nov-2016 09:42:35 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:35 SAST>	Process ID 32634 already online during start() call
+<Wednesday, 02-Nov-2016 09:42:35 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:35 SAST>	Process ID 32635 already online during start() call
+<Wednesday, 02-Nov-2016 09:42:35 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:42:41 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:41 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:41 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:41 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:41 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:41 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:42:43 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:43 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:42:43 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 09:45:16 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:45:16 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:45:16 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:45:18 SAST>	Process ID 32842 already online during start() call
+<Wednesday, 02-Nov-2016 09:45:18 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:45:18 SAST>	Process ID 32843 already online during start() call
+<Wednesday, 02-Nov-2016 09:45:18 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:45:18 SAST>	Process ID 32844 already online during start() call
+<Wednesday, 02-Nov-2016 09:45:18 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 09:45:23 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:23 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:23 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:30 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:30 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:30 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:34 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:34 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:45:34 SAST>	User requested 'restart' on program/process ls
+<Wednesday, 02-Nov-2016 09:48:32 SAST>	 User requested services 'Reconfig'
+<Wednesday, 02-Nov-2016 09:50:29 SAST>	User requested 'kill' on program/process ls
+<Wednesday, 02-Nov-2016 09:50:29 SAST>	User requested 'kill' on program/process ls
+<Wednesday, 02-Nov-2016 09:50:29 SAST>	User requested 'kill' on program/process ls
+<Wednesday, 02-Nov-2016 09:50:29 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:50:29 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:50:29 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 09:50:33 SAST>	User requested 'kill' on program/process ls
+<Wednesday, 02-Nov-2016 09:50:33 SAST>	User requested 'kill' on program/process ls
+<Wednesday, 02-Nov-2016 09:50:33 SAST>	User requested 'kill' on program/process ls
+<Wednesday, 02-Nov-2016 09:51:50 SAST>	Taskmaster shut down by the user.
+
+<Wednesday, 02-Nov-2016 10:34:30 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:34:30 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:34:30 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:34:30 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:34:33 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 10:34:33 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 10:34:33 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 10:34:35 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 10:34:35 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 10:34:35 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 10:34:38 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 10:34:38 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 10:34:38 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 10:34:42 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 10:34:42 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 10:34:42 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 10:37:43 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:37:43 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:37:43 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:38:47 SAST>	Taskmaster force shut down by the user. Processes potentially orphaned
+
+<Wednesday, 02-Nov-2016 10:51:02 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:51:02 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:02 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:02 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	Program ls at process 37566 failed to start. Retrying for the 1 time.
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	ls 37567 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	ls 37568 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:05 SAST>	ls 37569 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:54 SAST>	Taskmaster force shut down by the user. Processes potentially orphaned
+
+<Wednesday, 02-Nov-2016 10:51:55 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:51:55 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:55 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:51:55 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:52:05 SAST>	Taskmaster shut down by the user.
+
+<Wednesday, 02-Nov-2016 10:52:45 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:52:45 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:52:45 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:52:45 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:52:47 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:52:47 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:52:47 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:52:47 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:52:47 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:52:47 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:54:18 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:54:18 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:54:18 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:54:18 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:54:20 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:54:20 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:54:20 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:54:20 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:54:20 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:54:20 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:06 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:55:06 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:06 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:06 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:35 SAST>	Taskmaster initiated using the configuration file 'config.yaml'.
+<Wednesday, 02-Nov-2016 10:55:35 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:35 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:35 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:37 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:55:37 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:55:37 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:55:37 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:37 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:37 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:41 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:55:41 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:55:41 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 10:55:41 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:41 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 10:55:41 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:00:48 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 11:00:48 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 11:00:48 SAST>	User requested 'shutdown' on program ls
+<Wednesday, 02-Nov-2016 11:00:50 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 11:00:50 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 11:00:50 SAST>	User requested 'kill' on program ls
+<Wednesday, 02-Nov-2016 11:00:52 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:00:52 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:00:52 SAST>	User requested 'start' on program ls
+<Wednesday, 02-Nov-2016 11:00:52 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:00:52 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:00:52 SAST>	ls 0 Reported as OFFLINE
+<Wednesday, 02-Nov-2016 11:01:04 SAST>	 User requested services 'Reconfig'

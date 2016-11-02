@@ -12,8 +12,8 @@ function task_restart($input)
 			if (strcmp($process->_attribStat['name'], trim($args[1])) == 0)
 			{
 				$name = trim($args[1]);
-				echo "<taskmaster/> User requested 'restart' on program/process {$name}\n";
-				log_message("User requested 'restart' on program/process {$name}");
+				echo "<taskmaster/> User requested 'restart' on program {$name}\n";
+				log_message("User requested 'restart' on program {$name}");
 				$process->restart();
 			}
 		}
@@ -35,8 +35,8 @@ function task_kill($input)
 			{
 				$name = trim($args[1]);
 				$process->kill();
-				echo "<taskmaster/> User requested 'kill' on program/process {$name}\n";
-				log_message("User requested 'kill' on program/process {$name}");
+				echo "<taskmaster/> User requested 'kill' on program {$name}\n";
+				log_message("User requested 'kill' on program {$name}");
 			}
 		}
 	}

@@ -9,8 +9,12 @@ function		maintain()
 		//request status
 		//if offline, request restart boolean setting
 		//attempt to restart if true
-		if ($process->status(FALSE) == FALSE)
+		if (is_resource($process->_attribStat['stream']) != FALSE)
+			$proc_details = proc_get_status($process->_attribStat['stream']);
+		if (is_resource($process->_attribStat['stream']) == FALSE || $proc_details['running'] == FALSE)
 		{
+			$process->_attribStat['status'] == FALSE;
+			$process->kill();
 			if ($process->_attribStat['reported'] == FALSE)
 			{
 				log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Reported as OFFLINE");

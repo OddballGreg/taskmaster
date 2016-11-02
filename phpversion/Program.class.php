@@ -257,8 +257,9 @@ class Process {
 
 	public function shutdown()
 	{
-		$proc_details = proc_get_status($this->_attribStat['stream']);
-		if ($this->_attribStat['status'] == TRUE)
+		if (is_resource($this->_attribStat['stream']) != FALSE)
+			$proc_details = proc_get_status($this->_attribStat['stream']);
+		if (is_resource($this->_attribStat['stream']) != FALSE && $this->_attribStat['status'] == TRUE)
 		{
 			if ($proc_details['running'] == TRUE)
 				proc_terminate($this->_attribStat['stream'], $this->_attribStat['exitsig']);
@@ -271,8 +272,9 @@ class Process {
 
 	public function kill()
 	{
-		$proc_details = proc_get_status($this->_attribStat['stream']);
-		if ($this->_attribStat['status'] == TRUE)
+		if (is_resource($this->_attribStat['stream']) != FALSE)
+			$proc_details = proc_get_status($this->_attribStat['stream']);
+		if (is_resource($this->_attribStat['stream']) != FALSE && $this->_attribStat['status'] == TRUE)
 		{
 			if ($proc_details['running'] == TRUE)
 			{
