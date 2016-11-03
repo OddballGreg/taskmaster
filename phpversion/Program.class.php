@@ -37,7 +37,7 @@ class Process {
         $this->_attribStat['pcount'] = 1;
         $this->_attribStat['autostart'] = TRUE;
         $this->_attribStat['rstart_cond'] = TRUE;
-        $this->_attribStat['exitcodes'] = array(0);
+        $this->_attribStat['exitcodes'] = array();
         $this->_attribStat['startwait'] = 0;
         $this->_attribStat['retry'] = 3;
         $this->_attribStat['exitsig'] = 3;

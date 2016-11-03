@@ -12,7 +12,7 @@ function task_exit($input)
 	if (strncmp($input, "exit -f", 7) == 0)
 	{
 		echo "<taskmaster/> Force Exiting Taskmaster. Processes may have been orphaned.\n";
-		log_message("Taskmaster force shut down by the user. Processes potentially orphaned\n");
+		log_message("Taskmaster force shut down by the user. Processes potentially orphaned");
 		die ();
 	}
 	else if (online_check() != FALSE)
@@ -24,7 +24,7 @@ function task_exit($input)
 	else if (online_check() == FALSE)
 	{
 		echo "<taskmaster/> Exiting Taskmaster. Have a nice day.\n";
-		log_message("Taskmaster shut down by the user.\n");
+		log_message("Taskmaster shut down by the user.");
 		die ();
 	}
 	
