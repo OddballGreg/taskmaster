@@ -31,7 +31,7 @@ $GLOBALS['configName'] = $argv[1];
 $GLOBALS['configFile'] = fopen($argv[1],"r");
 $GLOBALS['processList'] = initData();
 print_r($GLOBALS['processList']);
-log_message("\nTaskmaster initiated using the configuration file '{$argv[1]}'.");
+log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.");
 
 //$GLOBALS['configName'] = $argv[1];
 //$file = file($GLOBALS['configName']); //File is read into an array of each line here.

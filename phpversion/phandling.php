@@ -31,6 +31,7 @@ function		maintain()
 			if ($process->_attribStat['rstart_cond'] == TRUE) /* check if the process should be restarted */
 			{
 				if ($process->_attribStat['usr_sd'] == TRUE) /* Check if the process was shutdown because of a user command or valid exit code */
+				{
 					if ($process->_attribStat['reported'] == FALSE) /* Check that the process has not reported it's status before */
 					{ 			
 						if (isset($proc_details)) /*dicate a log message depending on what information is available */
@@ -38,10 +39,11 @@ function		maintain()
 						else
 							log_message("{$process->_attribStat['name']} {$process->_attribStat['pid']} Will not be restarted due to User Shutdown/Accepted Exitcode.");
 						$process->_attribStat['reported'] = TRUE; /* Set reported to avoid flooding the log with repeated reports */
-					}		
+					}
+				}		
 				else /* if the program was not shut down by user command */
 				{
-					if ($process->_attribStat['exited_with'] != NULL && in_array($process->_attribStat['exited_with'], $process->_attribStat['exitcodes']) == FALSE) /* Check for accepted exit code */
+					if ($process->_attribStat['exited_with'] != NULL && in_array($process->_attribStat['exited_with'], $process->_attribStat['exitcodes']) != FALSE) /* Check for accepted exit code */
 					{
 						if ($process->_attribStat['reported'] == FALSE) /* Check that the process has not reported it's status before */
 						{

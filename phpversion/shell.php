@@ -29,6 +29,7 @@ function initData() {
 function shell()
 {
 	stream_set_blocking(STDOUT, 0);
+	task_status();
 	echo "<taskmaster/> ";
 	while (1) {
 		maintain();

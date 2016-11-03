@@ -125,7 +125,7 @@ class Process {
 							1 => array("file","/dev/null", "w"),  // stdout is a pipe that the child will write to
 							2 => array("file","/dev/null", "w")); // stderr is a file to write to
 					}
-					if ($this->_attribStat['umask'] > 199)
+					if ($this->_attribStat['umask'] > 199 || $this->_attribStat['umask'] < 100 && $this->_attribStat['umask'] < 100 != 000)
 					{
 						$this->_attribStat['umask'] == NULL;
 						log_message("{$this->_attribStat['name']} User set invalid umask. Process creation requires read and write rights. Umask 000 set");

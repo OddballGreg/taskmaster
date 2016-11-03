@@ -16,6 +16,7 @@ function task_restart($input)
 				echo "<taskmaster/> User requested 'restart' on program {$name}\n";
 				log_message("User requested 'restart' on program {$name}");
 				$process->restart();
+				$process->status(TRUE);
 			}
 		}
 	}
@@ -39,6 +40,7 @@ function task_kill($input)
 				$process->kill();
 				echo "<taskmaster/> User requested 'kill' on program {$name}\n";
 				log_message("User requested 'kill' on program {$name}");
+				$process->status(TRUE);
 			}
 		}
 	}
@@ -62,6 +64,7 @@ function task_shutdown($input)
 				$name = trim($args[1]);
 				echo "<taskmaster/> User requested 'shutdown' on program {$name}\n";
 				log_message("User requested 'shutdown' on program {$name}");
+				$process->status(TRUE);
 			}
 		}
 	}
@@ -107,6 +110,7 @@ function task_start($input)
 				$process->start();
 				echo "<taskmaster/> User requested 'start' on program {$name}\n";
 				log_message("User requested 'start' on program {$name}");
+				$process->status(TRUE);
 			}
 		}
 	}
