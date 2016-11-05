@@ -6,6 +6,8 @@ function		maintain()
 	while (isset($GLOBALS['processList'][++$index]) == TRUE)
 	{
 		$process = $GLOBALS['processList'][$index];
+		//echo $process->_attribStat['usr_sd'];
+		//print_r($process->_attribStat['exitcodes']);
 		if (is_resource($process->_attribStat['stream'])) /* Check that $process has a valid stream */
 		{
 			$proc_details = proc_get_status($process->_attribStat['stream']); /* If so, gather process details */
@@ -15,6 +17,7 @@ function		maintain()
 		if (is_resource($process->_attribStat['stream']) == FALSE || $proc_details['running'] == FALSE) /* if the programs stream is false OR was reported as offline */
 		{
 			$process->_attribStat['status'] == FALSE; /* Set process as offline */
+			//echo $process->_attribStat['name']." ".$process->_attribStat['status'].PHP_EOL;	//REMOVE!!!!!!!!!!!!!
 			if ($process->_attribStat['reported'] == FALSE) /* Check that the process has not previously reported itself as offline */
 			{
 				if (isset($proc_details)) /*dicate a log message depending on what information is available */
@@ -65,7 +68,7 @@ function		maintain()
 				}
 			}
 		}
-		if ($process->_attribStat['restartMe'] == TRUE) /* Check for programs flagged for restarting by a reconfig, restart them */
+		if ($process->_attribStat['restartMe'] == TRUE)  //check for programs flagged for restarting by a reconfig, restart them
 		{
 			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Process detected as flagged for Restarting");
 			log_message($process->_attribStat['name'] . " " . $process->_attribStat['pid'] . " Attempting To Restart Process");

@@ -3,27 +3,28 @@
 include_once('Program.class.php');
 
 function initData() {
-    $processes = array();
-    $vector = array();
-    $array = array();
-    $temp = array();
-    while ($line = fgets($GLOBALS['configFile'])) { 
-        if (strncmp($line,"---",3)) {
-            $temp = explode("\t",trim(trim($line),":"));
-            $raw[$temp[0]] = $temp[1];
-            array_push($array, $raw);
-            $temp = array();
-        }
-        else {
-            array_push($vector, $array[18]);
-            $array = array();
-        }
+$tempAr = array();
+$final = array();
+$configOrig = array();
+    while ($line = fgets($GLOBALS['configFile'])) {
+	array_push($configOrig,$line);
+    if (strncmp($line,"---",3)) {
+        $tempVal = explode(': ',$line);
+		if ($tempVal[0] == "exitcodes")
+			$next[$tempVal[0]] = explode(",",$tempVal[1]);
+        else $next[$tempVal[0]] = str_replace(";","",$tempVal[1]);
+        unset($tempVal);
+        array_push($tempAr,$next);
     }
-    unset($array);
-    foreach ($vector as $process)
-        array_push($processes, new Process($process));
-    unset($vector);
-    return $processes;
+    else {
+        $tempOb = new Process($next);
+        array_push($final,$tempOb);
+        unset($next);
+        unset($tempOb);
+    	}
+	}
+	$GLOBALS['configOrig'] = $configOrig;
+	return $final;
 }
 
 function shell()
@@ -45,22 +46,17 @@ function run($line)
 {
 	$processList = $GLOBALS['processList'];
 	$newAttr = explode("->",$line);
-	foreach ($processList as $process) {
+	/*foreach ($processList as $process) {
 		if (strncmp($process->getName(),$line,strlen($process->getName())) == 0)
 			$process->debug_start($line);
-	}
+	}*/
 	if (strncmp($line,"exit",4) == 0 || strncmp($line,"q",1) == 0) {
 		task_exit($line);
 	}
-	/*else if (strncmp($line,"status",6) == 0) {      //use e.g. "status->ls" i.e. status of attrib within object
-		foreach($processList as $process) {
-			if (strncmp($process->getName(),$newAttr[1],strlen($process->getName())) == 0) {
-				echo $process->getName().PHP_EOL;
-				foreach($process->attribStat() as $key => $value)
-					echo $key.": ".$value.PHP_EOL;
-			}
-		}
-	}*/
+	else if (strncmp($line,"original",8) == 0) {
+		foreach ($GLOBALS['configOrig'] as $line)
+			echo $line.PHP_EOL;
+	}
 	else if (strncmp($line,"update",6) == 0) {      //use e.g. "adjust->ls->pid->8000"
 		$finalAttr = array();
 		$finalAttr[$newAttr[2]] = $newAttr[3];

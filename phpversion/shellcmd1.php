@@ -58,6 +58,6 @@ function task_help()
 	echo "processes and programs according to the .yaml file given as an arguement.\n";
 	echo "The following commands are available to you:\n";
 	echo "Help\nStatus\nKill\nShutdown\nRestart\nReconfig\nStart\nExit\n";
-	echo "Note: The commands require that you input the name of the program ase sensitively as an arguement or they will not function.\n";
+	echo "Note: The commands require that you input the name of the program as sensitively as an arguement or they will not function.\n";
 }
 ?>

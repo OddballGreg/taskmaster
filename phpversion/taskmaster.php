@@ -1,4 +1,4 @@
-#!/goinfre/ghavenga/mamp/php/bin/php
+#!/goinfre/sallen/WEB/php/bin/php
 <?php
 
 /*php error reporting code, remove before submission                               */
@@ -30,7 +30,7 @@ else
 $GLOBALS['configName'] = $argv[1];
 $GLOBALS['configFile'] = fopen($argv[1],"r");
 $GLOBALS['processList'] = initData();
-print_r($GLOBALS['processList']);
+//print_r($GLOBALS['processList']);
 log_message("Taskmaster initiated using the configuration file '{$argv[1]}'.");
 
 //$GLOBALS['configName'] = $argv[1];

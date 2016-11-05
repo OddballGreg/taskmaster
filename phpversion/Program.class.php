@@ -9,7 +9,7 @@ class Process {
         "pcount" => 2,
         "autostart" => FALSE,
         "rstart_cond" => FALSE,
-        "exitcodes" => array(185),
+        "exitcodes" => array(),
         "startwait" => 5,
         "retry" => 3,
         "exitsig" => 3,
@@ -29,48 +29,47 @@ class Process {
 		"exited_with" => NULL
     );
 
-	public function __construct($kwargs) {
-        echo "constructor".PHP_EOL;
-        $this->_attribStat['name'] = "tail";
-        $this->_attribStat['pid'] = 0;
-        $this->_attribStat['lcmd'] = "tail -f /tmp/toto";
-        $this->_attribStat['pcount'] = 1;
-        $this->_attribStat['autostart'] = TRUE;
-        $this->_attribStat['rstart_cond'] = TRUE;
-        $this->_attribStat['exitcodes'] = array();
-        $this->_attribStat['startwait'] = 0;
-        $this->_attribStat['retry'] = 3;
-        $this->_attribStat['exitsig'] = 3;
-        $this->_attribStat['killwait'] = 0;
-        $this->_attribStat['pid_logging'] = TRUE;
-        $this->_attribStat['pid_logfile'] = NULL;
-        $this->_attribStat['env_vars'] = array();
-        $this->_attribStat['wrk_dir'] = NULL;
-        $this->_attribStat['umask'] = 200;
+    function __construct($kwargs) {
+        if (isset($kwargs['name']))
+			$this->_attribStat['name'] = $kwargs['name'];
+        if (isset($kwargs['lcmd']))
+			$this->_attribStat['lcmd'] =  $kwargs['lcmd'];
+        if (isset($kwargs['pcount']))
+			$this->_attribStat['pcount'] =  $kwargs['pcount'];
+        if (isset($kwargs['autostart']))
+			$this->_attribStat['autostart'] =  $kwargs['autostart'];
+        if (isset($kwargs['rstart_cond']))
+			$this->_attribStat['rstart_cond'] =  $kwargs['rstart_cond'];
+        if (isset($kwargs['exitcodes'])) {
+			foreach ($kwargs['exitcodes'] as $code) {
+				array_push($this->_attribStat['exitcodes'],(int)$code);
+			}
+		}
+        if (isset($kwargs['startwait']))
+			$this->_attribStat['startwait'] =  $kwargs['startwait'];
+        if (isset($kwargs['retry']))
+			$this->_attribStat['retry'] =  $kwargs['retry'];
+        if (isset($kwargs['exitsig']))
+			$this->_attribStat['exitsig'] =  $kwargs['exitsig'];
+        if (isset($kwargs['killwait']))
+			$this->_attribStat['killwait'] =  $kwargs['killwait'];
+        if (isset($kwargs['pid_logging']))
+			$this->_attribStat['pid_logging'] =  $kwargs['pid_logging'];
+        if (isset($kwargs['pid_logfile']))
+			$this->_attribStat['pid_logfile'] =  $kwargs['pid_logfile'];
+        if (isset($kwargs['env_vars']))
+			$this->_attribStat['env_vars'] =  $kwargs['env_vars'];
+        if (isset($kwargs['wrk_dir']))
+			$this->_attribStat['wrk_dir'] =  $kwargs['wrk_dir'];
+        if (isset($kwargs['umask']))
+			$this->_attribStat['umask'] =  (int)$kwargs['umask'];
+        if (isset($kwargs['status']))
+			$this->_attribStat['status'] =  $kwargs['status'];
+        if (isset($kwargs['restartMe']))
+			$this->_attribStat['restartMe'] =  $kwargs['restartMe'];
+        if (isset($kwargs['child']))
+			$this->_attribStat['child'] =  $kwargs['child'];
     }
-
-    /*public function __construct($kwargs) {
-        echo "constructor".PHP_EOL;
-        $this->_attribStat['name'] = trim($kwargs['name:'],";");
-        $this->_attribStat['pid'] = trim($kwargs['pid:'],";");
-        $this->_attribStat['lcmd'] = trim($kwargs['lcmd:'],";");
-        $this->_attribStat['pcount'] = trim($kwargs['pcount:'],";");
-        $this->_attribStat['autostart'] = trim($kwargs['autostart:'],";");
-        $this->_attribStat['rstart_cond'] = trim($kwargs['rstart_cond:'],";");
-        $this->_attribStat['exitcodes'] = trim($kwargs['exitcodes:'],";");
-        $this->_attribStat['startwait'] = trim($kwargs['startwait:'],";");
-        $this->_attribStat['retry'] = trim($kwargs['retry:'],";");
-        $this->_attribStat['exitsig'] = trim($kwargs['exitsig:'],";");
-        $this->_attribStat['killwait'] = trim($kwargs['killwait:'],";");
-        $this->_attribStat['pid_logging'] = trim($kwargs['pid_logging:'],";");
-        $this->_attribStat['pid_logfile'] = trim($kwargs['pid_logfile:'],";");
-        $this->_attribStat['env_vars'] = trim($kwargs['env_vars:'],";");
-        $this->_attribStat['wrk_dir'] = trim($kwargs['wrk_dir:'],";");
-        $this->_attribStat['umask'] = trim($kwargs['umask:'],";");
-        $this->_attribStat['status'] = trim($kwargs['status:'],";");
-        $this->_attribStat['restartMe'] = trim($kwargs['restartMe:'],";");
-        $this->_attribStat['child'] = trim($kwargs['child:'],";");
-    }*/
 
 	public function adjust($pargs) {
         echo "pargs: ".$pargs.PHP_EOL;
@@ -86,7 +85,8 @@ class Process {
     }
 
     public function debug_start($lcmd) {
-        echo exec($lcmd);
+        exec($lcmd,$temp);
+		foreach ($temp as $args) echo $args.PHP_EOL;
     }
     
     public function __destruct() {
@@ -125,7 +125,7 @@ class Process {
 							1 => array("file","/dev/null", "w"),  // stdout is a pipe that the child will write to
 							2 => array("file","/dev/null", "w")); // stderr is a file to write to
 					}
-					if ($this->_attribStat['umask'] > 199 || $this->_attribStat['umask'] < 100 && $this->_attribStat['umask'] < 100 != 000)
+					if ($this->_attribStat['umask'] < 199 && $this->_attribStat['umask'] != 000)
 					{
 						$this->_attribStat['umask'] == NULL;
 						log_message("{$this->_attribStat['name']} User set invalid umask. Process creation requires read and write rights. Umask 000 set");
