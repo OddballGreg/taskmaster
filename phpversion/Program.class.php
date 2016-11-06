@@ -72,7 +72,7 @@ class Process {
         if (isset($kwargs['wrk_dir']))
 			$this->_attribStat['wrk_dir'] = $kwargs['wrk_dir'];
         if (isset($kwargs['umask']))
-			$this->_attribStat['umask'] = (int)$kwargs['umask'];
+			$this->_attribStat['umask'] = (int)"0".(int)$kwargs['umask'];
 		print_r($this->_attribStat);
     }
 

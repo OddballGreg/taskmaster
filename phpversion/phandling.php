@@ -6,29 +6,37 @@ function		maintain()
 	while (isset($GLOBALS['processList'][++$index]) == TRUE)
 	{
 		$process = $GLOBALS['processList'][$index];
-		//echo $process->_attribStat['usr_sd'];
-		//print_r($process->_attribStat['exitcodes']);
+		//echo "usr_sd:".$process->_attribStat['usr_sd'];
+		//print_r($process->_attribStat['exited_with']);
 		if (is_resource($process->_attribStat['stream'])) /* Check that $process has a valid stream */
 		{
 			$proc_details = proc_get_status($process->_attribStat['stream']); /* If so, gather process details */
+			//echo $proc_details['exitcode'];
 			if ($proc_details['running'] == FALSE && $process->_attribStat['exited_with'] == NULL && $proc_details['exitcode'] != -1) /* if process is not running and no valid exitcode was previously gathered. */
 				$process->_attribStat['exited_with'] = $proc_details['exitcode']; /* gather exitcode */
 		}
 		if (is_resource($process->_attribStat['stream']) == FALSE || $proc_details['running'] == FALSE) /* if the programs stream is false OR was reported as offline */
 		{
-			$process->_attribStat['status'] == FALSE; /* Set process as offline */
+			$process->_attribStat['status'] = FALSE; /* Set process as offline */
 			//echo $process->_attribStat['name']." ".$process->_attribStat['status'].PHP_EOL;	//REMOVE!!!!!!!!!!!!!
 			if ($process->_attribStat['reported'] == FALSE) /* Check that the process has not previously reported itself as offline */
 			{
+				//echo "exited with: ".$process->_attribStat['exited_with'].PHP_EOL;
+				//echo "exitcode: ".$proc_details['exitcode'].PHP_EOL;
 				if (isset($proc_details)) /*dicate a log message depending on what information is available */
 				{
 					$process->_attribStat['exited_with'] = $proc_details['exitcode'];
+					$process->_attribStat['pid'] = 0;
 					log_message("{$process->_attribStat['name']} {$proc_details['pid']} Reported as OFFLINE due to exitcode {$process->_attribStat['exited_with']}");
 				}
-				else if ($process->_attribStat['exited_with'] != NULL)
+				else if ($process->_attribStat['exited_with'] != NULL) {
+					$process->_attribStat['pid'] = 0;
 					log_message("{$process->_attribStat['name']} Reported as OFFLINE due to {$process->_attribStat['exited_with']}");
-				else
-					log_message("{$process->_attribStat['name']} Reported as OFFLINE without an Exitcode. Probably could not start.");				
+				}
+				else {
+					$process->_attribStat['pid'] = 0;
+					log_message("{$process->_attribStat['name']} Reported as OFFLINE without an Exitcode. Probably could not start.");
+				}
 				$process->_attribStat['reported'] = TRUE; /* Set reported to avoid flooding the log with repeated reports */
 			}
 			if ($process->_attribStat['rstart_cond'] == TRUE) /* check if the process should be restarted */
@@ -67,6 +75,7 @@ function		maintain()
 					}
 				}
 			}
+			//else $process->kill();	MAKES NO DIFFERENCE IN CURRENT STATE
 		}
 		if ($process->_attribStat['restartMe'] == TRUE)  //check for programs flagged for restarting by a reconfig, restart them
 		{

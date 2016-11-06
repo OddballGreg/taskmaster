@@ -3,14 +3,14 @@ lcmd: tail -f /tmp/toto;
 pcount: 1;
 autostart: TRUE;
 rstart_cond: TRUE;
-exitcodes: 1,0;
-startwait: 0;
+exitcodes: 1,4,9;
+startwait: 2;
 retry: 3;
 exitsig: 3;
 killwait: 0;
 pid_logging: TRUE;
 pid_logfile: pidLog.txt;
 env_vars: path=/tmp/toto,env=value;
-wrk_dir: NULL;
+wrk_dir: /tmp;
 umask: 077;
 ---

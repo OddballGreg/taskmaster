@@ -7,7 +7,8 @@ $tempAr = array();
 $final = array();
 $configOrig = array();
     while ($line = fgets($GLOBALS['configFile'])) {
-	array_push($configOrig,$line);
+	if (!isset($GLOBALS['configOrig']))
+		array_push($configOrig,$line);
     if (strncmp($line,"---",3)) {
         $tempVal = explode(': ',$line);
 		if ($tempVal[0] == "exitcodes" || $tempVal[0] == "env_vars")
@@ -23,7 +24,8 @@ $configOrig = array();
         unset($tempOb);
     	}
 	}
-	$GLOBALS['configOrig'] = $configOrig;
+	if (isset($configOrig))
+		$GLOBALS['configOrig'] = $configOrig;
 	unset($configOrig);
 	$write = fopen('configOrig.yaml', 'w');
 	foreach ($GLOBALS['configOrig'] as $original)
