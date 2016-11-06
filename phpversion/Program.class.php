@@ -35,40 +35,45 @@ class Process {
         if (isset($kwargs['lcmd']))
 			$this->_attribStat['lcmd'] =  $kwargs['lcmd'];
         if (isset($kwargs['pcount']))
-			$this->_attribStat['pcount'] =  $kwargs['pcount'];
-        if (isset($kwargs['autostart']))
-			$this->_attribStat['autostart'] =  $kwargs['autostart'];
-        if (isset($kwargs['rstart_cond']))
-			$this->_attribStat['rstart_cond'] =  $kwargs['rstart_cond'];
+			$this->_attribStat['pcount'] =  (int)$kwargs['pcount'];
+        if (isset($kwargs['autostart'])) {
+			if (strncmp(strtoupper($kwargs['autostart']),'TRUE',4) == 0)
+				$this->_attribStat['autostart'] = TRUE;
+			else $this->_attribStat['autostart'] = FALSE;
+		}
+        if (isset($kwargs['rstart_cond'])) {
+			if (strncmp(strtoupper($kwargs['rstart_cond']),'TRUE',4) == 0)
+				$this->_attribStat['rstart_cond'] = TRUE;
+			else $this->_attribStat['rstart_cond'] = FALSE;
+		}
         if (isset($kwargs['exitcodes'])) {
-			foreach ($kwargs['exitcodes'] as $code) {
+			foreach ($kwargs['exitcodes'] as $code)
 				array_push($this->_attribStat['exitcodes'],(int)$code);
-			}
 		}
         if (isset($kwargs['startwait']))
-			$this->_attribStat['startwait'] =  $kwargs['startwait'];
+			$this->_attribStat['startwait'] = (int)$kwargs['startwait'];
         if (isset($kwargs['retry']))
-			$this->_attribStat['retry'] =  $kwargs['retry'];
+			$this->_attribStat['retry'] = (int)$kwargs['retry'];
         if (isset($kwargs['exitsig']))
-			$this->_attribStat['exitsig'] =  $kwargs['exitsig'];
+			$this->_attribStat['exitsig'] = $kwargs['exitsig'];
         if (isset($kwargs['killwait']))
-			$this->_attribStat['killwait'] =  $kwargs['killwait'];
-        if (isset($kwargs['pid_logging']))
-			$this->_attribStat['pid_logging'] =  $kwargs['pid_logging'];
+			$this->_attribStat['killwait'] = (int)$kwargs['killwait'];
+        if (isset($kwargs['pid_logging'])) {
+			if (strncmp(strtoupper($kwargs['pid_logging']),'TRUE',4) == 0)
+				$this->_attribStat['pid_logging'] = TRUE;
+			else $this->_attribStat['pid_logging'] = FALSE;
+		}
         if (isset($kwargs['pid_logfile']))
-			$this->_attribStat['pid_logfile'] =  $kwargs['pid_logfile'];
-        if (isset($kwargs['env_vars']))
-			$this->_attribStat['env_vars'] =  $kwargs['env_vars'];
+			$this->_attribStat['pid_logfile'] = $kwargs['pid_logfile'];
+        if (isset($kwargs['env_vars'])) {
+			foreach ($kwargs['env_vars'] as $env_var)
+				array_push($this->_attribStat['env_vars'],$env_var);
+		}
         if (isset($kwargs['wrk_dir']))
-			$this->_attribStat['wrk_dir'] =  $kwargs['wrk_dir'];
+			$this->_attribStat['wrk_dir'] = $kwargs['wrk_dir'];
         if (isset($kwargs['umask']))
-			$this->_attribStat['umask'] =  (int)$kwargs['umask'];
-        if (isset($kwargs['status']))
-			$this->_attribStat['status'] =  $kwargs['status'];
-        if (isset($kwargs['restartMe']))
-			$this->_attribStat['restartMe'] =  $kwargs['restartMe'];
-        if (isset($kwargs['child']))
-			$this->_attribStat['child'] =  $kwargs['child'];
+			$this->_attribStat['umask'] = (int)$kwargs['umask'];
+		print_r($this->_attribStat);
     }
 
 	public function adjust($pargs) {
@@ -125,7 +130,7 @@ class Process {
 							1 => array("file","/dev/null", "w"),  // stdout is a pipe that the child will write to
 							2 => array("file","/dev/null", "w")); // stderr is a file to write to
 					}
-					if ($this->_attribStat['umask'] < 199 && $this->_attribStat['umask'] != 000)
+					if ($this->_attribStat['umask'] > 199 || $this->_attribStat['umask'] < 100 && $this->_attribStat['umask'] < 100 != 000)
 					{
 						$this->_attribStat['umask'] == NULL;
 						log_message("{$this->_attribStat['name']} User set invalid umask. Process creation requires read and write rights. Umask 000 set");

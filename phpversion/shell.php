@@ -10,7 +10,7 @@ $configOrig = array();
 	array_push($configOrig,$line);
     if (strncmp($line,"---",3)) {
         $tempVal = explode(': ',$line);
-		if ($tempVal[0] == "exitcodes")
+		if ($tempVal[0] == "exitcodes" || $tempVal[0] == "env_vars")
 			$next[$tempVal[0]] = explode(",",$tempVal[1]);
         else $next[$tempVal[0]] = str_replace(";","",$tempVal[1]);
         unset($tempVal);
@@ -24,6 +24,10 @@ $configOrig = array();
     	}
 	}
 	$GLOBALS['configOrig'] = $configOrig;
+	unset($configOrig);
+	$write = fopen('configOrig.yaml', 'w');
+	foreach ($GLOBALS['configOrig'] as $original)
+		fwrite($write,$original);
 	return $final;
 }
 
