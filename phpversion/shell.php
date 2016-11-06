@@ -7,30 +7,30 @@ $tempAr = array();
 $final = array();
 $configOrig = array();
     while ($line = fgets($GLOBALS['configFile'])) {
-	if (!isset($GLOBALS['configOrig']))
-		array_push($configOrig,$line);
-    if (strncmp($line,"---",3)) {
-        $tempVal = explode(': ',$line);
-		if ($tempVal[0] == "exitcodes" || $tempVal[0] == "env_vars")
-			$next[$tempVal[0]] = explode(",",$tempVal[1]);
-        else $next[$tempVal[0]] = str_replace(";","",$tempVal[1]);
-        unset($tempVal);
-        array_push($tempAr,$next);
-    }
-    else {
-        $tempOb = new Process($next);
-        array_push($final,$tempOb);
-        unset($next);
-        unset($tempOb);
-    	}
-	}
-	if (isset($configOrig))
-		$GLOBALS['configOrig'] = $configOrig;
-	unset($configOrig);
-	$write = fopen('configOrig.yaml', 'w');
-	foreach ($GLOBALS['configOrig'] as $original)
-		fwrite($write,$original);
-	return $final;
+		if (!isset($GLOBALS['configOrig']))
+			array_push($configOrig,$line);
+		if (strncmp($line,"---",3)) {
+			$tempVal = explode(': ',$line);
+			if ($tempVal[0] == "exitcodes" || $tempVal[0] == "env_vars")
+				$next[$tempVal[0]] = explode(",",$tempVal[1]);
+			else $next[$tempVal[0]] = str_replace(";","",$tempVal[1]);
+			unset($tempVal);
+			array_push($tempAr,$next);
+		}
+		else {
+			$tempOb = new Process($next);
+			array_push($final,$tempOb);
+			unset($next);
+			unset($tempOb);
+			}
+		}
+		if (isset($configOrig))
+			$GLOBALS['configOrig'] = $configOrig;
+		unset($configOrig);
+		$write = fopen('configOrig.yaml', 'w');
+		foreach ($GLOBALS['configOrig'] as $original)
+			fwrite($write,$original);
+		return $final;
 }
 
 function shell()
@@ -76,7 +76,7 @@ function run($line)
 		}
 	}
 	else if (strncmp($line, "reconfig", 8) == 0)
-		task_reconfig();
+		initData();
 	else if (strncmp($line, "help", 4) == 0)
 		task_help();
 	else if (strncmp($line, "restart", 7) == 0)

@@ -10,6 +10,8 @@ function		maintain()
 		//print_r($process->_attribStat['exited_with']);
 		if (is_resource($process->_attribStat['stream'])) /* Check that $process has a valid stream */
 		{
+			//if (isset($process->_attribStat['stream'])) echo "Stream".PHP_EOL;
+			//echo $process->_attribStat['stream'];
 			$proc_details = proc_get_status($process->_attribStat['stream']); /* If so, gather process details */
 			//echo $proc_details['exitcode'];
 			if ($proc_details['running'] == FALSE && $process->_attribStat['exited_with'] == NULL && $proc_details['exitcode'] != -1) /* if process is not running and no valid exitcode was previously gathered. */
@@ -62,7 +64,7 @@ function		maintain()
 								log_message("{$process->_attribStat['name']} {$proc_details['pid']} Recieved an accepted exitcode and will not restart automatically");
 							else
 								log_message("{$process->_attribStat['name']} Recieved an accepted exitcode and will not restart automatically");	
-							$process->_attribStat['usr_sd'] == TRUE; /* Set that the process exited by a user accepted exit code */
+							$process->_attribStat['usr_sd'] = TRUE; /* Set that the process exited by a user accepted exit code */
 							$process->_attribStat['reported'] = TRUE; /* Set reported to avoid flooding the log with repeated reports */
 						}
 					}

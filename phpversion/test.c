@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 
-int main() {
-    while (1) {
-        printf("Hello, I'm working....\n");
-    }
+int main(int argc, char **argv) {
+    (void)argc;
+    printf("%s output\n",argv[0]);
     return 0;
 }
